@@ -11,6 +11,16 @@ Section II: Hardware Description
 
 (Brief introduction of the breadboard-based prototyping platform)
 
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/supplies1.jpg" target="_blank">Link to image of supplies</a>
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/supplies1.jpg" width="200">
+    <font size="2">
+    <figcaption> Figure 1: Supplies </a> 
+    </figcaption>
+    </font>
+</figure>
+
 Section III: Lab Exercises
 --------------------------
 
