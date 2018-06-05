@@ -1,12 +1,9 @@
 Lab 1: Mystery Circuit
 ======================
 
-Section I: Overview
--------------------
-
 (Brief introduction of the lab) 
 
-Section II: Hardware Description
+Hardware Description
 --------------------------------
 
 (Brief introduction of the breadboard-based prototyping platform)
@@ -21,7 +18,7 @@ Section II: Hardware Description
     </font>
 </figure>
 
-Section III: Lab Exercises
+Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
