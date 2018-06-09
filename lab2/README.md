@@ -56,10 +56,10 @@ In this section, you will experiment with code that will either respond to or co
 
 Now, we will program our robot very simply, using the code shown in Figure 4. You should type up this code into the Arduino IDE. As make more and more programs having to do with the robot, you will likely find yourself typing the same things over and over again. To avoid doing this many times, you may want to save your file using the menu item: File → Save and then create a new copy for this part by using the menu item: *File → Save As* … You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 4, upload your code to the Arduino and verify that the LED blinks as it should.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BlinkingLEDCode.png" target="_blank">Link to image of blinking LED code example</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" target="_blank">Link to image of blinking LED code example</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BlinkingLEDCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="200">
     <font size="2">
     <figcaption> Figure 4: Blinking LED Code Example </a> 
     </figcaption>
