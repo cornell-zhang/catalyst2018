@@ -15,30 +15,30 @@ Before beginning the lab, make sure to take a look at the components that you wi
 
 Take a look at the mobile robotic platform and try to identify each of the parts of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 1 and 2, respectively, while Figure 3 shows a diagram of the prototyping board.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/RobotTop.png" target="_blank">Link to image of top view of robot</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" target="_blank">Link to image of top view of robot</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/RobotTop.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="400">
     <font size="2">
     <figcaption> Figure 1: Top-View of Mobile Robotic Platform </a> 
     </figcaption>
     </font>
 </figure>
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/RobotFront.png" target="_blank">Link to image of front view of robot</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" target="_blank">Link to image of front view of robot</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/RobotFront.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="200">
     <font size="2">
     <figcaption> Figure 2: Front-View of Mobile Robotic Platform </a> 
     </figcaption>
     </font>
 </figure>
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PrototypingBoard.png" target="_blank">Link to image of prototyping board</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" target="_blank">Link to image of prototyping board</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PrototypingBoard.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="200">
     <font size="2">
     <figcaption> Figure 3: Prototyping Board </a> 
     </figcaption>
@@ -68,10 +68,10 @@ Now, we will program our robot very simply, using the code shown in Figure 4. Yo
 
 Once this is working properly, let’s try to extend the code we’ve just written such that we make one LED light up when the right bumper is pressed and the other light up when the other LED is pressed. The code for this part is shown in Figure 5 below. Verify that this works as expected after finishing and uploading the code to your Arduino.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BlinkingLEDAndSwitchControlledLEDCode.png" target="_blank">Link to image of blinking LED and switch-controlled LED code example</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" target="_blank">Link to image of blinking LED and switch-controlled LED code example</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="200">
     <font size="2">
     <figcaption> Figure 5: Blinking LED and Switch-Controlled LED Code Example </a> 
     </figcaption>
@@ -81,7 +81,7 @@ Once this is working properly, let’s try to extend the code we’ve just writt
 Once this part is working, we can extend the code one step further, but getting the potentiometer involved as well. A potentiometer is a variable resistor, and it is located on one end of the prototyping board. Turning the blue knob will change the resistance of the potentiometer. The Arduino can read this resistance as an analog value by using an analog input pin. On our robot, the potentiometer is connected to analog input pin 5, and you will observe that analog inputs have values between 0 and 1023 when you add this extra functionality to your code. You can get the Arduino to read the potentiometer by adding this line to your loop routine:
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PotentiometerReadCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PotentiometerReadCode.png" width="200">
 </figure>
 
 After adding this statement to your code, verify that it works properly before showing your results to an instructor.
@@ -93,10 +93,10 @@ After adding this statement to your code, verify that it works properly before s
 #### Part1.B Experiment with Grayscale Sensors
 In this section, you will experiment with the grayscale sensor on the robot, before you have to use it to find the location of the target in the last section. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both a LED that generates light and a photodetector that senses light. Depending on the amount of light that the photodetector senses, it will output a different sort of value. This sensor will also report values between 0 and 1023, which indicates how much light has been reflected back(so higher values indicate that the robot it travelling on a lighter surface, while lower values will indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 6 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the serial monitor by selecting the menu item: Tools → Serial Monitor. Verify that the readings behave as expected, before showing your results to an instructor.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/GrayscaleSensorCode.png" target="_blank">Link to image of grayscale sensor and serial monitor example code</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" target="_blank">Link to image of grayscale sensor and serial monitor example code</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/GrayscaleSensorCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="200">
     <font size="2">
     <figcaption> Figure 6: Analog Grayscale Sensor and Serial Monitor Example </a>
     </figcaption>
@@ -112,10 +112,10 @@ In this section, you will begin to experiment with the drive motors of the robot
 
 Enter the code shown in Figure 7 below, into your Arduino IDE. Once you have done so, place your robot onto the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino, and if you would like, try executing this code once more, with the robot on the floor, so that you can see whether it really does move in a square.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/MoveRobotSquareCode.png" target="_blank">Link to image of move robot in a square code</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" target="_blank">Link to image of move robot in a square code</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/MoveRobotSquareCode.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="400">
     <font size="2">
         <figcaption> Figure 7: Move Robot in a Square Code Example </a>
     </figcaption>
@@ -137,10 +137,10 @@ It is recommended that you start with a fresh version of the code template provi
 #### Part2.A Develop Move-and-Stop Behavior
 In this section, you will have to write a program that makes the robot keep moving forwards until it hits an obstacle— in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/MoveAndStopTemplateCode.png" target="_blank">Link to image of template for move and stop behavior code</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" target="_blank">Link to image of template for move and stop behavior code</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/MoveAndStopTemplateCode.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="400">
     <font size="2">
         <figcaption> Figure 8: Template for Move-and-Stop Robot Behavior </a>
     </figcaption>
