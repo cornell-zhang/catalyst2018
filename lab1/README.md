@@ -42,7 +42,7 @@ In this section, you will wire up some basic circuits that start with a simple a
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" target="_blank">Link to image of breadboard wiring</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="400">
     <font size="2">
     <figcaption> Figure 3: Underlying Wiring of Breadboard </a> 
     </figcaption>
