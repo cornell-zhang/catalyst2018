@@ -8,10 +8,10 @@ Hardware Description
 
 Notice that we have given you not just a breadboard, but also some components that have already been wired up. You can verify that you aren’t missing any components on the breadboard by taking a look at Figure 1 below. You will also be able to use any of the supplies shown below in Figure 2. You should try to identify PMOS and NMOS transistors, the LED, integrated circuits, the digital input/output switches, and the breadboard power supply on your own prototyping platform. As for the other materials you will need, they are listed below:
 
-•	Black power cable with barrel connector
-•	LED
-•	Resistor
-•	Wire Cutter and Stripper
+- Black power cable with barrel connector
+- LED
+- Resistor
+- Wire Cutter and Stripper
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" target="_blank">Link to image of prototyping platform</a>
 
