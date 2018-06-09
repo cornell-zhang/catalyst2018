@@ -16,7 +16,7 @@ Notice that we have given you not just a breadboard, but also some components th
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" target="_blank">Link to image of prototyping platform</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="400">
     <font size="2">
     <figcaption> Figure 1: Simple LED Circuit Implemented on Prototyping Platform </a> 
     </figcaption>
@@ -72,7 +72,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" target="_blank">Link to image of inverter circuit</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" width="400">
     <font size="2">
     <figcaption> Figure 5: Inverter Circuit </a>
         Taken From: http://slideplayer.com/slide/5067607/ </a>
@@ -98,7 +98,7 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/NANDGateDiagram.png" target="_blank">Link to image of NAND Gate</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/NANDGateDiagram.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/NANDGateDiagram.png" width="400">
     <font size="2">
         <figcaption> Figure 7: NAND Gate </a>
             Taken From: https://electronics.stackexchange.com/questions/72806/preference-of-nand-nor-gates </a>
@@ -138,7 +138,7 @@ In this section, you will develop a parity checker, which is useful in determini
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" target="_blank">Link to image of parity checker</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="300">
     <font size="2">
         <figcaption> Figure 9: Parity Checker </a>
         Taken From: https://www.tutorialspoint.com/digital_circuits/digital_combinational_circuits.htm </a>
@@ -180,7 +180,7 @@ Wire up the full-adder shown in Figure 11 below. This unit is complicated enough
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" target="_blank">Link to image of full-adder</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" width="300">
     <font size="2">
         <figcaption> Figure 11: Full-Adder </a>
         Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder </a>
@@ -191,7 +191,7 @@ Wire up the full-adder shown in Figure 11 below. This unit is complicated enough
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" target="_blank">Link to image of full-adder</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="400">
     <font size="2">
         <figcaption> Figure 12: Planning Diagram for Breadboard Implementation of Full-Adder </a>
         Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder </a>
@@ -209,7 +209,7 @@ Now find another lab group that is at the same step. Chain both of your integrat
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" target="_blank">Link to image of two-bit ripple-carry adder</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" width="300">
     <font size="2">
         <figcaption> Figure 13: Two-Bit Ripple-Carry Adder </a>
         Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html </a>
