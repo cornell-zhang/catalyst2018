@@ -18,7 +18,7 @@ Take a look at the mobile robotic platform and try to identify each of the parts
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" target="_blank">Link to image of top view of robot</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="300">
     <font size="2">
     <figcaption> Figure 1: Top-View of Mobile Robotic Platform </a> 
     </figcaption>
@@ -28,7 +28,7 @@ Take a look at the mobile robotic platform and try to identify each of the parts
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" target="_blank">Link to image of front view of robot</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="300">
     <font size="2">
     <figcaption> Figure 2: Front-View of Mobile Robotic Platform </a> 
     </figcaption>
@@ -38,7 +38,7 @@ Take a look at the mobile robotic platform and try to identify each of the parts
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" target="_blank">Link to image of prototyping board</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="300">
     <font size="2">
     <figcaption> Figure 3: Prototyping Board </a> 
     </figcaption>
@@ -59,7 +59,7 @@ Now, we will program our robot very simply, using the code shown in Figure 4. Yo
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" target="_blank">Link to image of blinking LED code example</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="400">
     <font size="2">
     <figcaption> Figure 4: Blinking LED Code Example </a> 
     </figcaption>
@@ -71,7 +71,7 @@ Once this is working properly, let’s try to extend the code we’ve just writt
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" target="_blank">Link to image of blinking LED and switch-controlled LED code example</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="400">
     <font size="2">
     <figcaption> Figure 5: Blinking LED and Switch-Controlled LED Code Example </a> 
     </figcaption>
@@ -81,7 +81,7 @@ Once this is working properly, let’s try to extend the code we’ve just writt
 Once this part is working, we can extend the code one step further, but getting the potentiometer involved as well. A potentiometer is a variable resistor, and it is located on one end of the prototyping board. Turning the blue knob will change the resistance of the potentiometer. The Arduino can read this resistance as an analog value by using an analog input pin. On our robot, the potentiometer is connected to analog input pin 5, and you will observe that analog inputs have values between 0 and 1023 when you add this extra functionality to your code. You can get the Arduino to read the potentiometer by adding this line to your loop routine:
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PotentiometerReadCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PotentiometerReadCode.png" width="400">
 </figure>
 
 After adding this statement to your code, verify that it works properly before showing your results to an instructor.
@@ -96,7 +96,7 @@ In this section, you will experiment with the grayscale sensor on the robot, bef
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" target="_blank">Link to image of grayscale sensor and serial monitor example code</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="400">
     <font size="2">
     <figcaption> Figure 6: Analog Grayscale Sensor and Serial Monitor Example </a>
     </figcaption>
