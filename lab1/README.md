@@ -123,7 +123,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="400">
     <font size="2">
-        <figcaption> Figure 7: Breadboard Diagram for Testing NAND Gate </a>
+        <figcaption> Figure 8: Breadboard Diagram for Testing NAND Gate </a>
     </figcaption>
     </font>
 </figure>
