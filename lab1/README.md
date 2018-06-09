@@ -72,7 +72,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" target="_blank">Link to image of inverter circuit</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" width="200">
     <font size="2">
     <figcaption> Figure 5: Inverter Circuit </a>
         Taken From: http://slideplayer.com/slide/5067607/ </a>
@@ -80,10 +80,10 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
     </font>
 </figure>
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" target="_blank">Link to image of breadboard diagram for testing inverter circuit</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" target="_blank">Link to image of breadboard diagram for testing inverter circuit</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="400">
     <font size="2">
         <figcaption> Figure 6: Breadboard Diagram for Testing Inverter Circuit </a>
     </figcaption>
@@ -121,7 +121,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" target="_blank">Link to image of breadboard diagram for testing NAND gate</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="400">
     <font size="2">
         <figcaption> Figure 7: Breadboard Diagram for Testing NAND Gate </a>
     </figcaption>
