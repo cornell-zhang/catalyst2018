@@ -19,7 +19,7 @@ With the name “machine learning” coined in 1969 by Arthur Samuel[5], researc
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of blinking LED code example</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/KNNPrediction.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="400">
     <font size="2">
     <figcaption> Figure 1: Scheme in KNN Prediction </a> 
     </figcaption>
@@ -33,7 +33,7 @@ But what about predict digits in images? As we all know, all files are stored as
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of training instance of digits</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/HandwrittenDigit.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigit.png" width="400">
     <font size="2">
     <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b)n </a> 
     </figcaption>
@@ -95,22 +95,31 @@ Now it’s time to deploy a web application based on your digit recognition syst
 
 #### Part3. References
 [1] “What is Machine Learning? 3 things you need to know” Available at https://www.mathworks.com/discovery/machine-learning.html
+
 [2] Kun, Jeremy. K-Nearest-Neighbors and Handwritten Digit Classi_cation. Math Programming. Available at https://jeremykun.com/2012/08/26/k-nearest-neighbors-and-handwritten-digit-classi_cation
 
 [3] ECE 5775 lab2 handout: Digit Recognition System (Part1). Available at http://www.csl.cornell.edu/courses/ece5775/schedule.html
+
 [4] K-Nearest-Neighbors and Handwritten Digit Classification. Available at:
 https://jeremykun.com/2012/08/26/k-nearest-neighbors-and-handwritten-digit-classification/
+
 [5] Machine Learning – Wikipedia. Available at:
 https://en.wikipedia.org/wiki/Machine_learning
+
 [6] CS5780 lecture 2 handout: K-nearest-neighbors. Available at:
 http://www.cs.cornell.edu/courses/cs4780/2018sp/page16/index.html
+
 [7] Hamming distance – Wikipedia. Available at:
 https://en.wikipedia.org/wiki/Hamming_distance
+
 [8] The MNIST Database of handwritten digits. Available at:
 http://yann.lecun.com/exdb/mnist/
+
 [9] Python Tops 2017’s Most popular Programming Languages. Available at:
 https://www.extremetech.com/computing/252987-python-tops-list-2017s-popular-programming-languages
+
 [10] Python (programming language) – Wikipedia. Available at:
 https://en.wikipedia.org/wiki/Python_(programming_language)
+
 [11] The Python Tutorial. Available at:
 https://docs.python.org/3/tutorial/index.html
