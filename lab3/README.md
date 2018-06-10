@@ -70,44 +70,10 @@ Print (“Hello World!”)
 - Function
 - Class
 
-
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" target="_blank">Link to image of blinking LED code example</a>
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="400">
-    <font size="2">
-    <figcaption> Figure 4: Blinking LED Code Example </a> 
-    </figcaption>
-    </font>
-</figure>
-
-Once this is working properly, let’s try to extend the code we’ve just written such that we make one LED light up when the right bumper is pressed and the other light up when the other LED is pressed. The code for this part is shown in Figure 5 below. Verify that this works as expected after finishing and uploading the code to your Arduino.
-
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" target="_blank">Link to image of blinking LED and switch-controlled LED code example</a>
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="400">
-    <font size="2">
-    <figcaption> Figure 5: Blinking LED and Switch-Controlled LED Code Example </a> 
-    </figcaption>
-    </font>
-</figure>
-
-Once this part is working, we can extend the code one step further, but getting the potentiometer involved as well. A potentiometer is a variable resistor, and it is located on one end of the prototyping board. Turning the blue knob will change the resistance of the potentiometer. The Arduino can read this resistance as an analog value by using an analog input pin. On our robot, the potentiometer is connected to analog input pin 5, and you will observe that analog inputs have values between 0 and 1023 when you add this extra functionality to your code. You can get the Arduino to read the potentiometer by adding this line to your loop routine:
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PotentiometerReadCode.png" width="400">
-</figure>
-
-After adding this statement to your code, verify that it works properly before showing your results to an instructor.
-
-*Sign-Off Milestone*: Once you have one LED’s blink rate controlled by the potentiometer and the other LED controlled by the switch, have a teaching assistant verify that things are working correctly. 
-
-*Critical Thinking Questions*: Explain why pressing the switch quickly sometimes does not turn on the LED, and why the LED stays lit for a short duration after you release the switch. Similarly, explain why adjusting the potentiometer sometimes requires a short duration before impacting the blink rate.
-
 Lab Exercises
 --------------------------------
 
+#### Part1. Function Implementation
 In this part, you should implement four basic functions for building the digit recognition system. As for the first function, we will calculate the hamming distance of training images and the testing image. Then in the second function, we will sort the distance to find the K nearest neighbors. And we will vote for different labels (that is digits in our case) in the third function. Finally we sort the votes and return the final prediction.
 
 For more details, please refer to the comments in the provided template called “digitrec.py”. During debugging, feel free to consulting with the TAs. 
@@ -116,13 +82,13 @@ For more details, please refer to the comments in the provided template called �
 
 *Sign-Off Milestone*: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before move on.
 
-#### Part1. Experiment with Drive Motors
+#### Part1. Verify Digit Recognition System Locally
 After passed all checking point done by the test harness, you could move to part2 – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste your code implemented in part1. If the error rate is smaller than 10%, then you could move forward. 
 
 *Sign-off Milestone*: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before move on.
 
 
-### Part2. Robotic Behaviors
+### Part2. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to login the system. After that, please double check the group number showed in the top of the website. Before starting drawing on the canvas, please upload the “digitrec.py” file created in part2 to the website. Finally you could play with your web app. Draw some weird numbers on the canvas to see whether you could fool the smart machine!
 
 *Sign-off Milestone*: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
