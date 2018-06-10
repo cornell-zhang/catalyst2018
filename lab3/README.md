@@ -19,7 +19,7 @@ With the name “machine learning” coined in 1969 by Arthur Samuel[5], researc
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of blinking LED code example</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="300">
     <font size="2">
     <figcaption> Figure 1: Scheme in KNN Prediction </a> 
     </figcaption>
@@ -33,7 +33,7 @@ But what about predict digits in images? As we all know, all files are stored as
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" target="_blank">Link to image of training instance of digits</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
     <font size="2">
     <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b)n </a> 
     </figcaption>
