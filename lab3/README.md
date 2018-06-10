@@ -30,10 +30,10 @@ As showed in figure 1, all points are projected to a 2D hyperplane. Three of the
 
 But what about predict digits in images? As we all know, all files are stored as numbers in electronic devices, including images. Suppose we have a colored image with a small resolution 28x28, that is we have 784 pixels in this image. Under RGB color mode, each pixel will be represented by three numbers range from 0 to 255 corresponding to Red, Green, and Blue. To simplify our design, images in the training set and the testing set are black and white picture. Figure 2 shows 2 examples in the training set.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of training instance of digits</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" target="_blank">Link to image of training instance of digits</a>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigit.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="400">
     <font size="2">
     <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b)n </a> 
     </figcaption>
