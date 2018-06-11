@@ -169,20 +169,20 @@ Wire up the half-adder shown in Figure 11 below.
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdder.png" width="200">
     <font size="2">
-        <figcaption> Figure 10: Half-Adder </a>
+        <figcaption> Figure 11: Half-Adder </a>
     </figcaption>
     </font>
 </figure>
 
 #### Part3.B Develop Full Adder
-Wire up the full-adder shown in Figure 11 below. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 12. 
+Wire up the full-adder shown in Figure 12 below. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 13. 
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" target="_blank">Link to image of full-adder</a>
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" width="300">
     <font size="2">
-        <figcaption> Figure 11: Full-Adder </a>
+        <figcaption> Figure 12: Full-Adder </a>
         Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder </a>
     </figcaption>
     </font>
@@ -193,7 +193,7 @@ Wire up the full-adder shown in Figure 11 below. This unit is complicated enough
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="400">
     <font size="2">
-        <figcaption> Figure 12: Planning Diagram for Breadboard Implementation of Full-Adder </a>
+        <figcaption> Figure 13: Planning Diagram for Breadboard Implementation of Full-Adder </a>
         Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder </a>
     </figcaption>
     </font>
@@ -204,14 +204,14 @@ Wire up the full-adder shown in Figure 11 below. This unit is complicated enough
 #### Part3.C Develop two-bit ripple-carry adder
 In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Instead of using more logic gates, however, we will abstract away the logic behind the implementation of a full adder, by using a full-adder board, which is basically a printed circuit board that has the same circuit that you just built. You will see that it has three input switches corresponding to the three one-bit inputs. It also includes a “mode switch” which can be set to either “independent mode” or “chain mode”. Set the integrated full-adder board to “independent mode” and test its operation. Power the integrated full-adder board using a 9 V battery. Verify that it produces the same truth table as the full-adder you implemented in the previous subpart. 
 
-Now find another lab group that is at the same step. Chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 13 below. Both full adders should be powered using their own batteries. The integrated full-adder board on the right should be set to “independent mode” and the integrated full-adder board on the left should be set to “chain mode”. Verify that this simple two-bit ripple-carry adder works.
+Now find another lab group that is at the same step. Chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 14 below. Both full adders should be powered using their own batteries. The integrated full-adder board on the right should be set to “independent mode” and the integrated full-adder board on the left should be set to “chain mode”. Verify that this simple two-bit ripple-carry adder works.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" target="_blank">Link to image of two-bit ripple-carry adder</a>
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" width="300">
     <font size="2">
-        <figcaption> Figure 13: Two-Bit Ripple-Carry Adder </a>
+        <figcaption> Figure 14: Two-Bit Ripple-Carry Adder </a>
         Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html </a>
     </figcaption>
     </font>
