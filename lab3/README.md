@@ -81,8 +81,6 @@ For more details, please refer to the comments in the provided template called â
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/TipLab3.png" width="500">
     <font size="2">
-    <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b)n </a> 
-    </figcaption>
     </font>
 </figure>
 
