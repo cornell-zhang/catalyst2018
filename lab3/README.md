@@ -41,8 +41,6 @@ But what about predict digits in images? As we all know, all files are stored as
 </figure>
 
 #### Part2. Python Tutorial
-In this section, you will experiment with code that will either respond to or control the LEDs, switches, and potentiometer. 	
-
 Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because its high code readability, clear constructs, notably syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports the dynamic automatic memory management and multiple programming paradigms including object-oriented, imperative, functional and procedural. In this part, we will go through the basic syntax and data structure using in Python.
  
 There are many Python Tutorials online[11], and here we grab some basic usage for your information. Please refer to the script “example.py” to improve the understanding of Python when reading this part.
