@@ -16,7 +16,7 @@ Handwriting recognition refers to the computer’s ability to intelligently inte
 
 With the name “machine learning” coined in 1969 by Arthur Samuel[5], researchers have designed various machine learning algorithms suitable for different type of problems. As one of the earliest machine learning algorithms, the KNN has a straightforward and intuitive method to classify data, that is “similar inputs have similar outputs[6]”.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of blinking LED code example</a>
+<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of KNN prediction scheme</a>
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="300">
