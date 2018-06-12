@@ -84,18 +84,18 @@ For more details, please refer to the comments in the provided template called �
 
 *Sign-Off Milestone*: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before move on.
 
-#### Part1. Verify Digit Recognition System Locally
+#### Part2. Verify Digit Recognition System Locally
 After passed all checking point done by the test harness, you could move to part2 – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste your code implemented in part1. If the error rate is smaller than 10%, then you could move forward. 
 
 *Sign-off Milestone*: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before move on.
 
 
-### Part2. Deploy Digit Recognition Web Application
+#### Part3. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to login the system. After that, please double check the group number showed in the top of the website. Before starting drawing on the canvas, please upload the “digitrec.py” file created in part2 to the website. Finally you could play with your web app. Draw some weird numbers on the canvas to see whether you could fool the smart machine!
 
 *Sign-off Milestone*: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
 
-#### Part3. References
+#### References
 [1] “What is Machine Learning? 3 things you need to know” Available at https://www.mathworks.com/discovery/machine-learning.html
 
 [2] Kun, Jeremy. K-Nearest-Neighbors and Handwritten Digit Classi_cation. Math Programming. Available at https://jeremykun.com/2012/08/26/k-nearest-neighbors-and-handwritten-digit-classi_cation
