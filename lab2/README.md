@@ -129,7 +129,7 @@ Enter the code shown in Figure 7 below, into your Arduino IDE. Once you have don
 (Need to add Debug Hints)
 
 ### Part 2. Robotic Behaviors
-In this section, you will leverage all that you learned in the previous parts in order to implement various behaviors for your robot. This will all lead up to you writing the code that will have a robot navigate through a maze, trying find a certain target. This first part will have you implement behavior that will make the robot move forwards and stop when it hits something. The second part will have you build off the first part and make the robot have a wandering-to-target behavior. Lastly, you will combine the previous two parts and make the robot spin in a circle when it has reached the target.
+In this section, you will leverage all that you learned in the previous parts in order to implement various behaviors for your robot. This will all lead up to you writing the code that will allow the robot navigate through a maze and locate a certain target. This first part will have you implement behavior that will make the robot move forwards and stop when it hits something. The second part will have you build off the first part and allow the robot to display a wandering-to-target behavior. Lastly, you will combine the previous two parts and make the robot spin in a circle when it has reached the target.
 
 It is recommended that you start with a fresh version of the code template provided for you. If you haven’t done so already, you can access the template by choosing the following menu item: *File → Sketchbook → catalyst_lab2_template*. Delete old code in the loop routine so that you can start writing on a clean slate.
 
