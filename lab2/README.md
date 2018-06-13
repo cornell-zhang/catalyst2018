@@ -49,7 +49,7 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Robotic Sensors and Acutators
-In this part, you will experiment with the various sensors and actuators that you just identified on the robot. This will not only gradually introduce you to the sensors/actuators on the robot, but also get your much more comfortable with the software associated with the Arduino, that you will be using to program different behaviors for your robot, when doing the tasks in the next section.
+In this part, you will experiment with the various sensors and actuators that you just identified on the robot. This will not only gradually introduce you to the sensors/actuators on the robot, but also get you much more comfortable with the software associated with the Arduino that you will be using to program different behaviors for your robot when doing the tasks in the next section.
 
 #### Part1.A Experiment with LEDs, Switches, and Potentiometer
 In this section, you will experiment with code that will either respond to or control the LEDs, switches, and potentiometer. 	
