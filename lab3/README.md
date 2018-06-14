@@ -40,18 +40,22 @@ But what about predict digits in images? As we all know, all files are stored as
 </figure>
 
 ### Part2. Python Tutorial
-Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because of its high code readability, clear constructs, notably syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports dynamic automatic memory management and multiple programming paradigms, including object-oriented, imperative, functional and procedural. In this part, we will go through the basic syntax and data structure of Python.
+Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because of its high code readability, clear constructs, notably syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports dynamic automatic memory management and multiple programming paradigms, including object-oriented, imperative, functional and procedural. In this part, we will go through the basic syntax and data structures of Python.
  
 There are many Python Tutorials online[11], and here we grab some basic usage for your information. Please refer to the script “example.py” to improve the understanding of Python when reading this part.
 
 (1) The famous “Hello World” program in Python.
-Print (“Hello World!”)
+The print function in Python will let you print the text you put in the quotation marks onto the console. Look at the example file for its syntax. 
 
 (2) Data type
 - Int – An integer (e.g. -2, 3, 0, 2018)
+Operations on integers will return integer values, the four basic operations that you should know(and we will use in this lab) include "+, -, /, and \*", which correspond to add, subtract, divide and multiply respectively.
 - Float – A floating point number (e.g. 3.1415926, 2.718281)
+The same rule as integers applies here as well(operations on floating point numbers will yield floating point numbers). The same four basic operations will still apply here.
 - Str – A sequence of characters like texts (e.g. “Hello world!”, “3.1415926”)
+You used this above in the built-in python print function, although you can print much more than just strings using that function. Try to see what else you can print to the console!
 - Booleans – True or False
+Booleans can take on two values, either True or False. 
 
 (3) Data Structures
 - List – An array of data (e.g. l = [0,1,2,3,4,5])
