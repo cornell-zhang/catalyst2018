@@ -105,7 +105,7 @@ After passed all checking point done by the test harness, you could move to part
 
 
 ### Part3. Deploy Digit Recognition Web Application
-Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to login the system. After that, please double check the group number showed in the top of the website. Before starting drawing on the canvas, please upload the “digitrec.py” file created in part2 to the website. Finally you could play with your web app. Draw some weird numbers on the canvas to see whether you could fool the smart machine!
+Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to login the system. After that, please double check that the group number shown at the top is correct. Before starting ti draw on the canvas, please upload the “digitrec.py” file created in part2 to the website. Finally, play with your web app! Draw some weird numbers on the canvas to see whether you can fool the smart machine!
 
 *Sign-off Milestone*: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
 
