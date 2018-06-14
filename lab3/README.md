@@ -2,7 +2,7 @@
 Lab 3: Digit Recognition
 ======================
 
-In this lab assignment, you and your partner will explore the digital intelligence by implementing a simple digit recognition system using Python – an interpreted high-level programming language. Python and the machine learning algorithm called K-nearest-neighbors (KNN) will be introduced in the next section. As for the lab exercises, in part 1, you will implement and verify fundamental functions including calculating distances, sort distances, vote labels, and sort votes. Then you could move on to part 2 and build your digit recognition system locally. After achieving the error rate lower than 10%, you should upload your code to the remote server and randomly draw digits on the canvas to further test your design.
+In this lab assignment, you and your partner will explore the digital intelligence by implementing a simple digit recognition system using Python – an interpreted high-level programming language. Python and the machine learning algorithm called K-nearest-neighbors (KNN) will be introduced in the next section. As for the lab exercises, in part 1, you will implement and verify fundamental functions including calculating distances, sort distances, vote labels, and sort votes. Then you could move on to part 2 and build your digit recognition system locally. After achieving an error rate lower than 10%, you should upload your code to the remote server and randomly draw digits on the canvas to further test your design.
 
 Software Description
 --------------------------------
