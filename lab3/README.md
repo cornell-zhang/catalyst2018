@@ -40,7 +40,7 @@ But what about predict digits in images? As we all know, all files are stored as
     </font>
 </figure>
 
-#### Part2. Python Tutorial
+### Part2. Python Tutorial
 Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because of its high code readability, clear constructs, notably syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports dynamic automatic memory management and multiple programming paradigms, including object-oriented, imperative, functional and procedural. In this part, we will go through the basic syntax and data structure of Python.
  
 There are many Python Tutorials online[11], and here we grab some basic usage for your information. Please refer to the script “example.py” to improve the understanding of Python when reading this part.
@@ -71,15 +71,15 @@ Print (“Hello World!”)
 Lab Exercises
 --------------------------------
 
-#### Part1. Function Implementation
+### Part1. Function Implementation
 In this part, you should implement four basic functions for building the digit recognition system. As for the first function, we will calculate the hamming distance of training images and the testing image. The second function should then sort the distances to find its K nearest neighbors. The third function will execute a vote for different labels (that is digits in our case). Finally we sort the votes and return the final prediction. First navigate to the file,  *digitrec.py - part1*. In this file you'll see a Digit class in the beginning. Make sure to take a look at its data members and functions before going on, as you'll need to know the details of this class for the implementations that you will be doing later on. 
 
 For more details, please refer to the comments in the provided template called “digitrec.py”. During debugging, feel free to consult with the TAs through out the course of the entire lab.
 
-### Part1A. Calculate Hamming Distance
+#### Part1A. Calculate Hamming Distance
 First, navigate to the comment section that says, "1.calculate distance". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit(which you will notice that we have already provided to you a little further up in the code). Using the methods of the Digit class, try and calculate the hamming distance from the testing digit to each of the training images.
 
-### Part1B. Sort Distances
+#### Part1B. Sort Distances
 Next, navigate to the next comment section that says, "2.sort distances". In this section we will implement a specific type of sort, called "adaptive merge sort"(look at the citations below for more information on it). This is the same sort method that the built in python method, *sorted* uses when it sorts things like lists and dictionaries. Through implementing this sort method, you will learn about a programming archetype called recursion, and also a little bit about the through process that goes behind making an algorithm like this one. To make this function, you will need to make three separate functions, all of which have comment blocks over them. The first funciton will be the "main" function that will use recursion. In this function, you will have, first a base case, when the size of the list is small enough that you know the answer right off the bat. In this case, a list with only one element will always be sorted. Then, you will move onto the recursive case. First, you will partition the array into two halves. The first sub-array will contain all even-indexed elements in the array, while the second sub-array will contain all odd-indexed elements. If we happen to be lucky and the two of these array happen to be sorted right off the bat, we can proceed to merge the sorted arrays together(our second function will check whether these two sub-arrays are sorted, and our third function will merge two sorted arrays together, into one sorted array). In the rest of our "main" function, we either return the sorted array after merging, if we got "lucky". In the case that we didn't, however, we will recurse on the two halves that we made, and sort in the same way. Notice that this recursion will terminate due to the base case. If we didn't have the base case there, we would get an 'indexOutOfBounds' error, which would mean that we tried to access a list element that's not actually in the list(one that's either before the first element, or past the last element). To prevent this from happening, we must have a base case. Always make sure that when you're doing recursion, that you're making the problem progressively smaller as well.
 
 Finish implementing the three functions and ask a teaching assistant if you need any help. Once you have finished, you may move on to the next part.
@@ -90,26 +90,26 @@ Finish implementing the three functions and ask a teaching assistant if you need
     </font>
 </figure>
 
-### Part1C. KNN Vote
+#### Part1C. KNN Vote
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys, and the number of digits with that label, as the value. You will find the section you have to implement under, "3.knn vote". Once you have finished, you may move on to the next section.
 
-### Part1D. KNN Vote
+#### Part1D. KNN Vote
 In this part, you will sort the dictionary that you just created. Feel free to search the internet on how you can sort a dictionary(make sure you know whether you want to sort the dictionary by keys or values). And as always, ask a teaching assistant if you're having trouble. Congrats, you have implemented a program that recognizes hand-written digits!
 
 *Sign-Off Milestone*: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before move on.
 
-#### Part2. Verify Digit Recognition System Locally
+### Part2. Verify Digit Recognition System Locally
 After passed all checking point done by the test harness, you could move to part2 – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste your code implemented in part1. If the error rate is smaller than 10%, then you could move forward. 
 
 *Sign-off Milestone*: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before move on.
 
 
-#### Part3. Deploy Digit Recognition Web Application
+### Part3. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to login the system. After that, please double check the group number showed in the top of the website. Before starting drawing on the canvas, please upload the “digitrec.py” file created in part2 to the website. Finally you could play with your web app. Draw some weird numbers on the canvas to see whether you could fool the smart machine!
 
 *Sign-off Milestone*: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
 
-#### References
+### References
 [1] “What is Machine Learning? 3 things you need to know” Available at https://www.mathworks.com/discovery/machine-learning.html
 
 [2] Kun, Jeremy. K-Nearest-Neighbors and Handwritten Digit Classi_cation. Math Programming. Available at https://jeremykun.com/2012/08/26/k-nearest-neighbors-and-handwritten-digit-classi_cation
