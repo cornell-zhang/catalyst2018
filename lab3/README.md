@@ -41,7 +41,7 @@ But what about predict digits in images? As we all know, all files are stored as
 </figure>
 
 #### Part2. Python Tutorial
-Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because its high code readability, clear constructs, notably syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports the dynamic automatic memory management and multiple programming paradigms including object-oriented, imperative, functional and procedural. In this part, we will go through the basic syntax and data structure using in Python.
+Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because of its high code readability, clear constructs, notably syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports dynamic automatic memory management and multiple programming paradigms, including object-oriented, imperative, functional and procedural. In this part, we will go through the basic syntax and data structure of Python.
  
 There are many Python Tutorials online[11], and here we grab some basic usage for your information. Please refer to the script “example.py” to improve the understanding of Python when reading this part.
 
@@ -72,7 +72,7 @@ Lab Exercises
 --------------------------------
 
 #### Part1. Function Implementation
-In this part, you should implement four basic functions for building the digit recognition system. As for the first function, we will calculate the hamming distance of training images and the testing image. Then in the second function, we will sort the distance to find the K nearest neighbors. And we will vote for different labels (that is digits in our case) in the third function. Finally we sort the votes and return the final prediction. First navigate to the file,  *digitrec.py - part1*. In this file you'll see a Digit class in the beginning. Make sure to take a look at its data members and functions before going on, as you'll need to know the details of this class for the implementations that you will be doing later on. 
+In this part, you should implement four basic functions for building the digit recognition system. As for the first function, we will calculate the hamming distance of training images and the testing image. The second function should then sort the distances to find its K nearest neighbors. The third function will execute a vote for different labels (that is digits in our case). Finally we sort the votes and return the final prediction. First navigate to the file,  *digitrec.py - part1*. In this file you'll see a Digit class in the beginning. Make sure to take a look at its data members and functions before going on, as you'll need to know the details of this class for the implementations that you will be doing later on. 
 
 For more details, please refer to the comments in the provided template called “digitrec.py”. During debugging, feel free to consult with the TAs through out the course of the entire lab.
 
