@@ -68,6 +68,9 @@ Print (“Hello World!”)
 - Function
 - Class
 
+A nice 43 minutes python tutorial:
+https://www.youtube.com/watch?v=N4mEzFDjqtA
+
 Lab Exercises
 --------------------------------
 
