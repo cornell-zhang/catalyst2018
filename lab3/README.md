@@ -139,3 +139,6 @@ https://en.wikipedia.org/wiki/Python_(programming_language)
 
 [11] The Python Tutorial. Available at:
 https://docs.python.org/3/tutorial/index.html
+
+[12] Adaptive Merge Sort. Available at:
+https://www.cs.waikato.ac.nz/~tcs/COMP317/adaptivesort.html
