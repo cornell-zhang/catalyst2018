@@ -93,7 +93,7 @@ Finish implementing the three functions and ask a teaching assistant if you need
 #### Part1C. KNN Vote
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys, and the number of digits with that label, as the value. You will find the section you have to implement under, "3.knn vote". Once you have finished, you may move on to the next section.
 
-#### Part1D. KNN Vote
+#### Part1D. Sort Vote
 In this part, you will sort the dictionary that you just created. Feel free to search the internet on how you can sort a dictionary(make sure you know whether you want to sort the dictionary by keys or values). And as always, ask a teaching assistant if you're having trouble. Congrats, you have implemented a program that recognizes hand-written digits!
 
 *Sign-Off Milestone*: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before move on.
