@@ -9,7 +9,7 @@
 import time
 import operator
 import numpy
-from test_harness import check_result
+import check_result
 
 # K value
 K = 10
