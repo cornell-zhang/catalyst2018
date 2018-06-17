@@ -90,26 +90,26 @@ def selectionSort(alist):
     alist[lowest] = temp
 #Comparison between Python's built-in sort function and selection sort
 #Creating lists of size 100, 1000, and 10000
-firstList = []
+firstList = [] #Creating first list with 100 random elements
 for i in range(100):
     firstList.append(random.randint(0, 101))
-firstListCopy = firstList[:]
+firstListCopy = firstList[:] #Creating copy of first list
 print("Unsorted firstList: ", firstList, "\n")
 
-secondList = []
+secondList = [] #Creating second list with 1000 random elements
 for i in range(1000):
     secondList.append(random.randint(0, 101))
-secondListCopy = secondList[:]
+secondListCopy = secondList[:] #Creating copy of second list
 
-thirdList = []
+thirdList = [] #Creating third list with 10000 random elements
 for i in range(10000):
     thirdList.append(random.randint(0, 101))
-thirdListCopy = thirdList[:]
+thirdListCopy = thirdList[:] #Creating copy of third list
 
-firstStartSS = time.time()
+firstStartSS = time.time() #Record start time
 selectionSort(firstList)
-firstEndSS = time.time()
-print("Time for Selection Sort(Size 100): ", firstEndSS - firstStartSS, "\n")
+firstEndSS = time.time() #Record end time
+print("Time for Selection Sort(Size 100): ", firstEndSS - firstStartSS, "\n") #Subtract the two for time elapsed
 secondStartSS = time.time()
 selectionSort(secondList)
 secondEndSS = time.time()
@@ -118,7 +118,7 @@ thirdStartSS = time.time()
 selectionSort(thirdList)
 thirdEndSS = time.time()
 print("Time for Selection Sort(Size 10000): ", thirdEndSS - thirdStartSS, "\n")
-print("Sorted First List(using selection sort): ", firstList, "\n")
+print("Sorted First List(using selection sort): ", firstList, "\n") #Display the sorted first list
 
 firstStartPS = time.time()
 sorted(firstListCopy)
@@ -136,11 +136,14 @@ print("Sorted First List(using sorted function): ", firstListCopy, "\n")
 # 7. Recursion(Extension)
 # Fibonacci Sequence: 1, 1, 2, 3, 5, 8, 13, 21...
 def fib(n):
+    #Base Cases
     if n == 0: 
         return 0
     elif n == 1: 
         return 1
+    #Recursive Caeses
     else: 
         return fib(n-1) + fib(n-2)
+#Print out the first few fibonacci numbers using our function
 print("Fibonacci Sequence:", fib(1), ", ", fib(2), ", ", fib(3), ", ", fib(4), ", ", fib(5), ", ", fib(6), ", ", fib(7), "...")
 
