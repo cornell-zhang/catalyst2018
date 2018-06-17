@@ -1,7 +1,7 @@
 Lab 2: Smart Robot
 ======================
 
-In the previous lab assignment, you explored the field of computer engineering solely from the hardware perspective. In this lab, however, you will start to see how hardware relates to software by programming various behaviors on an Arduino-based robotics platform. In the first part of this lab, you will experiment with sensors and actuators on the robot. Much of the code to test and experiment with these sensors is provided for you, so that you can ease your way into learning about both the software and how that relates to the hardware. In the second section, you will develop a more complicated wandering behavior for your robot, which eventually culminates in programming your robot to reach a target. For each section, you will need to have a teaching assistant observe the desired behavior and initial the appropriate section on the sign-off sheet. **Make sure to turn in your sign-off sheet at the end of the lab session.**
+In the previous lab assignment, you explored the field of computer engineering solely from the hardware perspective. In this lab, however, you will start to see how hardware relates to software by programming various behaviors using an Arduino-based robotics platform. In Part 1, you will experiment with the robot's sensors and actuators. Part 1 is intended to teach you about engineering from a software standpoint, so much of the code used to test and experiment with these sensors is provided for you. In Part 2, you will gradually develop a more complicated wandering behavior for your robot. It will eventually culminate in creating a program that allows your robot to roam an enclosed space and locate a target. Part 2 will require more critical thinking, as you will be developing much of your own implementation. nFor each section, you will need to have a teaching assistant observe the desired behavior and initial the appropriate section on the sign-off sheet. **Make sure to turn in your sign-off sheet at the end of the lab session.**
 
 Hardware Description
 --------------------------------
@@ -13,7 +13,7 @@ Before beginning the lab, make sure to take a look at the components that you wi
 - Workstation with black USB cable
 - Arduino cheat sheet
 
-Take a look at the mobile robotic platform and try to identify each of the parts of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 1 and 2, respectively, while Figure 3 shows a diagram of the prototyping board.
+Take a look at the mobile robotic platform and try to identify each part of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 1 and 2 respectively. Figure 3 shows a diagram of the prototyping board.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" target="_blank">Link to image of top view of robot</a>
 
@@ -49,12 +49,12 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Robotic Sensors and Acutators
-In this part, you will experiment with the various sensors and actuators that you just identified on the robot. This will not only gradually introduce you to the sensors/actuators on the robot, but also get you much more comfortable with the software associated with the Arduino that you will be using to program different behaviors for your robot when doing the tasks in the next section.
+In this part, you will experiment with the various sensors and actuators that you just identified on the robot. This is designed to not only introduce you to the components of the robot, but also accustom you to the software associated with the Arduino that you will be using in the next section.
 
 #### Part1.A Experiment with LEDs, Switches, and Potentiometer
-In this section, you will experiment with code that will either respond to or control the LEDs, switches, and potentiometer. 	
+In this section, you will experiment with code that will either respond to or control the LEDs, the switches, and the potentiometer. 	
 
-Now, we will program our robot very simply, using the code shown in Figure 4. You should type up this code into the Arduino IDE. As make more and more programs having to do with the robot, you will likely find yourself typing the same things over and over again. To avoid doing this many times, you may want to save your file using the menu item: File → Save and then create a new copy for this part by using the menu item: *File → Save As* … You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 4, upload your code to the Arduino and verify that the LED blinks as it should.
+Now, we will program our robot very simply, using the code shown in Figure 4. You should type this code into the Arduino IDE. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid doing this many times, you may want to save your file using the menu item: File → Save and then create a new copy for each new part by using the menu item: *File → Save As* … You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 4, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Verify that your Arduino IDE is connected to the right serial port by clicking Tools → Port. Check that the 9V battery is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 4 and compile it again.  Finally upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" target="_blank">Link to image of blinking LED code example</a>
 
@@ -66,7 +66,7 @@ Now, we will program our robot very simply, using the code shown in Figure 4. Yo
     </font>
 </figure>
 
-Once this is working properly, let’s try to extend the code we’ve just written such that we make one LED light up when the right bumper is pressed and the other light up when the other LED is pressed. The code for this part is shown in Figure 5 below. Verify that this works as expected after finishing and uploading the code to your Arduino.
+We will now extend the code to make one LED light up when the right bumper is pressed and the other light up when the left bumper is pressed. The code for this part is shown in Figure 5 below. Verify that this works as expected after typing the code into the IDE and uploading it to your Arduino.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" target="_blank">Link to image of blinking LED and switch-controlled LED code example</a>
 
@@ -78,13 +78,13 @@ Once this is working properly, let’s try to extend the code we’ve just writt
     </font>
 </figure>
 
-Once this part is working, we can extend the code one step further, but getting the potentiometer involved as well. A potentiometer is a variable resistor, and it is located on one end of the prototyping board. Turning the blue knob will change the resistance of the potentiometer. The Arduino can read this resistance as an analog value by using an analog input pin. On our robot, the potentiometer is connected to analog input pin 5, and you will observe that analog inputs have values between 0 and 1023 when you add this extra functionality to your code. You can get the Arduino to read the potentiometer by adding this line to your loop routine:
+Once this part is working, we can extend the code one step further, by getting the potentiometer involved as well. A potentiometer is a variable resistor, and it is located on one end of the prototyping board. Turning the blue knob will change the resistance of the potentiometer. The Arduino can read this resistance as an analog value by using an analog input pin. On our robot, the potentiometer is connected to analog input pin 5. Analog inputs have values between 0 and 1023. You can get the Arduino to read the potentiometer by adding this line to your loop routine:
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PotentiometerReadCode.png" width="400">
 </figure>
 
-After adding this statement to your code, verify that it works properly before showing your results to an instructor.
+A small change to the current code can allow the blink rate of the LED to be determined by the potentiometer.  Determine how to implement this new function and modify your code accordingly. After uploading your code code, verify that it works properly before showing your results to an instructor.
 
 *Sign-Off Milestone*: Once you have one LED’s blink rate controlled by the potentiometer and the other LED controlled by the switch, have a teaching assistant verify that things are working correctly. 
 
