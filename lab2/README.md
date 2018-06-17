@@ -51,7 +51,7 @@ Lab Exercises
 ### Part 1. Robotic Sensors and Acutators
 In this part, you will experiment with the various sensors and actuators that you just identified on the robot. This is designed to not only introduce you to the components of the robot, but also accustom you to the software associated with the Arduino that you will be using in the next section.
 
-#### Part1.A Experiment with LEDs, Switches, and Potentiometer
+#### Part 1.A Experiment with LEDs, Switches, and Potentiometer
 In this section, you will experiment with code that will either respond to or control the LEDs, the switches, and the potentiometer. 	
 
 Now, we will program our robot very simply, using the code shown in Figure 4. You should type this code into the Arduino IDE. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid doing this many times, you may want to save your file using the menu item: File → Save and then create a new copy for each new part by using the menu item: *File → Save As* … You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 4, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Verify that your Arduino IDE is connected to the right serial port by clicking Tools → Port. Check that the 9V battery is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 4 and compile it again.  Finally upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
@@ -90,7 +90,7 @@ A small change to the current code can allow the blink rate of the LED to be det
 
 *Critical Thinking Questions*: Explain why pressing the switch quickly sometimes does not turn on the LED, and why the LED stays lit for a short duration after you release the switch. Similarly, explain why adjusting the potentiometer sometimes requires a short duration before impacting the blink rate.
 
-#### Part1.B Experiment with Grayscale Sensors
+#### Part 1.B Experiment with Grayscale Sensors
 In this section, you will experiment with the grayscale sensor on the robot. This is the same sensor you will need to utilize later in the last section to find the location of the target. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both an LED that generates light and a photodetector that senses light. The value the sensor outputs depends on the amount of light that the photodetector senses. This sensor will report values between 0 and 1024, which indicates how much light has been reflected back (lower values indicate that the robot is travelling on a lighter surface, while higher values indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 6 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the serial monitor by selecting the menu item: Tools → Serial Monitor. Place your robot over the light wood of the testing block and then over the black section of the testing block.  Notice the types of values the grayscale sensor yields in each case and determine a threshold value that separates the two. This value can be a rough estimate of a number that separates grayscale values for light colors and grayscale values for dark colors (you will need to use this value later in the last section). Verify that the readings behave as expected before showing your results to an instructor.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" target="_blank">Link to image of grayscale sensor and serial monitor example code</a>
@@ -107,7 +107,7 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 
 *Critical Thinking Questions*: What happens when the analog grayscale sensor is positioned precisely at the edge of the target? How do your readings compare to the readings collected by other groups around you? Why do you think all robots do not report the same analog grayscale sensor values when positioned over similar materials? What do you think would happen if the target was made out of a very glossy black material?
 
-#### Part1.C Experiment with Drive Motors
+#### Part 1.C Experiment with Drive Motors
 In this section, you will begin to experiment with the drive motors of the robot. The test program that you will use to experiment with these motors is shown in Figure 7 below. This program will attempt to move the robot in a square pattern, with sides being two feet long. You will notice that two pins are used to control each drive motor. One pin controls the direction that the motor spins, while the other controls the speed at which that motor spins. When the motor direction output pin is set to LOW, the motor will spin forwards, and when it is set to HIGH, the motor will spin backwards. The motor speed pin can be set to any value between 0 and 255, where higher numbers indicate a faster motor speed. Keep in mind that moderate motor speeds are between 75 and 125, and also that the motor speed is proportional to the voltage generated by the 5 AA batteries(so as they drain, you may have to increase you motor speed in order to get your wheels to turn at the same rate). 
 
 Enter the code shown in Figure 7 below, into your Arduino IDE. Once you have done so, place your robot on the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino, and if you would like, try executing this code once more, with the robot on the floor, so that you can see whether it really does move in a square. If your robot does not move in a square, play around with the rotating delay time until it does. 
@@ -130,7 +130,7 @@ Enter the code shown in Figure 7 below, into your Arduino IDE. Once you have don
 ### Part 2. Robotic Behaviors
 In this section, you will leverage all that you learned in the previous parts to implement various behaviors for your robot. This will lead up to writing the code that will allow the robot navigate through a maze and locate a certain target. Part A requires you to implement behavior that will make the robot move forwards and stop when it hits something. In Part B, you will build off the previous part and allow the robot to display a wandering-to-target behavior. Lastly, you will combine the previous two parts and make the robot spin in a circle when it has reached the target.
 
-#### Part2.A Develop Move-and-Stop Behavior
+#### Part 2.A Develop Move-and-Stop Behavior
 In this section, you will have to write a program that makes the robot keep moving forwards until it hits an obstacle— in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" target="_blank">Link to image of template for move and stop behavior code</a>
@@ -143,14 +143,14 @@ In this section, you will have to write a program that makes the robot keep movi
     </font>
 </figure>
 
-#### Part2.B Develop Wander Behavior
+#### Part 2.B Develop Wander Behavior
 In this section, you will extend the behavior of your robot to include “wandering”. For now, you can ignore the target and just have the robot keep moving forward until it hits an obstacle. When it does, have it reverse and turn slightly. Thus, your robot will keep “wandering” through its environment. Try to build a finite-state machine algorithm that describes the robot’s behavior.  For this part, you will only need to make use of the robot's bump switches and drive motors. Once you think you have it, make sure to check with an instructor. After developing the necessary code and uploading it to the Arduino, verify that your robot behaves as expected.
 
 *Sign-Off Milestone*: Once you have the robot successfully wandering the environment, have a teaching assistant verify that things are working correctly
 
 *Troubleshooting:* If your robot repeatedly stops before the mechanical bump switches are pressed, it could be due to noise created by the drive motors that causes the robot to behave as if the switches have been pressed.  A simple software fix to this problem is to implement code that checks the mechanical bump switches twice with a small delay in between checks.  If the bump switch is closed during both checks it is very likely that the robot has actually bumped into an obstacle. 
 
-#### Part2.C Develop Wander-to-Target Behavior
+#### Part 2.C Develop Wander-to-Target Behavior
 
 Lastly, you will extend the code from the previous section to include making the robot spin in a circle and stop once it has found the target. If you need to, you can go back and review the code shown in Figure 6, which allowed you to experiment with the grayscale sensor. You may find that the finite-state machine algorithm you made in the previous part will help you with developing your code. Feel free to plan your code and discuss with the teaching assistants before actually beginning to implement it. 
 
