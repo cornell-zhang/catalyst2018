@@ -84,7 +84,7 @@ Once this part is working, we can extend the code one step further, by getting t
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PotentiometerReadCode.png" width="400">
 </figure>
 
-A small change to the current code can allow the blink rate of the LED to be determined by the potentiometer.  Determine how to implement this new function and modify your code accordingly. After uploading your code code, verify that it works properly before showing your results to an instructor.
+A small change to the current code can allow the blink rate of the LED to be determined by the potentiometer.  Determine how to implement this new function and modify your code accordingly. After uploading your code, verify that it works properly before showing your results to an instructor.
 
 *Sign-Off Milestone*: Once you have one LED’s blink rate controlled by the potentiometer and the other LED controlled by the switch, have a teaching assistant verify that things are working correctly. 
 
