@@ -148,6 +148,8 @@ In this section, you will extend the behavior of your robot to include “wander
 
 *Sign-Off Milestone*: Once you have the robot successfully wandering the environment, have a teaching assistant verify that things are working correctly
 
+*Troubleshooting:* If your robot repeatedly stops before the mechanical bump switches are pressed, it could be due to noise created by the drive motors that causes the robot to behave as if the switches have been pressed.  A simple software fix to this problem is to implement code that checks the mechanical bump switches twice with a small delay in between checks.  If the bump switch is closed during both checks it is very likely that the robot has actually bumped into an obstacle. 
+
 #### Part2.C Develop Wander-to-Target Behavior
 
 Lastly, you will extend the code from the previous section to include making the robot spin in a circle and stop once it has found the target. If you need to, you can go back and review the code shown in Figure 6, which allowed you to experiment with the grayscale sensor. You may find that the finite-state machine algorithm that you made in the previous part will help you with developing your code. Feel free to plan out your code on paper and discussing with the teaching assistants, before actually beginning to implement it. 
