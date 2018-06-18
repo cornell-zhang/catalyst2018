@@ -221,7 +221,7 @@ Wire up the half-adder shown in Figure 11 below.
 </figure>
 <details><summary><I>HINT 1</I></summary>
 <p>
-   *Debugging tip*: Only one output light should light up when any or both switches are closed. Depending on wiring, when both switches are closed, 2nd bit light will turn on. When only one switch is closed, 1st bit light will turn on.
+    <I>Debugging tip</I>: Only one output light should light up when any or both switches are closed. Depending on wiring, when both switches are closed, 2nd bit light will turn on. When only one switch is closed, 1st bit light will turn on.
 </p>
 </details>
 
