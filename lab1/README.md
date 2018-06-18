@@ -60,7 +60,7 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
-#### Part1.A Experiment with LED
+#### Part 1.A Experiment with LED
 Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1 since it shows the circuit wired up on the breadboard.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" target="_blank">Link to image of LED circuit</a>
@@ -77,7 +77,7 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? This would be equivalent to using an even narrower pipe in our water circuit analogy. What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
-#### Part1.B Experiment with Inverters
+#### Part 1.B Experiment with Inverters
 Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired up to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" target="_blank">Link to image of inverter circuit</a>
@@ -107,7 +107,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 </p>
 </details>
 
-#### Part1.C Developing a NAND Gate 
+#### Part 1.C Developing a NAND Gate 
 In this section, you will implement a more complex circuit in the NAND gate. If you still have a yellow jumper attached to both your NMOS transistors, have an instructor come over to remove one, as you’ll only need one of them to implement this gate.
 
 Consider the circuit shown below in Figure 7. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). Once you have done so, implement the circuit shown on your prototyping platform and confirm that you are getting the expected results using your truth table. 
@@ -149,7 +149,7 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
 ### Part 2. Understanding Basic Logic Gates
 In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates we discovered.
 
-#### Part2.A Experiment with AND, OR, XOR Gates
+#### Part 2.A Experiment with AND, OR, XOR Gates
 After turning off the power supply, begin to wire up the AND gate as shown in Figure 8 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" target="_blank">Link to image of breadboard diagram for testing NAND gate</a>
@@ -166,7 +166,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 
 *Critical Thinking Questions*: So far we have see four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
-#### Part2.B Develop Parity Checker
+#### Part 2.B Develop Parity Checker
 In this section, you will develop a parity checker, which is useful in determining whether a message has been compromised in any way when it was being sent. A parity unit should produce a zero when there are an even number of ones in the input and a one when there are an odd number of ones in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. 
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" target="_blank">Link to image of parity checker</a>
@@ -197,12 +197,17 @@ Figure 9 illustrates how a four-bit parity checker can be implemented using four
    For the truth table, there should be 16 entries since we have 4 bits and  You can quickly come up with a truth table without evaulating the gates by counting the number 1's in the input. 
 </p>
 </details>
+<details><summary><I>HINT 2</I></summary>
+<p>
+   Check the documentation carefully to see which pins in the chip are the input and which pins are the output. Remember that the rule connections in breadboards!
+</p>
+</details>
 
 
 ### Part 3. Building a Simple Calculator
 In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder.
 
-#### Part3.A Experiment with Half-Adder
+#### Part 3.A Experiment with Half-Adder
 Wire up the half-adder shown in Figure 11 below. 
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdder.png" target="_blank">Link to image of half-adder</a>
@@ -214,8 +219,14 @@ Wire up the half-adder shown in Figure 11 below.
     </figcaption>
     </font>
 </figure>
+<details><summary><I>HINT 1</I></summary>
+<p>
+   *Debugging tip*: Only one output light should light up when any or both switches are closed. Depending on wiring, when both switches are closed, 2nd bit light will turn on. When only one switch is closed, 1st bit light will turn on.
+</p>
+</details>
 
-#### Part3.B Develop Full Adder
+
+#### Part 3.B Develop Full Adder
 Wire up the full-adder shown in Figure 12 below. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 13. 
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" target="_blank">Link to image of full-adder</a>
