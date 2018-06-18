@@ -253,6 +253,13 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 
 *Sign-Off Milestone*: Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
 
+<details><summary><I>HINT 1</I></summary>
+<p>
+    <I>Debugging tip</I>: When there is only one of A, B, and Cin, S = 1, cout = 0. When two of those, S = 0, cout = 0. When all three are closed, then both S and cout = 1. 
+
+</p>
+</details>
+
 #### Part3.C Develop two-bit ripple-carry adder
 In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Instead of using more logic gates, however, we will abstract away the logic behind the implementation of a full adder, by using a full-adder board, which is basically a printed circuit board that has the same circuit that you just built. You will see that it has three input switches corresponding to the three one-bit inputs. It also includes a “mode switch” which can be set to either “independent mode” or “chain mode”. Set the integrated full-adder board to “independent mode” and test its operation. Power the integrated full-adder board using a 9 V battery. Verify that it produces the same truth table as the full-adder you implemented in the previous subpart. 
 
