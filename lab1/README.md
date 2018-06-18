@@ -101,7 +101,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
     </font>
 </figure>
 
-<details><summary>**HINT (CLICK ME)**</summary>
+<details><summary><I>HINT (CLICK ME)</I></summary>
 <p>
     Looking from the flat side of the transistor with pins facing down, left pin is the source which connects to VDD for PMOS and GND for NMOS. Right pin is the drain which connect to the output for both PMOS and NMOS. The middle pin is the gate for both which connects to the input.
 </p>
@@ -127,13 +127,30 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
 
 *Critical Thinking Questions*: Why is this gate called a NAND gate? Can we use a NAND and the inverter from the previous part to implement an AND gate? Can you think of how to implement a NOR gate?
 
-(Need to add Debug Hints)
+<details><summary><I>HINT 1</I></summary>
+<p>
+   Sample Truth table
+    
+| AB        |Output          |
+| ------------- |:-------------:|
+| 00      |  |
+| 01      |       |
+| 10 |       |
+| 11 |       |
+</p>
+</details>
+<details><summary><I>HINT 2</I></summary>
+<p>
+   On the breadboard, observe the numbered rows and lettered columns. Connecting wires on the same rows results in parallel connections and connecting wires on the same columns results in series connections. This is true for the columns labeled "ABCDEFGHIJ". 
+</p>
+</details>
+
 
 ### Part 2. Understanding Basic Logic Gates
-In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates that we discover.
+In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates we discovered.
 
 #### Part2.A Experiment with AND, OR, XOR Gates
-After turning off the power supply, begin to wire up the AND gate as shown in Figure 8 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
+After turning off the power supply, begin to wire up the AND gate as shown in Figure 8 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" target="_blank">Link to image of breadboard diagram for testing NAND gate</a>
 
@@ -174,6 +191,13 @@ Figure 9 illustrates how a four-bit parity checker can be implemented using four
     </figcaption>
     </font>
 </figure>
+
+<details><summary><I>HINT 1</I></summary>
+<p>
+   For the truth table, there should be 16 entries since we have 4 bits and  You can quickly come up with a truth table without evaulating the gates by counting the number 1's in the input. 
+</p>
+</details>
+
 
 ### Part 3. Building a Simple Calculator
 In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder.
