@@ -30,6 +30,10 @@ As for the other materials you will need, they are listed below:
     </font>
 </figure>
 
+
+
+
+
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/supplies1.jpg" target="_blank">Link to image of supplies</a>
 
 <figure>
@@ -44,7 +48,7 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
-In this section, you will wire up some basic circuits that start with a simple analog LED circuit and go to other simple digital circuits before going into developing a NAND gate. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure that the breadboard power supply isn’t turned on. You may refer to Figure 3 below to see the wiring underlying the breadboard.
+In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" target="_blank">Link to image of breadboard wiring</a>
 
@@ -69,12 +73,12 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
     </font>
 </figure>
 
-*Sign-Off Milestone*: Once you have wired everything up, have an instructor verify that things are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
+*Sign-Off Milestone*: Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
 
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? This would be equivalent to using an even narrower pipe in our water circuit analogy. What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part1.B Experiment with Inverters
-Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired up to VDD and GND respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
+Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired up to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" target="_blank">Link to image of inverter circuit</a>
 
@@ -96,6 +100,12 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
     </figcaption>
     </font>
 </figure>
+
+<details><summary>**HINT (CLICK ME)**</summary>
+<p>
+    Looking from the flat side of the transistor with pins facing down, left pin is the source which connects to VDD for PMOS and GND for NMOS. Right pin is the drain which connect to the output for both PMOS and NMOS. The middle pin is the gate for both which connects to the input.
+</p>
+</details>
 
 #### Part1.C Developing a NAND Gate 
 In this section, you will implement a more complex circuit in the NAND gate. If you still have a yellow jumper attached to both your NMOS transistors, have an instructor come over to remove one, as you’ll only need one of them to implement this gate.
