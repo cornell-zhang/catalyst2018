@@ -34,7 +34,7 @@ But what about predict digits in images? As we all know, all files are stored as
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
     <font size="2">
-    <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b)n </a> 
+    <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b) </a> 
     </figcaption>
     </font>
 </figure>
