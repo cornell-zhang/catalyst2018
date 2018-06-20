@@ -56,6 +56,12 @@ In this section, you will experiment with code that will either respond to or co
 
 Now, we will program our robot very simply, using the code shown in Figure 4. You should type this code into the Arduino IDE. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid repeition, you may want to save your file using the menu item: *File → Save* and then create a new copy for each new part by using the menu item: *File → Save As…* You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 4, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Verify that your Arduino IDE is connected to the right serial port by clicking Tools → Port. Check that the 9V battery is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 4 and compile it again.  Finally upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
 
+Some notes on the code shown below:
+- You are typing in C++ which is a popular low level programing language.
+- ```//``` before any words means that the entire line is "commented" which doesn't affect the execution of the code in any way. They are good for putting labels and telling the user on how the code works.
+- Always remember to put a semicolon ```;``` behind each line of code because that denotes line ending.
+- For variables, which are shown in lines 3 to 6, the first word denotes the type of variable, second word is the variable name and it is set equal to a value. For line 3, ```int pin_led1 = 4``` means that we are declaring a variable of type "integer" named pin_led1 with an integer value of 4.
+
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" target="_blank">Link to image of blinking LED code example</a>
 
 <figure>
@@ -68,6 +74,7 @@ Now, we will program our robot very simply, using the code shown in Figure 4. Yo
 
 We will now extend the code to make one LED light up when the right bumper is pressed and the other light up when the left bumper is pressed. The code for this part is shown in Figure 5 below. Verify that this works as expected after typing the code into the IDE and uploading it to your Arduino.
 
+
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" target="_blank">Link to image of blinking LED and switch-controlled LED code example</a>
 
 <figure>
@@ -77,7 +84,6 @@ We will now extend the code to make one LED light up when the right bumper is pr
     </figcaption>
     </font>
 </figure>
-
 
 
 Once this part is working, we can extend the code one step further, by getting the potentiometer involved as well. A potentiometer is a variable resistor, and it is located on one end of the prototyping board. Turning the blue knob will change the resistance of the potentiometer. The Arduino can read this resistance as an analog value by using an analog input pin. On our robot, the potentiometer is connected to analog input pin 5. Analog inputs have values between 0 and 1023. You can get the Arduino to read the potentiometer by adding this line to your loop routine:
@@ -91,6 +97,13 @@ A small change to the current code can allow the blink rate of the LED to be det
 *Sign-Off Milestone*: Once you have one LED’s blink rate controlled by the potentiometer and the other LED controlled by the switch, have a teaching assistant verify that things are working correctly. 
 
 *Critical Thinking Questions*: Explain why pressing the switch quickly sometimes does not turn on the LED, and why the LED stays lit for a short duration after you release the switch. Similarly, explain why adjusting the potentiometer sometimes requires a short duration before impacting the blink rate.
+
+
+<details><summary><I>HINT (CLICK ME)</I></summary>
+<p>
+    <code>hello</code>
+</p>
+</details>
 
 #### Part 1.B Experiment with Grayscale Sensors
 In this section, you will experiment with the grayscale sensor on the robot. This is the same sensor you will need to utilize later in the last section to find the location of the target. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both an LED that generates light and a photodetector that senses light. The value the sensor outputs depends on the amount of light that the photodetector senses. This sensor will report values between 0 and 1024, which indicates how much light has been reflected back (lower values indicate that the robot is travelling on a lighter surface, while higher values indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 6 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the serial monitor by selecting the menu item: *Tools → Serial Monitor*. Place your robot over the light wood of the testing block and then over the black section of the testing block.  Notice the types of values the grayscale sensor yields in each case and determine a threshold value that separates the two. This value can be a rough estimate of a number that separates grayscale values for light colors and grayscale values for dark colors (you will need to use this value later in the last section). Verify that the readings behave as expected before showing your results to an instructor.
