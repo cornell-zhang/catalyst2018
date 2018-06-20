@@ -72,6 +72,7 @@ Dictionaries are very much like lists, except for the fact that their indices ar
 - Tuple – A list of various data type (e.g. t = (‘Bob’, 20, 3.1415926))
 
 A tuple is sort of like a list with a fixed size. You can access elements of a tuple using the same syntax that you would using an array. Just remember that you can never append elements to a tuple(only change the values that it holds). Tuples, too, have indices that start at 0.
+
 (4) Control flow
 - Conditional branch – if-elif-else
 
@@ -82,6 +83,7 @@ With loops, you can execute a block of your code multiple times, instead of havi
 - While loop
 
 The while loop can be used in the place of a for-loop, and it can also be used for other things as well. Usually, while loops are used when you don't know how many times you would like something to iterate, since while loops will iterate only until their condition evaluates to False. You may look at the example code for more examples. Always make sure that your condition will always evaluate to False eventually, since otherwise, you will run into an infinite loop, that may make your program crash.
+
 (5) Object-Oriented Programming (OOP)
 - Function
 
