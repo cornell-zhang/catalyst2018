@@ -101,7 +101,7 @@ A small change to the current code can allow the blink rate of the LED to be det
 
 <details><summary><I>HINT 1 (CLICK ME)</I></summary>
 <p>
-    Don't forget to setup the poteniometer! All periherials in the arduino must first be initialized before they can be used. The pin for the potentiometer is already assigned for you at the top titled <code>int pin_potentiometer=A5;</code>. Initialize it like the bumpers and LED's.    
+    Don't forget to setup the poteniometer! All peripherals in the arduino must first be initialized before they can be used. The pin for the potentiometer is already assigned for you at the top titled <code>int pin_potentiometer=A5;</code>. Initialize it like the bumpers and LED's.    
 </p>
 </details>
 
