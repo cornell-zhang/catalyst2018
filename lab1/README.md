@@ -61,7 +61,7 @@ In this section, you will wire up some basic circuits that start with a simple a
 </figure>
 
 #### Part 1.A Experiment with LED
-Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1 since it shows the circuit wired up on the breadboard.
+Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" target="_blank">Link to image of LED circuit</a>
 
@@ -75,10 +75,10 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 
 *Sign-Off Milestone*: Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
 
-*Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? This would be equivalent to using an even narrower pipe in our water circuit analogy. What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
+*Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part 1.B Experiment with Inverters
-Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired up to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
+Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" target="_blank">Link to image of inverter circuit</a>
 
@@ -103,7 +103,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 
 <details><summary><I>HINT (CLICK ME)</I></summary>
 <p>
-    Looking from the flat side of the transistor with pins facing down, left pin is the source which connects to VDD for PMOS and GND for NMOS. Right pin is the drain which connect to the output for both PMOS and NMOS. The middle pin is the gate for both which connects to the input.
+    Looking from the flat side of the transistor with pins facing down, the left pin is the source which connects to VDD for PMOS and GND for NMOS. The right pin is the drain which connects to the output for both PMOS and NMOS. The middle pin is the gate, which connects to the input.
 </p>
 </details>
 
@@ -164,7 +164,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 
 *Sign-Off Milestone*: Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the AND gate. 
 
-*Critical Thinking Questions*: So far we have see four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
+*Critical Thinking Questions*: So far we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
 #### Part 2.B Develop Parity Checker
 In this section, you will develop a parity checker, which is useful in determining whether a message has been compromised in any way when it was being sent. A parity unit should produce a zero when there are an even number of ones in the input and a one when there are an odd number of ones in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. 
@@ -194,12 +194,12 @@ Figure 9 illustrates how a four-bit parity checker can be implemented using four
 
 <details><summary><I>HINT 1</I></summary>
 <p>
-   For the truth table, there should be 16 entries since we have 4 bits and  You can quickly come up with a truth table without evaulating the gates by counting the number 1's in the input. 
+   For the truth table, there should be 16 entries since we have 4 bits and you can quickly come up with a truth table without evaulating the gates by counting the number of 1's in the input. 
 </p>
 </details>
 <details><summary><I>HINT 2</I></summary>
 <p>
-   Check the documentation carefully to see which pins in the chip are the input and which pins are the output. Remember that the rule connections in breadboards!
+   Check the documentation carefully to see which pins in the chip are the input and which pins are the output. 
 </p>
 </details>
 
@@ -260,10 +260,8 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 </p>
 </details>
 
-#### Part3.C Develop two-bit ripple-carry adder
-In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Instead of using more logic gates, however, we will abstract away the logic behind the implementation of a full adder, by using a full-adder board, which is basically a printed circuit board that has the same circuit that you just built. You will see that it has three input switches corresponding to the three one-bit inputs. It also includes a “mode switch” which can be set to either “independent mode” or “chain mode”. Set the integrated full-adder board to “independent mode” and test its operation. Power the integrated full-adder board using a 9 V battery. Verify that it produces the same truth table as the full-adder you implemented in the previous subpart. 
-
-Now find another lab group that is at the same step. Chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 14 below. Both full adders should be powered using their own batteries. The integrated full-adder board on the right should be set to “independent mode” and the integrated full-adder board on the left should be set to “chain mode”. Verify that this simple two-bit ripple-carry adder works.
+#### Part 3.C Develop two-bit ripple-carry adder
+In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 14 below. Both full adders should be powered using their own batteries. Verify that this simple two-bit ripple-carry adder works.
 
 <a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" target="_blank">Link to image of two-bit ripple-carry adder</a>
 
