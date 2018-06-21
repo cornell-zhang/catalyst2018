@@ -26,8 +26,8 @@ In this project, students will build a robot whose motion is controlled by one f
 ### 6. Color recognition:
 In this project, students will train a robot to recognize different colors. You should use the grayscale sensor in the bottom of the robot and decision tree/linear regression to build the system. 
 
-### 7. Mini-autodrive system:
+### 7. Adaptive cruise system:
 In this project, students will build a smart robot who is able to drive safely in the lab. You should use the infrared sensor in the front of the robot and decision tree/linear regression to build the system. The Basic idea is to avoid any collision during the auto-driving.
 
 ### 8. Smart Light:
-In this project, students will use the relay output module to control a lighting system, based on how much external light there is in the environment. Students will use the photoresistor to measure how much external light there is and will accordingly switch the lighting system on or off. Students should be able to use a simple decision tree to figure out when the environment is dark enough that it needs light.
+In this project, students will use the relay output module to control a lighting system, based on how bright it is in the room. Students will use the photoresistor to measure the brightness of the room and switch the lighting system on or off. The light system is simulated with a bunch of LEDs. Students should be able to use a simple decision tree to figure out the darkness and the corresponding number number of lights (LEDs) required to turn on.
