@@ -242,50 +242,17 @@ When trying to find your target, it is a good idea to specify a range of values 
 </p>
 </details>
 
-Optional Extensions
-Parts 1–3 are the required portions of the lab. If you complete these parts quickly, you are free to try
-one or more of the following extensions which are roughly arranged in order of difficulty. You can
-also make up your extension. These extensions are purely optional; do not feel like you must attempt
-them.
-• LED State Indicators – Modify your program so that LED1 turns on when the robot is in the
-REV state, LED2 turns on when the robot is in the ROT state, and both LEDs turn on when the
-robot finds the target.
-• Potentiometer Controlled Speed – Modify your program so that the potentiometer on the
-prototyping board controls the motor speed.
-• Randomized Wandering – Modify your program so that the robot randomly determines which
-direction to rotate and for how long to rotate. How does this impact the robot’s ability to
-explore the space and find the target?
-• Predefined Pattern – Modify your program so that if the button on the top of the prototyping
-board is pressed, the robot will move in a predefined pattern (e.g., move in a square) before
-
-continuing to wander the space. Your robot should abort the pattern and return to the wander-
-ing behavior if it encounters an obstacle while trying to complete the predefined pattern. Can
-
-you modify the finite-state machine diagram to appropriately reflect this new behavior?
-• Smart Rotation – Modify your program so that it takes into account which mechanical bump
-switch is pressed; when the robot backs up it should always rotates away from the bump switch
-which was closed. How does this impact the robot’s ability to explore the space and find the
-target?
-• Infrared Bump Sensor – Use the infrared sensor on the front of the robot as an additional
-bump sensor. You will need to experiment with the analog values from the infrared sensor to
-determine an acceptable threshold (similar to what you did with the grayscale analog sensor).
-Augment your finite-state-machine algorithm so that if the robot senses an obstacle either from
-the mechanical bump switches or the infrared sensor it will then enter the REV and ROT states.
-How does this impact the robot’s ability to explore the space and find the target?
-• Infrared Wall Following – With careful tuning, there may not be a need to move in reverse
-after sensing an obstacle with the infared sensor. Try to build a more elegant wall following
-control application: when the robot senses an obstacle with the infrared sensor it can stop and
-immediately rotate until the infared sensor indicates there is open space; the robot can then
-proceed. If done correctly, this will cause the robot to follow the walls without needing to
-move in reverse.
-• Infrared Mapping – It may be possible to generate a simple map by rotating in place and
-sampling the infrared sensor. For example, the robot could rotate in-place at the very beginning
-to determine which direction has the most open space. The robot could then move in this
-direction and use similar “scans” to determine how to proceed.
-• Navigate Around More Obstacles – Ask the instructors for additional obstacles to place in the
-environment. How does the robot handle these new obstacles? How can you modify your
-control application to robustly handle more complicated environments?
-• Gray Line Following – Ask the instructors for a strip of gray tape and place this tape in the
-robot’s environment. Is it possible to design a control application which allows the robot to
-“follow” this tape to the target?
+### Optional Extensions: 
+---
+Parts 1–3 are the required portions of the lab. If you complete these parts quickly, you are free to try one or more of the following extensions which are roughly arranged in order of difficulty. You can also make up your extension. These extensions are purely optional; do not feel like you must attempt them.
+- LED State Indicators – Modify your program so that LED1 turns on when the robot is in the REV state, LED2 turns on when the robot is in the ROT state, and both LEDs turn on when the robot finds the target.
+- Potentiometer Controlled Speed – Modify your program so that the potentiometer on the prototyping board controls the motor speed.
+- Randomized Wandering – Modify your program so that the robot randomly determines which direction to rotate and for how long to rotate. How does this impact the robot’s ability to explore the space and find the target?
+- Predefined Pattern – Modify your program so that if the button on the top of the prototyping board is pressed, the robot will move in a predefined pattern (e.g., move in a square) before continuing to wander the space. Your robot should abort the pattern and return to the wandering behavior if it encounters an obstacle while trying to complete the predefined pattern. Can you modify the finite-state machine diagram to appropriately reflect this new behavior?
+- Smart Rotation – Modify your program so that it takes into account which mechanical bump switch is pressed; when the robot backs up it should always rotates away from the bump switch which was closed. How does this impact the robot’s ability to explore the space and find the target?
+- Infrared Bump Sensor – Use the infrared sensor on the front of the robot as an additional bump sensor. You will need to experiment with the analog values from the infrared sensor to determine an acceptable threshold (similar to what you did with the grayscale analog sensor). Augment your finite-state-machine algorithm so that if the robot senses an obstacle either from the mechanical bump switches or the infrared sensor it will then enter the REV and ROT states. How does this impact the robot’s ability to explore the space and find the target?
+- Infrared Wall Following – With careful tuning, there may not be a need to move in reverse after sensing an obstacle with the infared sensor. Try to build a more elegant wall following control application: when the robot senses an obstacle with the infrared sensor it can stop and immediately rotate until the infared sensor indicates there is open space; the robot can then proceed. If done correctly, this will cause the robot to follow the walls without needing to move in reverse.
+- Infrared Mapping – It may be possible to generate a simple map by rotating in place and sampling the infrared sensor. For example, the robot could rotate in-place at the very beginning to determine which direction has the most open space. The robot could then move in this direction and use similar “scans” to determine how to proceed.
+- Navigate Around More Obstacles – Ask the instructors for additional obstacles to place in the environment. How does the robot handle these new obstacles? How can you modify your control application to robustly handle more complicated environments?
+- Gray Line Following – Ask the instructors for a strip of gray tape and place this tape in the robot’s environment. Is it possible to design a control application which allows the robot to “follow” this tape to the target?
 
