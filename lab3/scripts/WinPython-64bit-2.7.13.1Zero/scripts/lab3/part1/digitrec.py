@@ -20,6 +20,9 @@ NUMBER = 7
 class Digit:
   # image data: label and pixels(data)
   def __init__(self):
+    """Initializer: creates a Digit object with attributes label, data, and index
+
+    """
     self.label = '' #The number that corresponds to this digit image
     self.data  = [] #List storing the pixels corresponding to the hand-written digit
     self.index = ''  # training image index from 1 to ...
@@ -28,6 +31,14 @@ class Digit:
     self.ndata = numpy.array(self.data)
   # calculate distance
   def distance(self,digit):
+    """
+    Looks at the digit object's data array and calculates the distance between
+    each pixel in the array.
+
+    Returns: the total distance in pixels between itself and another digit object
+
+    Parameter digit: a Digit Object
+    """
     return numpy.sum(abs(self.ndata - digit.ndata))
     """ correct implementaion but runs slowly
     dis = 0
@@ -39,15 +50,15 @@ class Digit:
     return dis
     """
 
-# Digit Recognition              
+# Digit Recognition
 def digitrec(testing_data,training_set):
   """
-  Function that returns the predicted digit drawn in testing_data.
+  Returns: the predicted digit drawn in testing_data.
   
-  The testing_data argument contains the 2D array filled with 
+  Parameter testing_data: contains the 2D array filled with 
   0's and 1's, which represents the hand-written digit.
   
-  The training_set argument is a list of Digit objects, which
+  Parameter training_set: a list of Digit objects, which
   the function will use to compare against the testing image.
   """
   #training_set = get_training_set()
@@ -122,7 +133,7 @@ def digitrec(testing_data,training_set):
       """
       This function sorts a list by distance.
       
-      L is the list of tuples that you would like to sort by distance
+      Parameter L: list of tuples that you would like to sort by distance
       """
       #Base Case()
       #How small a list, where the sort becomes trivial?
