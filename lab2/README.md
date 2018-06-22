@@ -243,6 +243,6 @@ Parts 1–3 are the required portions of the lab. If you complete these parts qu
 - Gray Line Following – Ask the instructors for a strip of gray tape and place this tape in the robot’s environment. Is it possible to design a control application which allows the robot to “follow” this tape to the target?
 
 
-##Acknowledgements 
+## Acknowledgements 
 This lab handout is derived from the 2014 CURIE Academy "Computer Engineering -- Software Perspective" lab designed by Professor Christopher Batten.
 
