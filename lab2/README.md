@@ -15,8 +15,6 @@ Before beginning the lab, make sure to take a look at the components that you wi
 
 Take a look at the mobile robotic platform and try to identify each part of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 1 and 2 respectively. Figure 3 shows a diagram of the prototyping board.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" target="_blank">Link to image of top view of robot</a>
-
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="300">
     <font size="2">
