@@ -145,7 +145,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
     </font>
 </figure>
 
-*Sign-Off Milestone*: Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the AND gate. 
+```Sign-Off Milestone```: Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the AND gate. 
 
 *Critical Thinking Questions*: So far we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
@@ -221,7 +221,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
     </font>
 </figure>
 
-*Sign-Off Milestone*: Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
+```Sign-Off Milestone```: Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
 
 <details><summary><I>HINT 1</I></summary>
 <p>
