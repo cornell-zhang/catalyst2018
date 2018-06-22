@@ -77,8 +77,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" width="200">
     <font size="2">
-    <figcaption> Figure 5: Inverter Circuit </a>
-        Taken From: http://slideplayer.com/slide/5067607/ </a>
+        <figcaption> Figure 5: Inverter Circuit [1] </a>
     </figcaption>
     </font>
 </figure>
@@ -105,8 +104,7 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/NANDGateDiagram.png" width="400">
     <font size="2">
-        <figcaption> Figure 7: NAND Gate </a>
-            Taken From: https://electronics.stackexchange.com/questions/72806/preference-of-nand-nor-gates </a>
+        <figcaption> Figure 7: NAND Gate [2] </a>         
     </figcaption>
     </font>
 </figure>
@@ -158,8 +156,7 @@ In this section, you will develop a parity checker, which is useful in determini
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="300">
     <font size="2">
-        <figcaption> Figure 9: Parity Checker </a>
-        Taken From: https://www.tutorialspoint.com/digital_circuits/digital_combinational_circuits.htm </a>
+        <figcaption> Figure 9: Parity Checker [3] </a>
     </figcaption>
     </font>
 </figure>
@@ -212,8 +209,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" width="300">
     <font size="2">
-        <figcaption> Figure 12: Full-Adder </a>
-        Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder </a>
+        <figcaption> Figure 12: Full-Adder [4] </a>
     </figcaption>
     </font>
 </figure>
@@ -221,8 +217,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="400">
     <font size="2">
-        <figcaption> Figure 13: Planning Diagram for Breadboard Implementation of Full-Adder </a>
-        Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder </a>
+        <figcaption> Figure 13: Planning Diagram for Breadboard Implementation of Full-Adder [5] </a>
     </figcaption>
     </font>
 </figure>
@@ -242,15 +237,21 @@ In this last section you will combine full adders in order to develop a two-bit 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" width="300">
     <font size="2">
-        <figcaption> Figure 14: Two-Bit Ripple-Carry Adder </a>
-        Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html </a>
+        <figcaption> Figure 14: Two-Bit Ripple-Carry Adder [6]</a>
     </figcaption>
     </font>
 </figure>
 
 
-#### Acknowledgements
+Acknowledgements
 ---
 Thanks to Professor Batten for templates on lab 1 and 2 from his CURIE Academy program. [Link](https://www.csl.cornell.edu/curie2014/)
 
-
+References
+---
+[1] Taken From: http://slideplayer.com/slide/5067607/
+[2] Taken From: https://electronics.stackexchange.com/questions/72806/preference-of-nand-nor-gates 
+[3] Taken From: https://www.tutorialspoint.com/digital_circuits/digital_combinational_circuits.htm 
+[4] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
+[5] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
+[6] Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html 
