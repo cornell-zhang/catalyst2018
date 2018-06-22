@@ -66,8 +66,7 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 </figure>
 
 
-
-*Sign-Off Milestone*: Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
+```Sign-Off Milestone``` : Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
 
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
@@ -109,7 +108,7 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
     </font>
 </figure>
 
-*Sign-Off Milestone*: Once you have wired the logic gate, have an instructor verify that things are connected correctly; then the instructor will turn on the board and we can observe the functionality of the circuit. 
+```Sign-Off Milestone```: Once you have wired the logic gate, have an instructor verify that things are connected correctly; then the instructor will turn on the board and we can observe the functionality of the circuit. 
 
 *Critical Thinking Questions*: Why is this gate called a NAND gate? Can we use a NAND and the inverter from the previous part to implement an AND gate? Can you think of how to implement a NOR gate?
 
