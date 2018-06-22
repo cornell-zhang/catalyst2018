@@ -250,8 +250,14 @@ Thanks to Professor Batten for templates on lab 1 and 2 from his CURIE Academy p
 References
 ---
 [1] Taken From: http://slideplayer.com/slide/5067607/
+
 [2] Taken From: https://electronics.stackexchange.com/questions/72806/preference-of-nand-nor-gates 
+
 [3] Taken From: https://www.tutorialspoint.com/digital_circuits/digital_combinational_circuits.htm 
+
 [4] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
+
 [5] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
-[6] Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html 
+
+[6] Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html
+
