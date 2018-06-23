@@ -122,17 +122,13 @@ In this section, you will find the K-nearest neighbors of the testing image, and
 In this part, you will sort the dictionary that you just created. Feel free to search the internet on how you can sort a dictionary(make sure you know whether you want to sort the dictionary by keys or values). And as always, ask a teaching assistant if you're having trouble. When you think you have correctly implemented all four parts, you may check your code using the provided test harness. You can do so by using the terminal to run the test script. Once you have navigated to the correct directory, use *python main.py* to run the test cases. If you need any help debugging after any failed test cases, feel free to ask a teaching assistant. Just as in lab 2, remember to check the syntax of your code very carefully--it is likely that many failed test cases are due to syntax errors!
 
 
-```dif
-- Sign-Off Milestone: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
+```diff
+- Sign-Off Milestone: 
+Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
 ```
 
 ### Part 2. Verify Digit Recognition System Locally
 After passing all check points done by the test harness, you can move to part2 – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 3. 
-
-```diff
-- Sign-off Milestone: 
-Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before moving on.
-```
 
 ```diff
 - Sign-off Milestone: 
