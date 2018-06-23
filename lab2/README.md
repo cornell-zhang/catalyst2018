@@ -173,7 +173,7 @@ In this section, you will have to write a program that makes the robot keep movi
 #### Part 2.B Develop Wander Behavior
 In this section, you will extend the behavior of your robot to include “wandering.” For now, you can ignore the target and just have the robot keep moving forward until it hits an obstacle. When it does, have it reverse and turn slightly. Thus, your robot will keep “wandering” through its environment. Try to build a finite-state machine algorithm that describes the robot’s behavior.  For this part, you will only need to make use of the robot's bump switches and drive motors. Once you think you have it, make sure to check with an instructor. After developing the necessary code and uploading it to the Arduino, verify that your robot behaves as expected.
 
-*Sign-Off Milestone*: Once you have the robot successfully wandering the environment, have a teaching assistant verify that things are working correctly
+```Sign-Off Milestone```: Once you have the robot successfully wandering the environment, have a teaching assistant verify that things are working correctly
 
 *Troubleshooting:* If your robot repeatedly stops before the mechanical bump switches are pressed, it could be due to noise created by the drive motors that causes the robot to behave as if the switches have been pressed. A simple software fix to this problem is to implement code that checks the mechanical bump switches twice with a small delay in between checks. If the bump switch is closed during both checks it is very likely that the robot has actually bumped into an obstacle. 
 
