@@ -123,21 +123,21 @@ In this part, you will sort the dictionary that you just created. Feel free to s
 
 
 ```dif
-Sign-Off Milestone: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
+- Sign-Off Milestone: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
 ```
 
 ### Part 2. Verify Digit Recognition System Locally
 After passing all check points done by the test harness, you can move to part2 – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 3. 
 
 ```dif
-Sign-off Milestone: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before moving on.
+- Sign-off Milestone: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before moving on.
 ```
 
 ### Part 3. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to log into the system. After that, please double check that the group number shown at the top is correct. Before starting to draw on the canvas, please upload the “digitrec.py” file created in Part 2 to the website. Finally, play with your web app! Draw some weird numbers on the canvas to see whether you can fool the smart machine!
 
 ```dif
-Sign-off Milestone: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
+- Sign-off Milestone: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
 ```
 
 ### Extensions
