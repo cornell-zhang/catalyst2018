@@ -86,7 +86,7 @@ Once this part is working, we can extend the code one step further, by getting t
 
 A small change to the current code can allow the blink rate of the LED to be determined by the potentiometer.  Determine how to implement this new function and modify your code accordingly. After uploading your code, verify that it works properly before showing your results to an instructor.
 
-*Sign-Off Milestone*: Once you have one LED’s blink rate controlled by the potentiometer and the other LED controlled by the switch, have a teaching assistant verify that things are working correctly. 
+```Sign-Off Milestone```: Once you have one LED’s blink rate controlled by the potentiometer and the other LED controlled by the switch, have a teaching assistant verify that things are working correctly. 
 
 *Critical Thinking Questions*: Explain why pressing the switch quickly sometimes does not turn on the LED, and why the LED stays lit for a short duration after you release the switch. Similarly, explain why adjusting the potentiometer sometimes requires a short duration before impacting the blink rate.
 
@@ -120,7 +120,7 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
     </font>
 </figure>
 
-*Sign-Off Milestone*: Once you have the analog grayscale sensor values being displayed on the serial monitor, have a teaching assistant verify that things are working correctly. 
+```Sign-Off Milestone```: Once you have the analog grayscale sensor values being displayed on the serial monitor, have a teaching assistant verify that things are working correctly. 
 
 *Critical Thinking Questions*: What happens when the analog grayscale sensor is positioned precisely at the edge of the target? How do your readings compare to the readings collected by other groups around you? Why do you think all robots do not report the same analog grayscale sensor values when positioned over similar materials? What do you think would happen if the target was made out of a very glossy black material?
 
@@ -137,7 +137,7 @@ Enter the code shown in Figure 7 below into your Arduino IDE. Once you have done
     </font>
 </figure>
 
-*Sign-Off Milestone*: Once you have the robot continuously moving in roughly a square with two-foot sides, have a teaching assistant verify that things are working correctly. 
+```Sign-Off Milestone```: Once you have the robot continuously moving in roughly a square with two-foot sides, have a teaching assistant verify that things are working correctly. 
 
 *Critical Thinking Questions*: Why don’t the same motor speed and delay values always result in every robot moving in a perfect square? If the robot begins moving in a perfect square, does it continue to move in a square? Why or why not? Propose a way to enable the robot to more reliably move in a perfect square. Hint: You probably need to add more sensors to the robot. 
 
@@ -207,7 +207,7 @@ As a hint, we recommend adding code to your loop that reads the analog grayscale
 
 If you would like to optimize the wandering behavior of your robot through the maze, try modifying your code so that the direction the robot turns depends on which mechanical bump switch was pressed. This would allow the robot to turn away from the obstacles it bumps into, thereby allowing it to navigate the maze more quickly.  In other words, program the robot to turn right if the left bump switch is closed and left if the right bump switch is closed. This will require you to find the relevant conditional from the template and instead create two separate conditionals: one for the right bump switch and one for the left. 
 
-*Sign-Off Milestone*: Once you have the robot successfully wandering the environment and finding the target, have a teaching assistant verify that things are working correctly.
+```Sign-Off Milestone```: Once you have the robot successfully wandering the environment and finding the target, have a teaching assistant verify that things are working correctly.
 
 <details><summary><I>HINT 1</I></summary>
 <p>
