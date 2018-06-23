@@ -121,18 +121,24 @@ In this section, you will find the K-nearest neighbors of the testing image, and
 #### Part 1D. Sort Vote
 In this part, you will sort the dictionary that you just created. Feel free to search the internet on how you can sort a dictionary(make sure you know whether you want to sort the dictionary by keys or values). And as always, ask a teaching assistant if you're having trouble. When you think you have correctly implemented all four parts, you may check your code using the provided test harness. You can do so by using the terminal to run the test script. Once you have navigated to the correct directory, use *python main.py* to run the test cases. If you need any help debugging after any failed test cases, feel free to ask a teaching assistant. Just as in lab 2, remember to check the syntax of your code very carefully--it is likely that many failed test cases are due to syntax errors!
 
-*Sign-Off Milestone*: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
+
+```dif
+Sign-Off Milestone: Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
+```
 
 ### Part 2. Verify Digit Recognition System Locally
 After passing all check points done by the test harness, you can move to part2 – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 3. 
 
-*Sign-off Milestone*: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before moving on.
-
+```dif
+Sign-off Milestone: Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before moving on.
+```
 
 ### Part 3. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Open a browser and type in the IP address “10.XX.XX.XX”. Then type in your Username and Password to log into the system. After that, please double check that the group number shown at the top is correct. Before starting to draw on the canvas, please upload the “digitrec.py” file created in Part 2 to the website. Finally, play with your web app! Draw some weird numbers on the canvas to see whether you can fool the smart machine!
 
-*Sign-off Milestone*: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
+```dif
+Sign-off Milestone: Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
+```
 
 ### Extensions
 In this extension, we will implement a specific type of sort, called "adaptive merge sort"[12]. This is the same sort method that the built in python method, *sorted* uses when it sorts things like lists and dictionaries. Through implementing this sort method, you will learn about a programming archetype called recursion, and also a little bit about the process behind making an algorithm like this one. To make this function, you will need to make three separate functions, all of which have comment blocks over them. 
