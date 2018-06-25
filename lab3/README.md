@@ -109,12 +109,6 @@ First, navigate to the comment section that says, "1.calculate distance". This i
 #### Part 1B. Sort Distances
 Next, navigate to the next comment section that says, "2.sort distances". In this section, we will sort the results list that we have already made in the previous part so that we have the tuples in order of distance, from least to greatest(we would like to find the K-*nearest* neighbors, after all). To simplify this section for you, you may use one of Python's built-in functions, *sorted*, which takes the entire list of tuples, and can sort by whatever you would like to specify it to sort by. In this case, we would like to sort by distance. This will take a little bit of google-ing on your part, so make sure to ask a teaching assistant if you need any help. If you have prior coding experience, you may be interested in trying out the extension, which implements the same sorting algorithm that Python uses in its built-in function called "Adaptive Merge Sort". Through doing this exercise, you will learn about a new programming archetype called recursion. Be sure to complete the entirety of this lab before coming back to try this optional extension.
 
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/TipLab3.png" width="500">
-    <font size="2">
-    </font>
-</figure>
-
 #### Part 1C. KNN Vote
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. You will find the section you have to implement under the comment "3.knn vote". 
 
