@@ -35,61 +35,18 @@ But what about predicting digits in images? As we all know, all files are stored
     </font>
 </figure>
 
-### Part 2. Python Tutorial
+### Part 2. Google Colab
+
+In this lab, you will be programming in Python, and we will be using Google Colab, which is based off Jupyter Notebook, as it makes it very easy to collaborate with your peers in real-time. Google Colab works very similarly to a Google Docs, propogating changes that you may make on the document on your device, to all other devices that have access to the very same document. Since it is based off of Jupyter Notebook, the files have an extension, ".ipynb," also allowing them to have both text blocks and code blocks. You can run each of the code blocks by clicking on the "run" button on the top left of each of the code blocks. We have chosen this platform, since you can easily play with the code that we have provided for you, after each and every part of the tutorial, and also since it is very convenient for the text explanations to be located right near the code blocks pertaining to the text, so that you can see what we are talking about, right after you read something that was explained in the text. 
+
+Below, at the bottom of the Python tutorial, you will find the link to a folder, containing all the necessary material for lab3. You will first have to choose one person in your group that will copy this folder into his/her own drive, and share it with the rest of your groupmates, so that everyone will be able to edit each of the files. Feel free to make multiple copies of the tutorial if you wish, so that each person in your group can play with the example code simultaneously, without any conflicts.
+
+### Part 3. Python Tutorial
 Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because of its high code readability, clear constructs, syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports dynamic automatic memory management and multiple programming paradigms, including object-oriented, imperative, functional and procedural. In this section, we will go over the basic syntax and data structures of Python.
- 
-There are many Python Tutorials online[11], and here we grab some basic usage for your information. Please refer to the script “example.py” to improve the understanding of Python when reading this part.
 
-(1) The famous “Hello World” program in Python.
-The print function in Python will let you print the text you put in the quotation marks onto the console. Look at the example file for its syntax. 
+In this part, you should navigate to the copy of the folder you have created and go to the file, "example.ipynb," so that you can follow along with the Python tutorial there.
 
-(2) Data type
-- Int – An integer (e.g. -2, 3, 0, 2018)
-
-Operations on integers will return integer values, the four basic operations that you should know(and we will use in this lab) include "+, -, /, and \*", which correspond to add, subtract, divide and multiply respectively.
-- Float – A floating point number (e.g. 3.1415926, 2.718281)
-
-The same rule as integers applies here as well(operations on floating point numbers will yield floating point numbers). The same four basic operations will still apply here.
-- Str – A sequence of characters like texts (e.g. “Hello world!”, “3.1415926”)
-
-You used this above in the built-in python print function, although you can print much more than just strings using that function. Try to see what else you can print to the console!
-- Booleans – True or False
-
-Booleans can take on two values, either True or False. All of your conditions should evaluate to one of these two values. 
-\*\*Note: You will see that there are variables in the example code, of these various data types. You can think of these variables just as a storing place for some sort of value of that specific type. Python is a weakly typed language, so variables won't have a type associated with them(it's also dynamically typed, so type checking doesn't happen until run-time), unlike strongly typed languages, like Java and C/C++(which are statically typed, so type checking happens during compile-time).
-
-(3) Data Structures
-- List – An array of data (e.g. l = [0,1,2,3,4,5])
-
-In Python, lists can have elements of various different types. There are many built-in functions for lists, which you should feel free to use through out the lab. One good resource is to use the Python documentation, when you want to find methods of data structures like lists. You can access elements of the list, just by using square bracket notation. In the square brackets, you will want to put the index of the element you are trying to get(just remember that indices start at 0). Eg. For the above example of a list, l\[1] = 1.
-- Dictionary – Associative arrays (e.g. d = {‘Bob’ : 20, ‘Alice’ : 18})
-
-Dictionaries are very much like lists, except for the fact that their indices aren't necessarily integers, like they are for lists. In the dictionary shown above, strings(names in this case) are the indices, while integers are the values. To access the first element of the dictionary, enter something like, d\['Bob'], which would give you "20" as a result. To help you remember, dictionaries are true to their name in that whenever you look at a dictionary to find the definition of a word, you will have to search the dictionary using that same word. In that case, the word would be the key, while its definition would be the value associated with that key.
-- Tuple – A list of various data type (e.g. t = (‘Bob’, 20, 3.1415926))
-
-A tuple is sort of like a list with a fixed size. You can access elements of a tuple using the same syntax that you would using an array. Just remember that you can never append elements to a tuple(only change the values that it holds). Tuples, too, have indices that start at 0.
-
-(4) Control flow
-- Conditional branch – if-elif-else
-
-Instead of having your program execute lines of code sequentially, you need to alter the order in which your code executes by placing a conditional branch. Each conditional branch has a condition that it checks before proceeding. If, when using an if-statement, that condition evalutates to the boolean True, then the action inside its body is executed. Otherwise, no action is taken. If you would like some action to be executed, you can add an else statement(this doesn't take in a condition), which will execute its body every time the condition in the above if-statement evaluates to False. If you'd like to check another condition, then you can use an elif-statement after the original if-statement, so that you can check another condition if the first didn't evaluate to True. The elif-statement works in the same way as the if-statement. You can play around with the examples in the example file to get more familiar with these statements before we begin the main part of the lab.
-- For loop
-
-With loops, you can execute a block of your code multiple times, instead of having to type it out each time. For loops are generally used when you know the number of times that you'd like to repeat a block of code. In most for-loops, you'll see the loop header in the following format: *for loop_variable in range(first_val, second_val)*. The range function is one that iterates sequentially from *first_val* to *second_val*(not inclusive). You can add other optional arguments, like the ability to iterate by 2's instead of sequentially through the numbers. For examples on how to do this, you should look at the documentation and experiment with the sample code provided. As always, ask a teaching assistant if you need help.
-- While loop
-
-The while loop can be used in place of a for-loop, and it can also be used for other things as well. Usually, while loops are used when you don't know how many times you would like something to iterate since while loops will iterate only until their condition evaluates to False. See example.py for more examples. Always make sure that your condition will always eventually evaluate to False. Otherwise, you will run into an infinite loop that may make your program crash.
-
-(5) Object-Oriented Programming (OOP)
-- Function
-
-A function has the ability to take in arguments and return others as well. Just like Python's built-in function calls, your functions can be made to give you the ability to do something that hasn't already been implemented or that is specific to your code. For examples with proper syntax, please refer to the example code.
-- Class
-
-Classes are "things" that store data. They can have member data elements and member functions as well. You may once again find examples of the class structure in the example file. Make sure to ask teaching assistants if you have any quesitons, as you will be able to produce much more elegant solutions if you exploit classes in your work.
-
-A nice 43-minute python tutorial video:
-https://www.youtube.com/watch?v=N4mEzFDjqtA
+Link to Folder: https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing
 
 Lab Exercises
 --------------------------------
