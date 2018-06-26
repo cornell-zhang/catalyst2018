@@ -15,8 +15,6 @@ Handwriting recognition refers to a computer’s ability to intelligently interp
 
 With the name “machine learning” coined in 1969 by Arthur Samuel[5], researchers have designed various machine learning algorithms suitable for different type of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data: “similar inputs have similar outputs[6]”.
 
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" target="_blank">Link to image of KNN prediction scheme</a>
-
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="300">
     <font size="2">
@@ -28,8 +26,6 @@ With the name “machine learning” coined in 1969 by Arthur Samuel[5], researc
 As shown in Figure 1, all points are projected to a 2D hyperplane. Three of them are labeled “+”, and the other three are labeled “-”. How should we classify the new point marked as “?”? Since its nearest neighbors are 2 “+”'s and 1 “-”,we should label it as “+” based on the principle of “similar inputs have similar outputs”.
 
 But what about predicting digits in images? As we all know, all files are stored as numbers in electronic devices, including images. Suppose we have a colored image with low resolution, 28x28. That is, we have 784 pixels in this image. In RGB color mode, each pixel will be represented by three numbers ranging from 0 to 255 and corresponding with the colors red, green, and blue. To simplify our design, images in the training set and the testing set are black and white. Figure 2 shows two examples in the training set.
-
-<a href="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" target="_blank">Link to image of training instance of digits</a>
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
