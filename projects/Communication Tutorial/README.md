@@ -11,8 +11,8 @@ The current circuit board stack consists of a maker shield on top, followed by a
 |Motor Shield Pin | Maker Shield Pin|
 |---------------- |-----------------|
 |reset            |rst              |
-|3.3V             |3V3              |
-|5V               |-                |
+|3.3V             |-                |
+|5V               |3V3              |
 |GND              |GND              |
 |GND              |-                |
 |Vin              |Vin              |
@@ -35,7 +35,7 @@ Next, attach the Wifi board to the breadboard so that its row of pins are connec
 |3V3            |-                |
 |GND            |-                |
 
-Connect the 5V pin on the motor shield, the VIN pin on the Wifi board, and the 5V pin on the maker shield to pins in the + column of the breadboard. Then, connect the GND pin on the motor shield, the GND pin on the Wifi board, and the GND pin on the maker shield to pins in the - column of the breadboard. 
+Connect the VIN pin on the Wifi board and the 5V pin on the maker shield to pins in the + column of the breadboard. Then, connect the GND pin on the Wifi board and the GND pin on the maker shield to pins in the - column of the breadboard. 
 
 The hardware setup for your robot should now be complete!
 
