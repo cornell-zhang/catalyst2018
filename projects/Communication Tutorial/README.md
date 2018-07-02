@@ -15,7 +15,7 @@ The current circuit board stack consists of a maker shield on top, followed by a
 |5V               |3V3              |
 |GND              |GND              |
 |GND              |-                |
-|Vin              |Vin              |
+|Vin              |-                |
 |PWM A 3          |D3               |
 |PWM B 11         |D9               |
 |DIR A 12         |D1               |
