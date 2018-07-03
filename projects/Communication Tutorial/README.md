@@ -18,8 +18,10 @@ The current circuit board stack consists of a maker shield on top, followed by a
 |Vin              |-                |
 |PWM A 3          |D3               |
 |PWM B 11         |D9               |
-|DIR A 12         |D1               |
+|DIR A 12         |D5*              |
 |DIR B 13         |D10              |
+
+* In order to attach a wire from pin DIR A 12 to pin to D5 you can completely remove the existing wire connected to pin D5. This connection was previously used to control the board LED and will not be needed for the final project.
 
 Next, attach the Wifi board to the breadboard so that its row of pins are connected to column i of the breadboard. Use the two breadboard columns above the board to make connections between the Wifi Board and the maker shield according to the table below. 
 
