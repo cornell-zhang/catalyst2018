@@ -1,1 +1,3 @@
-# catalyst2018
+# CATALYST 2018: Exploring Digital Intelligence
+
+Digital intelligence consists of the use of digital computers to perform intelligent tasks, from automatically recognizing objects in pictures to manuevering an autonomous vehicle. In this research project, we will explore how to create and implement intelligence in machines. In particular, we will study how to combine state-of-the-art hardware and software to perceive, process, and learn from real-world information and assemble a practical hardware-software system with demonstratable intelligence. This week-long design experience will include three guided laboratory sessions to familiarize us with basic concepts in hardware, software, and machine intelligence, and culminate in a design project where we complete an end-to-end prototype of an intelligent machine of your choice.
