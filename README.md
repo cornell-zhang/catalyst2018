@@ -5,4 +5,7 @@ Digital intelligence consists of the use of digital computers to perform intelli
 This week-long design experience includes three guided laboratory sessions to familiarize us with concepts in hardware, software, and machine intelligence. Based on knowledge acquired from the laboratory session, we will work in groups to build an end-to-end prototype of an intelligent machine. Here is an overview of the design activities:
 
 #### Lab 1
-We will start with learning the concepts of hardware because hardware is the foundation required to build and run our intelligent machines. We will experiment with basic analog and digital circuits and have the opportunity to build digital elements from a logic gate to an arithmetic unit.
+We will start with learning the concepts of hardware because hardware is the foundation required to build and run our intelligent machines. We will experiment with basic analog and digital circuits and have the opportunity to build digital elements from a simple logic gate to a more complex arithmetic unit.
+
+#### Lab 2
+We will then learn to write software to program the behavior of hardware. Using an Arduino-based robotics platform, you will write software programs to control various exploratory behaviors of a robot through actuators and enable the robot to perceive its surrounding environment through sensors and react appropriately.
