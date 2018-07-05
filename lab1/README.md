@@ -22,7 +22,7 @@ As for the other materials you will need, they are listed below:
 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="800">
     <font size="2">
     <figcaption> Figure 1: Simple LED Circuit Implemented on Prototyping Platform </a> 
     </figcaption>
@@ -43,11 +43,13 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
-In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
+In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate.  
+
+If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="800">
     <font size="2">
     <figcaption> Figure 3: Underlying Wiring of Breadboard </a> 
     </figcaption>
@@ -55,7 +57,7 @@ In this section, you will wire up some basic circuits that start with a simple a
 </figure>
 
 #### Part 1.A Experiment with LED
-Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard.
+Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. The LED is device that looks like this
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
@@ -258,5 +260,4 @@ References
 
 [5] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
 
-[6] Taken From: https://cse.buffalo.edu/~sheenara/LabAssignment.html
 
