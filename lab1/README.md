@@ -43,9 +43,7 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
-In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate.  
-
-If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
+In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate. We will be exploring the basic building blocks that make up all electronics. A computer contains billions of transistors and logic gates such as the NAND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic and basic circuit works is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
 
 
 <figure>
@@ -57,6 +55,8 @@ If you are ever in need of assistance, feel free to ask the TA’s for help. Whi
 </figure>
 
 #### Part 1.A Experiment with LED
+LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from back current or current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
+The circuit diagram shown in figure 4 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from high voltage to low voltage. Thus the current flows clockwise in the schematic. 
 Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. The LED is device that looks like this
 
 <figure>
