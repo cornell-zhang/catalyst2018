@@ -9,3 +9,7 @@ We will start with learning the concepts of hardware because hardware is the fou
 
 #### Lab 2
 We will then learn to write software to program the behavior of hardware. Using an Arduino-based robotics platform, you will write software programs to control various exploratory behaviors of a robot through actuators and enable the robot to perceive its surrounding environment through sensors and react appropriately.
+
+#### Lab 3
+We will learn how to bring intelligence into machines by teaching a computer to recognize handwritten numerical digits. We will learn and implement the popular K-Nearest-Neighbor machine learning algorithm to decipher different handwritten digits using a distance-based measure.
+
