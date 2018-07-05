@@ -1,7 +1,7 @@
 Lab 1: Mystery Circuit
 ======================
 
-In this first lab assignment, both you and your partner will experiment with basic circuit components, gradually building your way up into building a two-bit ripple-carry adder. In the first section, you will experiment with both basic analog and digital circuits, culminating with the creation of a NAND gate. In the second part, you will experiment with basic logic gates, and eventually develop a parity checker. In the last part, you will use everything you have learned thus far to incrementally build a two-bit ripple-carry adder. After finishing each section, make sure that a teaching assistant verifies the correct the correct outcome and initials the appropriate line on the sign-off sheet. **Make sure to turn in your sign-off sheet by the end of the lab session.**
+In this first lab assignment, both you and your partner will experiment with basic circuit components, gradually building your way up into building a two-bit ripple-carry adder. In the first section, you will experiment with both basic analog and digital circuits, culminating with the creation of a NAND gate. In the second part, you will experiment with basic logic gates, and eventually develop a parity checker. In the last part, you will use everything you have learned thus far to incrementally build a two-bit ripple-carry adder. After finishing each section, make sure that a teaching assistant verifies the correct outcome and initials the appropriate line on the sign-off sheet. **Make sure to turn in your sign-off sheet by the end of the lab session.**
 
 
 Hardware Description
