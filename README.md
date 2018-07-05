@@ -13,3 +13,5 @@ We will then learn to write software to program the behavior of hardware. Using 
 #### Lab 3
 We will learn how to bring intelligence into machines by teaching a computer to recognize handwritten numerical digits. We will learn and implement the popular K-Nearest-Neighbor machine learning algorithm to decipher different handwritten digits using a distance-based measure.
 
+### Project
+We will combine hardware, software, and machine intelligence to build a cohesive Internet-connected intelligent system. Depending on the project selected, we will leverage our digit recognition system to wirelessly control the movement of the robot and take advantage of various sensors to enable autonomous behaviors such as rapid target finding and adaptive cruise control.
