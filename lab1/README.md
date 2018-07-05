@@ -84,7 +84,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 </figure>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
     <font size="2">
         <figcaption> Figure 6: Breadboard Diagram for Testing Inverter Circuit </a>
     </figcaption>
@@ -140,7 +140,7 @@ In the previous section, we learned about basic digital circuits and how they ca
 After turning off the power supply, begin to wire up the AND gate as shown in Figure 8 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
     <font size="2">
         <figcaption> Figure 8: Breadboard Diagram for Testing NAND Gate </a>
     </figcaption>
@@ -155,7 +155,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 In this section, you will develop a parity checker, which is useful in determining whether a message has been compromised in any way when it was being sent. A parity unit should produce a zero when there are an even number of ones in the input and a one when there are an odd number of ones in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="600">
     <font size="2">
         <figcaption> Figure 9: Parity Checker [3] </a>
     </figcaption>
@@ -191,7 +191,7 @@ In this section, you will use all the knowledge you have previously gained about
 Wire up the half-adder shown in Figure 11 below. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdder.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdder.png" width="400">
     <font size="2">
         <figcaption> Figure 11: Half-Adder </a>
     </figcaption>
@@ -208,7 +208,7 @@ Wire up the half-adder shown in Figure 11 below.
 Wire up the full-adder shown in Figure 12 below. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 13. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdder.png" width="600">
     <font size="2">
         <figcaption> Figure 12: Full-Adder [4] </a>
     </figcaption>
@@ -216,7 +216,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 </figure>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
     <font size="2">
         <figcaption> Figure 13: Planning Diagram for Breadboard Implementation of Full-Adder [5] </a>
     </figcaption>
@@ -236,7 +236,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 14 below. Both full adders should be powered using their own batteries. Verify that this simple two-bit ripple-carry adder works.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/TwoBitRippleCarryAdder.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Adder.png" width="900">
     <font size="2">
         <figcaption> Figure 14: Two-Bit Ripple-Carry Adder [6]</a>
     </figcaption>
