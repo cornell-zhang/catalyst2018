@@ -54,11 +54,21 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
+Looking at figure 3, if we assume rows are denoted by number, we notice that all holes in a row are connected together. This means that any circuit components with both pins connected in the same rows are in parallel to each other. Different rows are not connected. Components with only one pin connected to the same row and the other pin connected to different rows are in series with each other. Components with no pins that share a row will not affect each other. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
+
 #### Part 1.A Experiment with LED
 LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from back current or current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
-The circuit diagram shown in figure 4 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from high voltage to low voltage. Thus the current flows clockwise in the schematic. 
-Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. The LED is device that looks like this
+The circuit diagram shown in figure 5 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from high voltage to low voltage. Thus the current flows clockwise in the schematic. The LED must be placed in a specific direction for it to turn on. The two pins of the LED are cathode, the short pin, and the anode, the long pin. Look at the diagram in figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED, it will emmit light.  
 
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LED.png" width="400">
+    <font size="2">
+    <figcaption> Figure 4: LED Schematic </a> 
+    </figcaption>
+    </font>
+</figure>
+
+Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent short circuit. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
@@ -73,6 +83,7 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part 1.B Experiment with Inverters
+In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes as opose to electrons while N-type semiconductors are the opposite. These transistors act as switches when turn to VDD and GND. Because of this behavior, combinations of NMOS and PMOS can make many different types of logic gates. PMOS will always be connected to ground and as a switch, it is open when voltage to the gate is high and closed when voltage through the gate is low. This is opposite for NMOS where NMOS is always connected to VDD.
 Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <figure>
