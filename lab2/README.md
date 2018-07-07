@@ -22,27 +22,35 @@ Take a look at the mobile robotic platform and try to identify each part of the 
 The robot is powered using two different batteries. Five AA batteries located at the bottom of the robot power the two drive motors.  A separate battery pack will be used to power the board stack.  This will need to be plugged into the Arduino board after the robot is disconnected from the computer in order for the robot to be properly powered. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotEnvironment.png" width="500">
     <font size="2">
-    <figcaption> Figure 1: Top-View of Mobile Robotic Platform </a> 
+    <figcaption> Figure 1: Plywood Environment </a> 
+    </figcaption>
+    </font>
+</figure>
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="500">
+    <font size="2">
+    <figcaption> Figure 2: Top-View of Mobile Robotic Platform </a> 
     </figcaption>
     </font>
 </figure>
 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="500">
     <font size="2">
-    <figcaption> Figure 2: Front-View of Mobile Robotic Platform </a> 
+    <figcaption> Figure 3: Front-View of Mobile Robotic Platform </a> 
     </figcaption>
     </font>
 </figure>
 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="500">
     <font size="2">
-    <figcaption> Figure 3: Prototyping Board </a> 
+    <figcaption> Figure 4: Prototyping Board </a> 
     </figcaption>
     </font>
 </figure>
