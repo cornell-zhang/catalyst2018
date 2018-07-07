@@ -168,12 +168,13 @@ In this section, you will leverage all that you learned in the previous parts to
 The figure below illustrates the specific FSM we will be using.  The robot first starts in the FWD, forward, state, where it only moves forward.  The robot stays in that state unless one of two events occur: the robot senses an obstacle using its mechanical bump switches or the robot senses the target using its grayscale sensor.  If the robot senses an obstacle, it will move into the REV state, where it will move backward for a fixed amount of time.  It will then transition to the ROT state, where it rotates for a fixed amount of time.  This will allow the robot to first back away from an obstacle and then rotate in a different direction before procedding. It will then transition back to the FWD state and continue in a different direction.  If the robot senses the target, it will transition to the TGT state, where it will spin in a circle to indicate that it has successfully found the target.  It then will transition to the STOP state.
 
 <figure>
-    <img src="hhttps://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
     <font size="2">
         <figcaption> Figure 9: Finite-State Machine Algorithm </a>
     </figcaption>
     </font>
 </figure>
+
 
 #### Part 2.A Develop Move-and-Stop Behavior
 In this section, you will have to write a program that makes the robot keep moving forward until it hits an obstacle, in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.
@@ -260,13 +261,6 @@ Parts 1–3 are the required portions of the lab. If you complete these parts qu
 - Potentiometer Controlled Speed – Modify your program so that the potentiometer on the prototyping board controls the motor speed.
 - Randomized Wandering – Modify your program so that the robot randomly determines which direction to rotate and for how long to rotate. How does this impact the robot’s ability to explore the space and find the target?
 - Predefined Pattern – Modify your program so that if the button on the top of the prototyping board is pressed, the robot will move in a predefined pattern (e.g., move in a square) before continuing to wander the space. Your robot should abort the pattern and return to the wandering behavior if it encounters an obstacle while trying to complete the predefined pattern. Can you modify the finite-state machine diagram to appropriately reflect this new behavior?
-- Smart Rotation – Modify your program so that it takes into account which mechanical bump switch is pressed; when the robot backs up it should always rotates away from the bump switch which was closed. How does this impact the robot’s ability to explore the space and find the target?
-- Infrared Bump Sensor – Use the infrared sensor on the front of the robot as an additional bump sensor. You will need to experiment with the analog values from the infrared sensor to determine an acceptable threshold (similar to what you did with the grayscale analog sensor). Augment your finite-state-machine algorithm so that if the robot senses an obstacle either from the mechanical bump switches or the infrared sensor it will then enter the REV and ROT states. How does this impact the robot’s ability to explore the space and find the target?
-- Infrared Wall Following – With careful tuning, there may not be a need to move in reverse after sensing an obstacle with the infared sensor. Try to build a more elegant wall following control application: when the robot senses an obstacle with the infrared sensor it can stop and immediately rotate until the infared sensor indicates there is open space; the robot can then proceed. If done correctly, this will cause the robot to follow the walls without needing to move in reverse.
-- Infrared Mapping – It may be possible to generate a simple map by rotating in place and sampling the infrared sensor. For example, the robot could rotate in-place at the very beginning to determine which direction has the most open space. The robot could then move in this direction and use similar “scans” to determine how to proceed.
-- Navigate Around More Obstacles – Ask the instructors for additional obstacles to place in the environment. How does the robot handle these new obstacles? How can you modify your control application to robustly handle more complicated environments?
-- Gray Line Following – Ask the instructors for a strip of gray tape and place this tape in the robot’s environment. Is it possible to design a control application which allows the robot to “follow” this tape to the target?
-
 
 #### Acknowledgements 
 This lab handout is derived from the 2014 CURIE Academy "Computer Engineering -- Software Perspective" lab designed by Professor Christopher Batten.
