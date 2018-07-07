@@ -17,7 +17,9 @@ Before beginning the lab, make sure to take a look at the components that you wi
 - Workstation with black USB cable
 - Arduino cheat sheet
 
-Take a look at the mobile robotic platform and try to identify each part of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 1 and 2 respectively. Figure 3 shows a diagram of the prototyping board.
+Take a look at the mobile robotic platform and try to identify each part of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 1 and 2 respectively. Figure 3 shows a diagram of the prototyping board. It includes two mechanical bump switches at the front of the robot to detect obstacles and a grayscale sensor to detect the target.  The robot's circuitry includes a stack of three boards mounted on top of the robot.  The lowest board is an Arduino, the main computing board, which you will program. The middle board is a motor shield, which allows the Arduino to control the robot's two motors.  The last board is a maker shield, which connects to the grayscale sensor and the two bump switch sensors. The maker shield also contains LEDs, a button, and a potentiometer.
+
+The robot is powered using two different batteries. Five AA batteries located at the bottom of the robot power the two drive motors.  A separate battery pack will be used to power the board stack.  This will need to be plugged into the Arduino board after the robot is disconnected from the computer in order for the robot to be properly powered. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="300">
