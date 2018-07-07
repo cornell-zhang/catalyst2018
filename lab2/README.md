@@ -76,7 +76,7 @@ Some notes on coding:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 4: Blinking LED Code Example </a> 
+    <figcaption> Figure 5: Blinking LED Code Example </a> 
     </figcaption>
     </font>
 </figure>
@@ -87,7 +87,7 @@ We will now extend the code to make one LED light up when the right bumper is pr
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 5: Blinking LED and Switch-Controlled LED Code Example </a> 
+    <figcaption> Figure 6: Blinking LED and Switch-Controlled LED Code Example </a> 
     </figcaption>
     </font>
 </figure>
@@ -130,7 +130,7 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 6: Analog Grayscale Sensor and Serial Monitor Example </a>
+    <figcaption> Figure 7: Analog Grayscale Sensor and Serial Monitor Example </a>
     </figcaption>
     </font>
 </figure>
@@ -147,7 +147,7 @@ Enter the code shown in Figure 7 below into your Arduino IDE. Once you have done
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="600">
     <font size="2">
-        <figcaption> Figure 7: Move Robot in a Square Code Example </a>
+        <figcaption> Figure 8: Move Robot in a Square Code Example </a>
     </figcaption>
     </font>
 </figure>
@@ -167,13 +167,21 @@ In this section, you will leverage all that you learned in the previous parts to
 
 The figure below illustrates the specific FSM we will be using.  The robot first starts in the FWD, forward, state, where it only moves forward.  The robot stays in that state unless one of two events occur: the robot senses an obstacle using its mechanical bump switches or the robot senses the target using its grayscale sensor.  If the robot senses an obstacle, it will move into the REV state, where it will move backward for a fixed amount of time.  It will then transition to the ROT state, where it rotates for a fixed amount of time.  This will allow the robot to first back away from an obstacle and then rotate in a different direction before procedding. It will then transition back to the FWD state and continue in a different direction.  If the robot senses the target, it will transition to the TGT state, where it will spin in a circle to indicate that it has successfully found the target.  It then will transition to the STOP state.
 
+<figure>
+    <img src="hhttps://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
+    <font size="2">
+        <figcaption> Figure 9: Finite-State Machine Algorithm </a>
+    </figcaption>
+    </font>
+</figure>
+
 #### Part 2.A Develop Move-and-Stop Behavior
 In this section, you will have to write a program that makes the robot keep moving forward until it hits an obstacle, in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="600">
     <font size="2">
-        <figcaption> Figure 8: Template for Move-and-Stop Robot Behavior </a>
+        <figcaption> Figure 10: Template for Move-and-Stop Robot Behavior </a>
     </figcaption>
     </font>
 </figure>
