@@ -10,7 +10,7 @@ Tutorials
 Before getting started, you should read this section carefully to learn basic knowledge about Python and KNN. In this section, the motivation for machine learning applications and the methodology of machine learning algorithms will be covered in Part 1. Part 2 is then a brief tutorial for programming in Python.
 
 ### Part 1. K-nearest neighbors
-Handwriting recognition refers to a computer’s ability to intelligently interpret handwritten inputs and is broadly applied in document processing, signature verification, and bank check clearing[3]. An important step in handwriting recognition is classification, which classifies data into one of a fixed number of classes according to learning models and training sets. The typical and most popular type of classification is called supervised learning. Specificly, we produce a set of already-classified data as input to a training model[4], which is a hypothesis function to approximate the corresponding problem. During the training process, the model will update the parameters, allowing it to make a reasonable prediction based on the pre-trained hypothesis function. 
+Handwriting recognition refers to a computer’s ability to intelligently interpret handwritten inputs and is broadly applied in document processing, signature verification, and bank check clearing[3]. An important step in handwriting recognition is classification, which classifies data into one of a fixed number of classes according to learning models and training sets (already classified handwritten digits). The typical and most popular type of classification is called supervised learning, that it learn to make prediction from data. Specificly, we produce a set of already classified data as input to a training model[4], which is a hypothesis function to approximate the corresponding problem. During the training process, the model will update the parameters, allowing it to make a reasonable prediction based on the pre-trained hypothesis function. 
 
 With the name “machine learning” coined in 1969 by Arthur Samuel[5], researchers have designed various machine learning algorithms suitable for different type of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data: “similar inputs have similar outputs[6]”.
 
@@ -24,15 +24,35 @@ With the name “machine learning” coined in 1969 by Arthur Samuel[5], researc
 
 As shown in Figure 1, all points are projected to a 2D hyperplane. Three of them are labeled “+”, and the other three are labeled “-”. How should we classify the new point marked as “?”? Since its nearest neighbors are 2 “+”'s and 1 “-”,we should label it as “+” based on the principle of “similar inputs have similar outputs”.
 
-But what about predicting digits in images? As we all know, all files are stored as numbers in electronic devices, including images. Suppose we have a colored image with low resolution, 28x28. That is, we have 784 pixels in this image. In RGB color mode, each pixel will be represented by three numbers ranging from 0 to 255 and corresponding with the colors red, green, and blue. To simplify our design, images in the training set and the testing set are black and white. Figure 2 shows two examples in the training set.
+But what about predicting digits in images? As we all know, all files are stored as numbers in electronic devices, including images. For colored images under RGB mode, each pixel will be represented by three numbers ranging from 0 to 255 and corresponding with the colors red, green, and blue. To simplify our design, images in the training set and the testing set are black and white, that is only "0" or "1" for each pixel. Figure 2 and 3 shows two simple examples of training instances with a used in the part 1A.
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.png" width="800">
+    <font size="2">
+    <figcaption> Figure 2: Training instance for digit 0 - resolution 7x7 </a> 
+    </figcaption>
+    </font>
+</figure>
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.2.png" width="800">
+    <font size="2">
+    <figcaption> Figure 3: Training instance for digit 7 - resolution 7x7 </a> 
+    </figcaption>
+    </font>
+</figure>
+
+However, as for a more accurate handwritten digit recognition system, these simple examples showed before are not enough. More features (training images with a higher resolution) and a large number of training images are required to build a realtively acceptable handwriten digit recognition system. Thus we choose the well-known MNIST dataset with a resolution of 28x28 in the part 2D. Again to simplify the design, images in the training set and the testing set are preprocessed to black and white ones. Figure 4 shows two digits with the resolution of 28x28.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
     <font size="2">
-    <figcaption> Figure 2: Training instance for digit 0 (a), training instance for digit 7 (b) </a> 
+    <figcaption> Figure 4: Training instance for digit 0 (a), training instance for digit 7 (b) </a> 
     </figcaption>
     </font>
 </figure>
+
+
 
 ### Part 2. Google Colab
 
