@@ -103,18 +103,17 @@ In this part, you should navigate to the copy of the folder (link available in t
 Lab Exercises
 --------------------------------
 
-### Part 1. Function Implementation
 In this part, you should implement four basic parts for building the digit recognition system. For the first part, we will calculate the hamming distance of training images and the testing image. The second part should then sort the distances to find its K nearest neighbors. The third part will execute a vote for different labels (digits in our case). Finally, we sort the votes and return the final prediction. To get started, first navigate to the file, *digitrec_P1.ipynb*, which should be under the directory, *Python_notebooks*, if you have preserved the original directory structure. You will find any data files that you may need under the directory, *dataset*. You should navigate through the python notebooks, instead of solely relying on this handout, as this handout doesn't go into as much detail as the python notebooks. Before testing, you will have to upload files into your Google Colab document. Please refer to the instructions listed on the document(the section is located at the top of the document), and it will instruct you on how to upload files to the Google Colab virtual machine (VM).
 
 As always, ask a teaching assistant if you need help with any of these parts.
 
-#### Part 1A. Calculate Hamming Distance
+### Part 1. Calculate Hamming Distance
 First, navigate to the comment section that says, "1.calculate distance". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit(we have already provided this a little further up in the code). Using the methods of the Digit class, try to calculate the hamming distance from the testing digit to each of the training images.
 
-#### Part 1B. Sort Distances
+### Part 2. Sort Distances
 Next, navigate to the comment section that says, "2.sort distances". In this section, we will sort the results list that we have already made in the previous part so that we have the tuples in order of distance, from least to greatest(we would like to find the K-*nearest* neighbors, after all). To simplify this section for you, you may use one of Python's built-in functions, *sorted*, which takes the entire list of tuples, and can sort by whatever you would like to specify it to sort by. In this case, we would like to sort by distance. This will take a little bit of google-ing on your part, so make sure to ask a teaching assistant if you need any help. If you have prior coding experience, you may be interested in trying out the extension, which implements the same sorting algorithm that Python uses in its built-in function called "Adaptive Merge Sort". Through doing this exercise, you will learn about a new programming archetype called recursion. Be sure to complete the entirety of this lab before coming back to try this optional extension.
 
-#### Part 1C. KNN Vote
+### Part 3. KNN Vote
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. You will find the section you have to implement under the comment "3.knn vote". 
 
 #### Part 1D. Sort Vote
@@ -126,7 +125,7 @@ In this part, you will sort the dictionary that you just created. Feel free to s
 Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
 ```
 
-### Part 2. Verify Digit Recognition System Locally
+### Part 4. Verify Digit Recognition System Locally
 After passing all check points done by the test harness, you can move to *digitrec_P2.ipynb* – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 3. Make sure that you are pasting correctly, as it is very easy to miss some parts and get errors that could potentially be difficult to debug.
 
 ```diff
@@ -134,7 +133,7 @@ After passing all check points done by the test harness, you can move to *digitr
 Once you have achieved an error rate smaller then 10%, show the code and results to one of the TAs before moving on.
 ```
 
-### Part 3. Deploy Digit Recognition Web Application
+### Part 5. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access the server. According to your group number, type in your Username (gx: x is your group number, i.e. g1,g2,g5,etc.) and Password (same with Username) to log into the system. After that, please double check that the group number shown on the top is correct. Before starting to draw on the canvas, you will have to upload a python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called "digitrec_sol.py" into the disk. Then open it within any programming IDE you like and paste the functions you implemented before to the correct place. Then upload the file "digitrec_sol.py", which includes your solution/implementation, to the server by clicking the button "upload python script". Afterwards, test your system by drawing digits(or other things if you'd like), to see whether it works as expected.
 
 ```diff
