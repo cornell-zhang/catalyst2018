@@ -24,7 +24,7 @@ With the name “machine learning” coined in 1969 by Arthur Samuel[5], researc
 
 As shown in Figure 1, all points are projected to a 2D hyperplane. Three of them are labeled “+”, and the other three are labeled “-”. How should we classify the new point marked as “?”? Since its nearest neighbors are 2 “+”'s and 1 “-”,we should label it as “+” based on the principle of “similar inputs have similar outputs”.
 
-But what about predicting digits in images? As we all know, all files are stored as numbers in electronic devices, including images. For colored images under RGB mode, each pixel will be represented by three numbers ranging from 0 to 255 and corresponding with the colors red, green, and blue. To simplify our design, images in the training set and the testing set are black and white, that is only "0" or "1" for each pixel. Figure 2 and 3 shows two simple examples of training instances with a used in the part 1A.
+But what about predicting digits in images? As we all know, all files are stored as numbers in electronic devices, including images. For colored images under RGB mode, each pixel will be represented by three numbers ranging from 0 to 255 and corresponding with the colors red, green, and blue. To simplify our design, images in the training set and the testing set are black and white, that is only "0" or "1" for each pixel. Figure 2 and 3 shows two simple examples of training instances with a resulution of 7x7, which are used in the part 1A.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.PNG" width="800">
@@ -49,7 +49,7 @@ However, these simple images showed before are not enough to build an accurate h
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
     <font size="2">
-    <figcaption> Figure 4: Training instance for digit 0 (a), training instance for digit 7 (b) </a> 
+    <figcaption> Figure 4: Training instance for digit 0 (a), training instance for digit 7 (b) - resolution 28x28 </a> 
     </figcaption>
     </font>
 </figure>
