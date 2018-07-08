@@ -27,7 +27,7 @@ As shown in Figure 1, all points are projected to a 2D hyperplane. Three of them
 But what about predicting digits in images? As we all know, all files are stored as numbers in electronic devices, including images. For colored images under RGB mode, each pixel will be represented by three numbers ranging from 0 to 255 and corresponding with the colors red, green, and blue. To simplify our design, images in the training set and the testing set are black and white, that is only "0" or "1" for each pixel. Figure 2 and 3 shows two simple examples of training instances with a used in the part 1A.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.png" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.PNG" width="800">
     <font size="2">
     <figcaption> Figure 2: Training instance for digit 0 - resolution 7x7 </a> 
     </figcaption>
@@ -35,14 +35,16 @@ But what about predicting digits in images? As we all know, all files are stored
 </figure>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.2.png" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.2.PNG" width="800">
     <font size="2">
     <figcaption> Figure 3: Training instance for digit 7 - resolution 7x7 </a> 
     </figcaption>
     </font>
 </figure>
 
-However, as for a more accurate handwritten digit recognition system, these simple examples showed before are not enough. More features (training images with a higher resolution) and a large number of training images are required to build a realtively acceptable handwriten digit recognition system. Thus we choose the well-known MNIST dataset with a resolution of 28x28 in the part 2D. Again to simplify the design, images in the training set and the testing set are preprocessed to black and white ones. Figure 4 shows two digits with the resolution of 28x28.
+Within the training set and testing set stored as the format of binary array, we could classify the testing instances by referring to the rule "similar inputs have similar outputs." To evaluate the silimarity between the testing instance and training instance, we could calculate the hamming distance[7], which is defined as the total number of corresponding bits that are different in the two binary strings. For example, 1011 and 0111 differ in the two most significant bits and therefore have a distance of 2. 1011 and 1010 differ only in the least significant bit and have a distance of 1. As a result, 10112 is closer to 10102 than to 01112.
+
+However, these simple images showed before are not enough to build an accurate handwritten digit recognition system. More features (training images with a higher resolution) and a large number of training images are required to build a realtively acceptable handwriten digit recognition system. Thus we choose the well-known MNIST dataset with a resolution of 28x28 in the part 2D. Again to simplify the design, images in the training set and the testing set are preprocessed to black and white ones. Figure 4 shows two digits with the resolution of 28x28.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
@@ -51,8 +53,6 @@ However, as for a more accurate handwritten digit recognition system, these simp
     </figcaption>
     </font>
 </figure>
-
-
 
 ### Part 2. Google Colab
 
