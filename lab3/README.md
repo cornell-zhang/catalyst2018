@@ -56,16 +56,25 @@ However, these simple images showed before are not enough to build an accurate h
 
 ### Part 2. Google Colab
 
-In this lab, you will be programming in Python, and we will be using Google Colab, which is based off Jupyter Notebook, as it makes it very easy to collaborate with your peers in real-time. Google Colab works very similarly to a Google Docs, propogating changes that you may make on the document on your device, to all other devices that have access to the very same document. Since it is based off of Jupyter Notebook, the files have an extension, ".ipynb," also allowing them to have both text blocks and code blocks. You can run each of the code blocks by clicking on the "run" button on the top left of each of the code blocks. We have chosen this platform, since you can easily play with the code that we have provided for you, after each and every part of the tutorial, and also since it is very convenient for the text explanations to be located right near the code blocks pertaining to the text, so that you can see what we are talking about, right after you read something that was explained in the text. 
+In this lab, you will be programming in Python, and we will be using Google Colab, which is based off Jupyter Notebook, as it makes it very easy to collaborate with your peers in real-time. You should have a Google account to use it. To get started, please click the following link to the shared folder and copy all files inside this folder to your Google Drive. You could select all of them and right click the mouse and choose the item "Add to My Drive" (Figure 5).
+Link to Folder: https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing
 
-Below, at the bottom of the Python tutorial, you will find the link to a folder, containing all the necessary material for lab3. You will first have to choose one person in your group that will copy this folder into his/her own drive, and share it with the rest of your groupmates, so that everyone will be able to edit each of the files. Feel free to make multiple copies of the tutorial if you wish, so that each person in your group can play with the example code simultaneously, without any conflicts.
+Figure 5 here
+
+Google Colab works very similarly to a Google Docs, propogating changes that you may make on the document on your device, to all other devices that have access to the very same document. Since it is based off of Jupyter Notebook, the files have an extension, ".ipynb,". To open these files, you could either double click the file and check the column in the top named "Open with Colaboratory" (Figure 6) or select, right click the mouse and select the item "Open with Colaboratory" (Figure 7).
+
+figure 6 here
+
+figure 7 here
+
+Notebook in Google Colab are allowed to have both text blocks and code blocks. You can run each of the code blocks by clicking on the "run" button on the top left of each of the code blocks (Figure 8). We have chosen this platform, since you can easily play with the code that we have provided for you, after each and every part of the tutorial, and also since it is very convenient for the text explanations to be located right near the code blocks pertaining to the text, so that you can see what we are talking about, right after you read something that was explained in the text. 
+
+figure 8 here
 
 ### Part 3. Python Tutorial
-Python, as a high-level programming language for general-purpose programming language, was the most popular programming language in 2017[9]. Most programmers start their coding journal from Python because of its high code readability, clear constructs, syntactically significant whitespace, and abundant open-source standard libraries[10]. Moreover, it supports dynamic automatic memory management and multiple programming paradigms, including object-oriented, imperative, functional and procedural. In this section, we will go over the basic syntax and data structures of Python.
+Python, as a high-level programming language for general-purpose programming language, was ranked as the most popular programming language in 2017[9]. These days, most students start their coding journal from Python because of its high code readability, clear constructs, syntactically significant whitespace, and abundant open-source standard libraries[10].In this section, we will go over the basic syntax and data structures of Python.
 
-In this part, you should navigate to the copy of the folder you have created and go to the file, "example.ipynb," so that you can follow along with the Python tutorial there.
-
-Link to Folder: https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing
+In this part, you should navigate to the copy of the folder (link available in the last section) that you have created and go to the file, "example.ipynb," so that you can follow along with the Python tutorial there. To effectively learn Python from practice, please feel free to modify and run the example notebook. If you accidentally mess it up, you could easily recover it by re-copying the original notebook in the shared folder.
 
 Lab Exercises
 --------------------------------
