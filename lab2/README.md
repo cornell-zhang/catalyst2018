@@ -74,9 +74,17 @@ Some notes on coding:
 - For variables, which are shown in lines 3 to 6, the first word denotes the type of variable, second word is the variable name and it is set equal to a value. For line 3, ```int pin_led1 = 4``` means that we are declaring a variable of type "integer" named pin_led1 with an integer value of 4.
 
 <figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/ArduinoCodeExample.png" width="600">
+    <font size="2">
+    <figcaption> Figure 5: Arduino IDE Layout </a> 
+    </figcaption>
+    </font>
+</figure>
+
+<figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 5: Blinking LED Code Example </a> 
+    <figcaption> Figure 6: Blinking LED Code Example </a> 
     </figcaption>
     </font>
 </figure>
@@ -87,7 +95,7 @@ We will now extend the code to make one LED light up when the right bumper is pr
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 6: Blinking LED and Switch-Controlled LED Code Example </a> 
+    <figcaption> Figure 7: Blinking LED and Switch-Controlled LED Code Example </a> 
     </figcaption>
     </font>
 </figure>
@@ -130,7 +138,7 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 7: Analog Grayscale Sensor and Serial Monitor Example </a>
+    <figcaption> Figure 8: Analog Grayscale Sensor and Serial Monitor Example </a>
     </figcaption>
     </font>
 </figure>
@@ -147,7 +155,7 @@ Enter the code shown in Figure 7 below into your Arduino IDE. Once you have done
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="600">
     <font size="2">
-        <figcaption> Figure 8: Move Robot in a Square Code Example </a>
+        <figcaption> Figure 9: Move Robot in a Square Code Example </a>
     </figcaption>
     </font>
 </figure>
@@ -170,7 +178,7 @@ The figure below illustrates the specific FSM we will be using.  The robot first
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
     <font size="2">
-        <figcaption> Figure 9: Finite-State Machine Algorithm </a>
+        <figcaption> Figure 10: Finite-State Machine Algorithm </a>
     </figcaption>
     </font>
 </figure>
@@ -182,7 +190,7 @@ In this section, you will have to write a program that makes the robot keep movi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="600">
     <font size="2">
-        <figcaption> Figure 10: Template for Move-and-Stop Robot Behavior </a>
+        <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior </a>
     </figcaption>
     </font>
 </figure>
