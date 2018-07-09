@@ -20,6 +20,13 @@ As for the other materials you will need, they are listed below:
 - Resistor
 - Wire Cutter and Stripper
 
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="800">
+    <font size="2">
+    <figcaption> Figure 1: Simple LED Circuit Implemented on Prototyping Platform </a> 
+    </figcaption>
+    </font>
+</figure>
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="800">
