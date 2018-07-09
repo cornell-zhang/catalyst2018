@@ -58,7 +58,7 @@ Looking at figure 3, if we assume rows are denoted by number, we notice that all
 
 #### Part 1.A Experiment with LED
 LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from back current or current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
-The circuit diagram shown in figure 5 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from high voltage to low voltage. Thus the current flows clockwise in the schematic. The LED must be placed in a specific direction for it to turn on. The two pins of the LED are cathode, the short pin, and the anode, the long pin. Look at the diagram in figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED, it will emmit light.  
+The LED must be placed in a specific direction for it to turn on. The two pins of the LED are called cathode, the short pin, and anode, the long pin. Look at the diagram in figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED from cathode to anode, it will emmit light.   
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LED.png" width="400">
@@ -68,7 +68,8 @@ The circuit diagram shown in figure 5 contains three circuit components; the LED
     </font>
 </figure>
 
-Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent short circuit. 
+The circuit diagram shown in figure 5 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from high voltage to low voltage. Thus the current flows clockwise in the schematic. 
+Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent a short circuit. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going from the positive end to the negative end. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
@@ -83,18 +84,45 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part 1.B Experiment with Inverters
-In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes as opose to electrons while N-type semiconductors are the opposite. These transistors act as switches when turn to VDD and GND. Because of this behavior, combinations of NMOS and PMOS can make many different types of logic gates. PMOS will always be connected to ground and as a switch, it is open when voltage to the gate is high and closed when voltage through the gate is low. This is opposite for NMOS where NMOS is always connected to VDD.
-Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
+In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can recieve electrons) as opose to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFET (MOS Field Effect Transistor) which means that it has a "gate" that controls the current flowing through it. These transistors act as switches whose behavior is determined by input voltage when the VDD and GND are kept constant. When the input voltage exceeds a certain threshhold, the MOSFET will change and allow current to flow through it or prevent current from flowing through it. Thus, combinations of NMOS and PMOS can make many different types of logic gates. 
+
+Here's a summary. PMOS and NMOS are complementary!
+
+PMOS: 
+- Closed when input is low 
+- Open when input is high 
+- Usually above the output in circuit diagram and connected to VDD
+
+NMOS:
+- Closed when input is high
+- Open when input is low 
+- Usually below the output in circuit diagram and connected to GND
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMS Inverter.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMOS Inverter.png" width="400">
     <font size="2">
-        <figcaption> Figure 6: Inverter Circuit [1] </a>
+        <figcaption> Figure 6: CMOS Inverter Circuit </a>
     </figcaption>
     </font>
 </figure>
 
-<details><summary><I>HINT (CLICK ME)</I></summary>
+There multiple labels in the figure. The 'G' stands for Gate which is where input voltage will be applied. The gate is not directly connected to the rest of the circuit but provides a voltage difference from the gate to the circuit. This is very similar to a capacitor. In digital logic, the gate voltage is the same as input voltage. 'D' stands for Drain and 'S' stands for Source. Notice that the PMOS and NMOS have the drain connected to the output. For PMOS, current will flow from the source to drain and for the NMOS, current will flow from the drain to source. 
+
+Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figure 6 above and Figure 7 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagramForInverter.png" width="800">
+    <font size="2">
+        <figcaption> Figure 7: Breadboard Diagram For Testing Inverter Circuit </a>
+    </figcaption>
+    </font>
+</figure>
+<details><summary><I>HINT 1(CLICK ME)</I></summary>
+<p>
+    As seen in Figure 7, wiring is very important for debugging the circuit. A good practice is to make all the same nodes the same color. For example, make wires that have the same voltage the same color.
+</p>
+</details>
+<details><summary><I>HINT 2/I></summary>
 <p>
     Looking from the flat side of the transistor with pins facing down, the left pin is the source which connects to VDD for PMOS and GND for NMOS. The right pin is the drain which connects to the output for both PMOS and NMOS. The middle pin is the gate, which connects to the input.
 </p>
@@ -106,9 +134,9 @@ In this section, you will implement a more complex circuit in the NAND gate. If 
 Consider the circuit shown below in Figure 7. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). Once you have done so, implement the circuit shown on your prototyping platform and confirm that you are getting the expected results using your truth table. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/NANDGateDiagram.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMOS NAND.png" width="400">
     <font size="2">
-        <figcaption> Figure 7: NAND Gate [2] </a>         
+        <figcaption> Figure 7: CMOS NAND Gate</a>         
     </figcaption>
     </font>
 </figure>
@@ -118,6 +146,11 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
 *Critical Thinking Questions*: Why is this gate called a NAND gate? Can we use a NAND and the inverter from the previous part to implement an AND gate? Can you think of how to implement a NOR gate?
 
 <details><summary><I>HINT 1</I></summary>
+<p>
+   A NAND gate is the opposite of an AND gate and outputs LOW when both inputs are HIGH and outputs HIGH otherwise. 
+</p>
+</details>
+<details><summary><I>HINT 2</I></summary>
 <p>
    Sample Truth table : Fill out the output column
     
@@ -129,7 +162,7 @@ Consider the circuit shown below in Figure 7. Before proceeding with your implem
 | 11 |       |
 </p>
 </details>
-<details><summary><I>HINT 2</I></summary>
+<details><summary><I>HINT 3</I></summary>
 <p>
    On the breadboard, observe the numbered rows and lettered columns. Connecting wires on the same rows results in parallel connections and connecting wires on the same columns results in series connections. This is true for the columns labeled "ABCDEFGHIJ". 
 </p>
