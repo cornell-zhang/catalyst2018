@@ -9,7 +9,7 @@ Software Description
 
 Before getting started, you should read this section carefully to learn basic knowledge about KNN and Python. In this section, the motivation for machine learning applications and the methodology of machine learning algorithms will be covered in Part 1. Then part 2 is a brief introduction to Google Colab, which is the online platform to program and test python scripts. And part 3 is a tutorial for programming in Python.
 
-### Part 1. K-nearest neighbors
+### Section 1. K-nearest neighbors
 Handwritten digit recognition refers to a computer’s ability to intelligently interpret handwritten inputs and is broadly applied in document processing, signature verification, and bank check clearing[3]. An important step in handwritten recognition is classification, which classifies data into one of a fixed number of classes according to learning models and training sets (already classified handwritten digits). The typical and most popular type of classification is called supervised learning, that it learn to make prediction from data. Specificly, we produce a set of already classified data (training dataset) as input to a training model[4], which is a hypothesis function to approximate the corresponding problem. During the training process, the model will update the parameters, allowing it to make a reasonable prediction based on the pre-trained hypothesis function. 
 
 With the name “machine learning” coined in 1969 by Arthur Samuel[5], researchers have designed various machine learning algorithms suitable for different types of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data: “similar inputs have similar outputs[6]”.
@@ -54,7 +54,7 @@ However, these simple images showed before are not enough to build an accurate h
     </font>
 </figure>
 
-### Part 2. Google Colab
+### Section 2. Google Colab
 
 In this lab, you will be programming in Python, and we will use Google Colab, which is based on the Jupyter Notebook, as it makes it very easy to collaborate with your peers in real-time. You should have a Google account to use it. To get started, please click the following link to the shared folder and copy all files inside this folder to your Google Drive. You could select all of them and right click the mouse and choose the item "Make a copy" (Figure 5).
 Link to Folder: https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing
@@ -95,7 +95,7 @@ Notebook in Google Colab are allowed to have both text blocks and code blocks. Y
     </font>
 </figure>
 
-### Part 3. Python Tutorial
+### Section 3. Python Tutorial
 Python, as a high-level programming language for general-purpose programming language, was ranked as the most popular programming language in 2017[9]. These days, most students start their coding journal from Python because of its high code readability, clear constructs, syntactically significant whitespace, and abundant open-source standard libraries[10].In this section, we will go over the basic syntax and data structures of Python.
 
 In this part, you should navigate to the copy of files in the shared folder (link available in the last section). Please open the file named *example.ipynb*, so that you can follow along with the Python tutorial there. To effectively learn Python from practice, feel free to modify and run the example notebook. If you accidentally mess it up, you could easily recover it by re-copying the original notebook in the shared folder.
@@ -103,30 +103,40 @@ In this part, you should navigate to the copy of files in the shared folder (lin
 Lab Exercises
 --------------------------------
 
-In this part, you should implement four basic parts for building the digit recognition system. For the first part, we will calculate the hamming distance of training images and the testing image. The second part should then sort the distances to find its K nearest neighbors. The third part will execute a vote for different labels (digits in our case) and return the final prediction. To get started, first navigate to the file called *digitrec.ipynb*. Also there is a reduced MNIST training dataset named *dataset.csv* used for part 4 and a python template *digitrec_sol.py* used for part 5. You should navigate through the python notebooks, instead of solely relying on this handout, as this handout doesn't go into as much detail as the python notebooks. Before testing, you will have to upload files into your Google Colab document. Please refer to the instructions listed on the document(the section is located at the top of the document), and it will instruct you on how to upload files to the Google Colab virtual machine (VM).
+In this section, you should implement four basic parts for building the digit recognition system. For the first part, we will calculate the hamming distance between the training images and the testing image. The second part should then sort the distances to find its K nearest neighbors. The third part will execute a "vote" on digits, to see which one is most represented in the K-Nearest Neighbors, to return as the final result. To get started, first navigate to the file called *digitrec.ipynb*. There, you will find each of the parts below, along with a description of each part you will have to implement. The five parts in the file correspond to the parts that are below-- in this handout. The file includes comment blocks as well as comments within the code, so make sure to read through the comment blocks before attempting a given part. The first three parts will involve you implementing functions, while the fourth part will involve testing the accuracy of your system, and the fifth part will involve uploading your file to our server, so that you can test out your code for yourself. For part 4, we will use a reduced MNIST training dataset named *dataset.csv*, and for part 5, we will use the entire file. In this part, you will just have to copy the functions that you will have implemented in the Google Colab document, and transfer them to the file, *digitrec_sol.py*, which can be found in the Google Drive folder. You should navigate through the python notebooks, instead of solely relying on this handout, as this handout doesn't go into as much detail as the python notebooks. Before testing(only for part 4), you will have to upload files into your Google Colab document. Please refer to the instructions listed on the document(the section is named part 4(a)), and it will instruct you on how to upload files to the Google Colab virtual machine (VM).
 
 As always, ask a teaching assistant if you need help with any of these parts.
 
+### Digit Class
+In this preliminary part, you will explore the class structure of the Digit class. If you need a refresher on classes and objects, you may refer to the tutorial in *example.py*. Take note of the data members and functions of the class, as you will be working with Digit objects throughout this lab.
+
 ### Part 1. Calculate Hamming Distance
-First, navigate to the comment section that says, "1.calculate distance". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit(we have already provided this a little further up in the code). Using the methods of the Digit class, try to calculate the hamming distance from the testing digit to each of the training images.
+First, navigate to the comment section that says, "Part 1: Calculate Hamming Distance". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit(we have already provided this a little further up in the code), and each of the digits in the training set. 
 
-### Part 2. Sort Distances
-Next, navigate to the comment section that says, "2.sort distances". In this section, we will sort the results list that we have already made in the previous part so that we have the tuples in order of distance, from least to greatest(we would like to find the K-*nearest* neighbors, after all). To simplify this section for you, you may use one of Python's built-in functions, *sorted*, which takes the entire list of tuples, and can sort by whatever you would like to specify it to sort by. In this case, we would like to sort by distance. This will take a little bit of google-ing on your part, so make sure to ask a teaching assistant if you need any help. If you have prior coding experience, you may be interested in trying out the extension, which implements the same sorting algorithm that Python uses in its built-in function called "Adaptive Merge Sort". Through doing this exercise, you will learn about a new programming archetype called recursion. Be sure to complete the entirety of this lab before coming back to try this optional extension.
-
-### Part 3. KNN Vote
-In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. You will find the section you have to implement under the comment "3.knn vote". 
-
-#### Part 1D. Sort Vote
-In this part, you will sort the dictionary that you just created. Feel free to search the internet on how you can sort a dictionary(make sure you know whether you want to sort the dictionary by keys or values). And as always, ask a teaching assistant if you're having trouble. When you think you have correctly implemented all four parts, you may check your code using the provided test harness. You can do so by using the terminal to run the test script. Once you have navigated to the correct directory, use *python main.py* to run the test cases. If you need any help debugging after any failed test cases, feel free to ask a teaching assistant. Just as in lab 2, remember to check the syntax of your code very carefully-- it is likely that many failed test cases are due to syntax errors!
-
+*HINT*: This method can be implemented very elegantly, if you exploit the Digit class.
 
 ```diff
 - Sign-Off Milestone: 
-Once you have passed all the test cases provided in the test harness, show the code and results to one of the TAs before moving on.
+Once you have implemented this function and compared your results with the correct ones that we have provided for you, show the results of your function to a TA before moving on.
+```
+
+### Part 2. Sort by Hamming Distance
+Next, navigate to the comment section that says, "Part 2: Sort by Hamming Distance". In this section, we will sort the results list that we have already made in the previous part so that we have the tuples in order of hamming distance, from least to greatest(we would like to find the K-*nearest* neighbors, after all). To simplify this section for you, you may use one of Python's built-in functions, *sorted*, which takes the entire list of tuples, and can sort by whatever you would like to specify it to sort by. A simple example was provided to you in the tutorial, so you may refer to that if you are stuck. Also, this may take a little bit of google-ing on your part, so make sure to ask a teaching assistant if you need any help. If you have prior coding experience, you may be interested in trying out the extension, which implements the same sorting algorithm that Python uses in its built-in function called "Adaptive Merge Sort". Through doing this exercise, you will learn about a new programming archetype called recursion. Be sure to complete the entirety of this lab before coming back to try this optional extension.
+
+```diff
+- Sign-Off Milestone: 
+Once you have finished sorting the results of your previous funciton, check the results of your function against the correct sorted result list that we have provided for you. Once you have finished, be sure to show your results to a TA before moving on.
+```
+
+### Part 3. Find K-Nearest Neighbors
+In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. After doing this, you will have to sort this dictioary by frequency of the digits. This way, we can pick out the digit with the highest frequency as our final result. You will find the section you have to implement under the comment "Part 3: Find K-Nearest Neighbors". 
+
+```diff
+- Sign-Off Milestone: Once you have implemented this function, compare your results with the correct labelMap that we have provided for you. After verifying the correctness of your function, be sure to have a TA verify your results before moving on.
 ```
 
 ### Part 4. Verify Digit Recognition System Locally
-After passing all check points done by the test harness, you can move to *digitrec_P2.ipynb* – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 3. Make sure that you are pasting correctly, as it is very easy to miss some parts and get errors that could potentially be difficult to debug.
+After passing all check points done by the test harness, you can move to *digitrec_P2.ipynb* – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 5. Make sure that you are pasting correctly, as it is very easy to miss some parts and get errors that could potentially be difficult to debug.
 
 ```diff
 - Sign-off Milestone: 
