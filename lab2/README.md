@@ -161,7 +161,7 @@ Enter the code shown in Figure 9 below into your Arduino IDE. Once you have done
     </font>
 </figure>
 
-**Sign-Off Milestone: Once you have the robot continuously moving in roughly a square with two-foot sides, have a teaching assistant verify that things are working correctly. **
+**Sign-Off Milestone: Once you have the robot continuously moving in roughly a square with two-foot sides, have a teaching assistant verify that things are working correctly.**
 
 *Critical Thinking Questions*: Why don’t the same motor speed and delay values always result in every robot moving in a perfect square? If the robot begins moving in a perfect square, does it continue to move in a square? Why or why not? Propose a way to enable the robot to more reliably move in a perfect square. Hint: You probably need to add more sensors to the robot. 
 
@@ -204,6 +204,8 @@ In this section, you will need to write a program that makes the robot continue 
     }</code> is a conditional statement that will execute the first part within the curly braces if the first condition evaluates to true. It will execute the second part otherwise. <code> if..else...</code> statements gurantees that one of the two code blocks will be executed and not both.
 </p>
 </details>
+
+**Sign-Off Milestone: Once you are able to stop your robot by pressing the bump switches, have a teaching assistant verify that things are working correctly.**
 
 *Critical Thinking Questions*: The code above is used to simply program your robot to stop when, and only when, its bump switches are pressed.  Why do you think the robot continues to drive forward as soon as you release the switch? Is it possible for the robot to ever come to a permanent stop? 
 
