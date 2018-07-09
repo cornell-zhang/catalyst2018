@@ -72,7 +72,7 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
-    <figcaption> Figure 4: Simple LED Circuit </a> 
+    <figcaption> Figure 5: Simple LED Circuit </a> 
     </figcaption>
     </font>
 </figure>
@@ -87,17 +87,9 @@ In this part, we will be working with PMOS and NMOS transistors. PMOS stands for
 Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figures 5 and 6 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/InverterCircuit.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMS Inverter.png" width="300">
     <font size="2">
-        <figcaption> Figure 5: Inverter Circuit [1] </a>
-    </figcaption>
-    </font>
-</figure>
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
-    <font size="2">
-        <figcaption> Figure 6: Breadboard Diagram for Testing Inverter Circuit </a>
+        <figcaption> Figure 6: Inverter Circuit [1] </a>
     </figcaption>
     </font>
 </figure>
