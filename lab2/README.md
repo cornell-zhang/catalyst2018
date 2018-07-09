@@ -10,7 +10,7 @@ For each section, you will need to have a teaching assistant observe the desired
 Hardware Description
 -------------------------------
 
-Before beginning the lab, make sure to take a look at the components that you will need:
+Before beginning the lab, make sure to take a look at the components you will need:
 
 - Arduino-based robotics platform
 - Wooden testing block (some groups may need to share)
