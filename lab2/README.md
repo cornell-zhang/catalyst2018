@@ -153,7 +153,7 @@ In this section, you will begin to experiment with the drive motors of the robot
 Enter the code shown in Figure 7 below into your Arduino IDE. Once you have done so, place your robot on the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino and, if you would like, try executing this code once more with the robot on the floor so that you can see whether it really does move in a square. If your robot does not move in a square, play around with the rotating delay time until it does. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="600">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="700">
     <font size="2">
         <figcaption> Figure 9: Move Robot in a Square Code Example </a>
     </figcaption>
@@ -188,7 +188,7 @@ The figure below illustrates the specific FSM we will be using.  The robot first
 In this section, you will have to write a program that makes the robot keep moving forward until it hits an obstacle, in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="600">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="700">
     <font size="2">
         <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior </a>
     </figcaption>
