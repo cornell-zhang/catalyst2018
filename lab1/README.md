@@ -122,7 +122,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
     As seen in Figure 7, wiring is very important for debugging the circuit. A good practice is to make all the same nodes the same color. For example, make wires that have the same voltage the same color.
 </p>
 </details>
-<details><summary><I>HINT 2/I></summary>
+<details><summary><I>HINT 2</I></summary>
 <p>
     Looking from the flat side of the transistor with pins facing down, the left pin is the source which connects to VDD for PMOS and GND for NMOS. The right pin is the drain which connects to the output for both PMOS and NMOS. The middle pin is the gate, which connects to the input.
 </p>
@@ -131,12 +131,12 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 #### Part 1.C Developing a NAND Gate 
 In this section, you will implement a more complex circuit in the NAND gate. If you still have a yellow jumper attached to both your NMOS transistors, have an instructor come over to remove one, as you’ll only need one of them to implement this gate.
 
-Consider the circuit shown below in Figure 7. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). Once you have done so, implement the circuit shown on your prototyping platform and confirm that you are getting the expected results using your truth table. 
+Consider the circuit shown below in Figure 8. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). Once you have done so, implement the circuit shown on your prototyping platform and confirm that you are getting the expected results using your truth table. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMOS NAND.png" width="400">
     <font size="2">
-        <figcaption> Figure 7: CMOS NAND Gate</a>         
+        <figcaption> Figure 8: CMOS NAND Gate</a>         
     </figcaption>
     </font>
 </figure>
