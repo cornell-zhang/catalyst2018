@@ -1,7 +1,7 @@
 Lab 1: Mystery Circuit
 ======================
 
-In this first lab assignment, both you and your partner will experiment with basic circuit components, gradually building your way up into building a two-bit ripple-carry adder. In the first section, you will experiment with both basic analog and digital circuits, culminating with the creation of a NAND gate. In the second part, you will experiment with basic logic gates, and eventually develop a parity checker. In the last part, you will use everything you have learned thus far to incrementally build a two-bit ripple-carry adder. After finishing each section, make sure that a teaching assistant verifies the correct outcome and initials the appropriate line on the sign-off sheet. **Make sure to turn in your sign-off sheet by the end of the lab session.**
+In this first lab assignment, both you and your partner will experiment with basic circuit components used in electronics, gradually building your way up into building a two-bit ripple-carry adder. The goal of the lab is become familiar with how circuits and digital logic work at a hardware level. In the first section, you will experiment with both basic analog and digital circuits, culminating with the creation of a logical NAND gate. In the second part, you will experiment with basic logic gates, and eventually develop a parity checker. In the last part, you will use everything you have learned thus far to incrementally build a two-bit ripple-carry adder. After finishing each section, make sure that a teaching assistant verifies the correct outcome and initials the appropriate line on the sign-off sheet. **Make sure to turn in your sign-off sheet by the end of the lab session.**
 
 
 Hardware Description
@@ -21,9 +21,23 @@ As for the other materials you will need, they are listed below:
 - Wire Cutter and Stripper
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/image3.jpeg" width="400">
     <font size="2">
-    <figcaption> Figure 1: Simple LED Circuit Implemented on Prototyping Platform </a> 
+    <figcaption> Black power cable with barrel connector </a> 
+    </figcaption>
+    </font>
+</figure>
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/image2.jpeg" width="400">
+    <font size="2">
+    <figcaption> The LED </a> 
+    </figcaption>
+    </font>
+</figure>
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/image1.jpeg" width="400">
+    <font size="2">
+    <figcaption> Resistors </a> 
     </figcaption>
     </font>
 </figure>
@@ -39,7 +53,7 @@ As for the other materials you will need, they are listed below:
 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/supplies1.jpg" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/supplies1.jpg" width="300">
     <font size="2">
     <figcaption> Figure 2: Supplies </a> 
     </figcaption>
@@ -50,8 +64,7 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
-In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate. We will be exploring the basic building blocks that make up all electronics. A computer contains billions of transistors and logic gates such as the NAND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic and basic circuit works is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
-
+In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate. We will be exploring the basic building blocks that make up all electronics. A computer contains billions of transistors. Logic gates such as the NAND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic and basic circuit work is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="800">
@@ -61,7 +74,7 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
-Looking at figure 3, if we assume rows are denoted by number, we notice that all holes in a row are connected together. This means that any circuit components with both pins connected in the same rows are in parallel to each other. Different rows are not connected. Components with only one pin connected to the same row and the other pin connected to different rows are in series with each other. Components with no pins that share a row will not affect each other. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
+Looking at figure 3, let us assume the rows are denoted by the numbers, we notice that all holes in a row are connected together. This means that any circuit components with both pins connected in the same rows are in parallel to each other. Different rows are not connected. Components with only one pin connected to the same row and the other pin connected to different rows are in series with each other. Components with no pins that share a row will not affect each other. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
 
 #### Part 1.A Experiment with LED
 LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from back current or current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
@@ -180,12 +193,27 @@ Consider the circuit shown below in Figure 8. Before proceeding with your implem
 In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates we discovered.
 
 #### Part 2.A Experiment with AND, OR, XOR Gates
+<p float = "left">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ORgate.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/XORNANDgate.PNG" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ANDgate.png" width="200">
+    <font size="2">
+        <figcaption> Figure 9: Different logic gates</a>
+    </figcaption>
+    </font>
+</p>
+
+
+Figures 9-12 show us the circuit symbols for some basic logic gates and their accompanying truth tables. Can you write the truth table for AND? 
 After turning off the power supply, begin to wire up the AND gate as shown in Figure 8 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
+
+
+
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
     <font size="2">
-        <figcaption> Figure 8: Breadboard Diagram for Testing NAND Gate </a>
+        <figcaption> Figure 10: Breadboard Diagram for Testing NAND Gate </a>
     </figcaption>
     </font>
 </figure>
@@ -293,7 +321,7 @@ Thanks to Professor Batten for templates on lab 1 and 2 from his CURIE Academy p
 
 References
 ---
-[1] Taken From: http://slideplayer.com/slide/5067607/
+[1] Taken From: David Harris, Sarah Harris, *Digital Design and Computer Architecture, 2nd edition*
 
 [2] Taken From: https://electronics.stackexchange.com/questions/72806/preference-of-nand-nor-gates 
 
