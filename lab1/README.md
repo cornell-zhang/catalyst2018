@@ -81,7 +81,7 @@ LED stands for Light Emitting Diodes; a diode is a semiconductor device that all
 The LED must be placed in a specific direction for it to turn on. The two pins of the LED are called cathode, the short pin, and anode, the long pin. Look at the diagram in figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED from cathode to anode, it will emmit light.   
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LED.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LED.png" width="600">
     <font size="2">
     <figcaption> Figure 4: LED Schematic </a> 
     </figcaption>
@@ -193,6 +193,9 @@ Consider the circuit shown below in Figure 8. Before proceeding with your implem
 In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates we discovered.
 
 #### Part 2.A Experiment with AND, OR, XOR Gates
+
+Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables. Can you write the truth table for AND? 
+
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates.PNG" width="800">
     <font size="2">
@@ -200,8 +203,6 @@ In the previous section, we learned about basic digital circuits and how they ca
     </figcaption>
     </font>
 </figure>
-
-Figures 9-12 show us the circuit symbols for some basic logic gates and their accompanying truth tables. Can you write the truth table for AND? 
 
 After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
@@ -237,7 +238,7 @@ The schematics in Figure 12 shows you the pin connections for the chips and what
     </font>
 </figure>
 
-Figure 9 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
+Figure 11 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
 
 Sample Truth table : Fill out the rest
     
@@ -274,7 +275,7 @@ Sample Truth table : Fill out the rest
 
 
 ### Part 3. Building a Simple Calculator
-In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder. Note the connection between the parity checker and the adder. We can first look at the XOR gates used for both devices. As we found in the previous section, the XOR gate is convenient for finding odd numbers of 1's in the input where it will output 1 for those combinations of input. This property is also useful for binary arithmatic since whenever the two inputs are 1, the addition will result in a 0 with a carry out of 1. To help understand the relationship, write the truth table for a half adder. It should have two inputs and two outputs as seen in Figure 13.  
+In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder. Note the connection between the parity checker and the adder. We can first look at the XOR gates used for both devices. As we found in the previous section, the XOR gate is convenient for finding odd numbers of 1's in the input where it will output 1 for those combinations of input. This property is also useful for binary arithmatic since whenever the two inputs are 1, the addition will result in a 0 with a carry out of 1. To help understand the relationship, write the truth table for a half adder. It should have two inputs and two outputs as seen in Figure 13. A carry out in binary arithmatic is similar to decimal arithmatic where in decimal arithmatic we carry over the 1..9 to the next order when the addition is greater than 10. In binary addition, we carry over the 1 when addition is greater than 1.   
 
 #### Part 3.A Experiment with Half-Adder
 Wire up the half-adder shown in Figure 13 below. 
@@ -295,12 +296,12 @@ Wire up the half-adder shown in Figure 13 below.
 
 
 #### Part 3.B Develop Full Adder
-Wire up the full-adder shown in Figure 12 below. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 13. 
+Wire up the full-adder shown in Figure 14 below. A full adder contains an additional carry in which allows modularity. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 15. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Fulladder.png" width="600">
     <font size="2">
-        <figcaption> Figure 12: Full-Adder [4] </a>
+        <figcaption> Figure 14: Full-Adder </a>
     </figcaption>
     </font>
 </figure>
@@ -308,7 +309,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
     <font size="2">
-        <figcaption> Figure 13: Planning Diagram for Breadboard Implementation of Full-Adder </a>
+        <figcaption> Figure 15: Planning Diagram for Breadboard Implementation of Full-Adder </a>
     </figcaption>
     </font>
 </figure>
@@ -322,7 +323,7 @@ Wire up the full-adder shown in Figure 12 below. This unit is complicated enough
 </p>
 </details>
 
-#### Part 3.C Develop two-bit ripple-carry adder
+#### Part 3.C Develop multi-bit ripple-carry adder
 In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 14 below. Both full adders should be powered using their own batteries. Verify that this simple two-bit ripple-carry adder works.
 
 <figure>
@@ -332,6 +333,34 @@ In this last section you will combine full adders in order to develop a two-bit 
     </figcaption>
     </font>
 </figure>
+
+#### Optional Extensions
+Parts 1–3 are the required portions of the lab. If you complete these parts quickly, you are free to
+try one or more of the following extensions which are roughly arranged in order of difficulty. These
+extensions are purely optional; do not feel like you must attempt them.
+- Larger Adders – Work with other groups to build a three-bit or four-bit adder using the integrated
+full-adder boards. What is the largest adder you can build? Don’t forget to work
+through the expected result on paper first so you can verify that your multi-bit adder works.
+- Using Your Breadboard Implementation – If you are confident that your breadboard implementation
+of the full-adder module works, try connecting it to the integrated full-adder board
+to create a two-bit adder.
+- Larger Parity Checkers – Build a larger parity checker that can calculate the parity for an eightbit
+input. You will need to use a total of seven XOR gates. Since each XOR chip only has four
+XOR gates, you will need to work with another group to build this circuit.
+- Implement a NOR Gate – Use PMOS and NMOS transistors to implement a NOR gate. A NOR
+gate should produce a one when both inputs are zero, otherwise it should always produce a
+zero.
+- Subtraction Unit – We can use your ripple-carry adder to subtract two binary numbers. To
+calculate A - B, we need to modify B before using the ripple-carry adder. We first invert every
+bit in B (i.e., every one becomes a zero and every zero becomes a one). Then we need to add one
+to the inverted version of B. If we add the result to A, it will have the same effect as subtracting B
+from A. In other words, using binary arithmetic A - B = A + !B + 1, where !B means invert every
+bit. Figure 13 illustrates how to implement a subtractor. You can implement the subtractor
+either by working out the inversion and increment by one on paper and then using the ripplecarry
+adder from Part 3. For the truly ambitious, you could implement a two-bit subtractor
+by working with three other groups. Combine each groups’ breadboard implementation of
+the full-adder module along with an inverter implemented using NMOS/PMOS transistors to
+create the entire hardware module.
 
 
 Acknowledgements
@@ -344,7 +373,7 @@ References
 
 [2] Taken From: https://www.tutorialspoint.com/digital_circuits/digital_combinational_circuits.htm 
 
-[4] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
+[3] Taken From: https://cs.stackexchange.com/questions/51255/full-adder-vs-half-adder 
 
 
 
