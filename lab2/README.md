@@ -185,7 +185,7 @@ The figure below illustrates the specific FSM we will be using.  The robot first
 
 
 #### Part 2.A Develop Move-and-Stop Behavior
-In this section, you will have to write a program that makes the robot keep moving forward until it hits an obstacle, in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.
+In this section, you will have to write a program that makes the robot keep moving forward until it hits an obstacle, in which case it will stop. The code shown in Figure 8 below, contains a possible starting point for your program.  Be sure to use your wooden testing block when working on this section.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="700">
@@ -203,6 +203,8 @@ In this section, you will have to write a program that makes the robot keep movi
     }</code> is a conditional statement that will execute the first part within the curly braces if the first condition evaluates to true. It will execute the second part otherwise. <code> if..else...</code> statements gurantees that one of the two code blocks will be executed and not both.
 </p>
 </details>
+
+*Critical Thinking Questions*: The code above is used to simply program your robot to stop when, and only when, its bump switches are pressed.  Why do you think the robot continues to drive forward as soon as you release the switch? Is it possible for the robot to ever come to a permanent stop? 
 
 #### Part 2.B Develop Wander Behavior
 In this section, you will extend the behavior of your robot to include “wandering.” For now, you can ignore the target and just have the robot keep moving forward until it hits an obstacle. When it does, have it reverse and turn slightly. Thus, your robot will keep “wandering” through its environment. Try to build a finite-state machine algorithm that describes the robot’s behavior.  For this part, you will only need to make use of the robot's bump switches and drive motors. Once you think you have it, make sure to check with an instructor. After developing the necessary code and uploading it to the Arduino, verify that your robot behaves as expected.
