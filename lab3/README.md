@@ -113,7 +113,7 @@ In this preliminary part, you will explore the class structure of the Digit clas
 ### Part 1. Calculate Hamming Distance
 First, navigate to the comment section that says, "Part 1: Calculate Hamming Distance". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit(we have already provided this a little further up in the code), and each of the digits in the training set. 
 
-*HINT*: This method can be implemented very elegantly, if you exploit the Digit class.
+*HINT*: This method can be implemented very elegantly, if you exploit the methods of the Digit class.
 
 ```diff
 - Sign-Off Milestone: 
@@ -135,8 +135,8 @@ In this section, you will find the K-nearest neighbors of the testing image, and
 - Sign-Off Milestone: Once you have implemented this function, compare your results with the correct labelMap that we have provided for you. After verifying the correctness of your function, be sure to have a TA verify your results before moving on.
 ```
 
-### Part 4. Verify Digit Recognition System Locally
-After passing all check points done by the test harness, you can move to *digitrec_P2.ipynb* – a more convincible verification of the digit recognition system. In this part, you can simply copy and paste the code you implemented in Part 1. If the error rate is smaller than 10%, then you can move on to Part 5. Make sure that you are pasting correctly, as it is very easy to miss some parts and get errors that could potentially be difficult to debug.
+### Part 4. Combining Functionality and Testing for Accuracy
+After checking your implementation for each of the methods from the first three parts, you will use this part to combine their functionalities and build your entire digitrec system. In this part, we have provided some training data for you, that is in the Google Drive folder that you have access to. You will use the copied file, *dataset.csv*, to provide training and testing images to test the accuracy of your system. To allow your program to access the data file, you will have to first upload the file to your Google Colab Virtual Machine(VM). Follow the instructions in part 4(a) to upload this file into the VM. Once you have uploaded the file, change the "filename" field in the code, so that the code can load the digit images from this file. Once you have done so, you will be able to run your digitrec system. Notice that, in the "digitrec" function, we make function calls to the other methods that you have implemented before. In this way, we have combined our modular design into a fully functional digitrec system. After doing all this, you can run the code to check the accuracy of your digitrec system against the testing images that were available in the file.
 
 ```diff
 - Sign-off Milestone: 
@@ -144,7 +144,7 @@ Once you have achieved an error rate smaller then 10%, show the code and results
 ```
 
 ### Part 5. Deploy Digit Recognition Web Application
-Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access the server. According to your group number, type in your Username (gx: x is your group number, i.e. g1,g2,g5,etc.) and Password (same with Username) to log into the system. After that, please double check that the group number shown on the top is correct. Before starting to draw on the canvas, you will have to upload a python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called "digitrec_sol.py" into the disk. Then open it within any programming IDE you like and paste the functions you implemented before to the correct place. Then upload the file "digitrec_sol.py", which includes your solution/implementation, to the server by clicking the button "upload python script". Afterwards, test your system by drawing digits(or other things if you'd like), to see whether it works as expected.
+Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access our server. According to your group number, your username will be "gX", where "X" is your group number, i.e. g1,g2,g5,etc. and your password will be the same as your username. Hit the "Login" button once you have filled these two fields. Please double check that the group number shown on the top(after the login screen) is correct. Before starting to draw on the canvas, you will have to upload a python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called *digitrec_sol.py* into your local machine. Then open it within any programming IDE you like and paste the functions you implemented before, into the correct place. After having done so, upload the file *digitrec_sol.py*, which includes your solution/implementation, to the server by clicking the button "upload python script". Lastly, you can test your system by drawing digits(or other things if you'd like), to see whether your system works as expected.
 
 ```diff
 - Sign-off Milestone: 
@@ -152,7 +152,7 @@ Once you have verified your web app, demonstrate the final web-based digit recog
 ```
 
 ### Extensions
-In part 2, you implement the sort distances function by applying the python built-in function called sort(). You may ask the question: what's going on? why it just worked? Actually there are many different sorting algorithms, if you are interested, please go ahead and checkout this nice 6 minute video!
+In part 2, you implement the sort distances function by applying the python built-in function called sort(). You may ask the question: what's going on? why it just worked? Actually there are many different sorting algorithms, so if you are interested, please go ahead and check out this nice 6 minute video!
 
 https://www.youtube.com/watch?v=kPRA0W1kECg
 
