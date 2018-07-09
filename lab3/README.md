@@ -133,7 +133,8 @@ Once you have finished sorting the results of your previous funciton, check the 
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. After doing this, you will have to sort this dictioary by frequency of the digits. This way, we can pick out the digit with the highest frequency as our final result. You will find the section you have to implement under the comment "Part 3: Find K-Nearest Neighbors". 
 
 ```diff
-- Sign-Off Milestone: Once you have implemented this function, compare your results with the correct labelMap that we have provided for you. After verifying the correctness of your function, be sure to have a TA verify your results before moving on.
+- Sign-Off Milestone: 
+Once you have implemented this function, compare your results with the correct labelMap that we have provided for you. After verifying the correctness of your function, be sure to have a TA verify your results before moving on.
 ```
 
 ### Part 4. Combining Functionality and Testing for Accuracy
@@ -162,6 +163,8 @@ Once you have achieved an error rate smaller then 10%, show the code and results
 
 ### Part 5. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access our server. According to your group number, your username will be "gX", where "X" is your group number, i.e. g1,g2,g5,etc. and your password will be the same as your username. Hit the "Login" button once you have filled these two fields. Please double check that the group number shown on the top(after the login screen) is correct. Before starting to draw on the canvas, you will have to upload a python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called *digitrec_sol.py* into your local machine. Then open it within any programming IDE you like and paste the functions you implemented before, into the correct place. After having done so, upload the file *digitrec_sol.py*, which includes your solution/implementation, to the server by clicking the button "upload python script". Lastly, you can test your system by drawing digits(or other things if you'd like), to see whether your system works as expected.
+
+Remember that if you want to connect to the server and play with your handwritten digit recognition system using other electronic devices, say your smartphone, it should be connected to the Cornell network, or else the firewall will block your request.
 
 ```diff
 - Sign-off Milestone: 
