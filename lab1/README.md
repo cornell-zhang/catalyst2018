@@ -275,7 +275,7 @@ Sample Truth table : Fill out the rest
 
 
 ### Part 3. Building a Simple Calculator
-In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder. Note the connection between the parity checker and the adder. We can first look at the XOR gates used for both devices. As we found in the previous section, the XOR gate is convenient for finding odd numbers of 1's in the input where it will output 1 for those combinations of input. This property is also useful for binary arithmatic since whenever the two inputs are 1, the addition will result in a 0 with a carry out of 1. To help understand the relationship, write the truth table for a half adder. It should have two inputs and two outputs as seen in Figure 13. A carry out in binary arithmatic is similar to decimal arithmatic where in decimal arithmatic we carry over the 1..9 to the next order when the addition is greater than 10. In binary addition, we carry over the 1 when addition is greater than 1.   
+In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder. Note the connection between the parity checker and the adder. We can first look at the XOR gates used for both devices. As we found in the previous section, the XOR gate is convenient for finding odd numbers of 1's in the input where it will output 1 for those combinations of input. This property is also useful for binary arithmetic since whenever the two inputs are 1, the addition will result in a 0 with a carry out of 1. To help understand the relationship, write the truth table for a half adder. It should have two inputs and two outputs as seen in Figure 13. A carry out in binary arithmetic is similar to decimal arithmetic where in decimal arithmetic we carry over the 1..9 to the next order when the addition is greater than 10. In binary addition, we carry over the 1 when addition is greater than 1.   
 
 #### Part 3.A Experiment with Half-Adder
 Wire up the half-adder shown in Figure 13 below. 
@@ -296,7 +296,7 @@ Wire up the half-adder shown in Figure 13 below.
 
 
 #### Part 3.B Develop Full Adder
-Wire up the full-adder shown in Figure 14 below. A full adder contains an additional carry in which allows modularity. This unit is complicated enough, that you should plan out your wiring ahead of time using the template in Figure 15. 
+Wire up the full-adder shown in Figure 14 below. A full adder contains a carry in which takes in the carry out from another adder. This allows modularity. This unit is complicated enough that you should plan out your wiring ahead of time using the template in Figure 15. Additionally you should extend your truth table to include a carry in. This will affect the output.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Fulladder.png" width="600">
@@ -315,24 +315,31 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains an additi
 </figure>
 
 ```Sign-Off Milestone```: Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
-
 <details><summary><I>HINT 1</I></summary>
 <p>
+    It is very easy to complete the truth table using arithmetic rather than working through Figure 14. One way to think about this is S = binary addition of A+B+Cin, while Cout = 0 if decimal addition of A+B+Cin<=1, otherwise = 1. 
+</p>
+</details>
+<details><summary><I>HINT 2</I></summary>
+<p>
     <I>Debugging tip</I>: When there is only one of A, B, and Cin, S = 1, cout = 0. When two of those, S = 0, cout = 0. When all three are closed, then both S and cout = 1. 
-
 </p>
 </details>
 
 #### Part 3.C Develop multi-bit ripple-carry adder
-In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 14 below. Both full adders should be powered using their own batteries. Verify that this simple two-bit ripple-carry adder works.
+In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. For a ripple-carry adder, the cout of one stage acts as the cin of the next stage. Observe Figure 16, a ripple-carry adder is a combination of full adders. This systems provides regularity and modularity. The ripple-carry adder starts in the full adder for the least significant bits. It first calculates the result and cout from binary addition of the least significant bits. Then, the full adder passes the cout to the next adder in line. The next adder takes in the cin, A, B and calculates its own result and cout. It passes the cout to the next adder in the chain until it reaches the end of the chain. The name "ripple-carry" comes from the fact that the carry moves through the system. Think about how in decimal arithmetic, we carry 1..9 multiple times if the carry results in addition greater than 10.  
+
+Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 16 below. Both full adders should be powered using 9v batteries. Verify that this simple two-bit ripple-carry adder works. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Adder.png" width="900">
     <font size="2">
-        <figcaption> Figure 14: Two-Bit Ripple-Carry Adder</a>
+        <figcaption> Figure 16: Multi-Bit Ripple-Carry Adder</a>
     </figcaption>
     </font>
 </figure>
+
+*Critical Thinking Questions*: What do you think is a disadvantage of the ripple-carry adder. Think about the name of the adder and what would happen if we have a large amount of full adders chained together. What would be a solution to this problem?
 
 #### Optional Extensions
 Parts 1–3 are the required portions of the lab. If you complete these parts quickly, you are free to
@@ -361,7 +368,18 @@ adder from Part 3. For the truly ambitious, you could implement a two-bit subtra
 by working with three other groups. Combine each groups’ breadboard implementation of
 the full-adder module along with an inverter implemented using NMOS/PMOS transistors to
 create the entire hardware module.
-
+<details><summary><I>Subtractor Hint</I></summary>
+<p>
+    You many find this adder diagram useful
+    <figure>
+        <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/4thBitSubtractor.PNG" width="900">
+        <font size="2">
+            <figcaption> Four Bit Subtractor</a>
+        </figcaption>
+        </font>
+    </figure>
+</p>
+</details>
 
 Acknowledgements
 ---
