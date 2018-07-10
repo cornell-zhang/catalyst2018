@@ -65,22 +65,22 @@ In this section, you will experiment with code that will either respond to or co
 
 In this lab, we will use a C-like programming language that is compatible with our Arduinos. Each program, or "sketch", consists of a sequence of steps that are executed individually. The sketches we will be using consist of different sections.  The first section defines global variables for pin assignments. The second section includes the setup function.  This function is meant to execute only once when the robot is first powered up. After the setup function is the loop function, which is executed over and over again.  Throughout the lab, you will mostly focus on modifying the loop function to change the behavior of your robot. 
 
-We will be using an Arduino IDE to write an compile our code.  Take a moment to familiarize yourself with the format and functions of the IDE.  Figure 5 below shows the layout of the program.
+We will be using the Arduino Web Editor to write and compile our code. Use a web browser to access the site [create.arduino.cc](create.arduino.cc). Create an account, using an email address and username of your choice, and proceed to the web editor. The figure below displays the layout of the web editor. In the lefthand bar, the sketchbook displays the files you have saved to the web editor.  You will be creating several different sketches throughout the course of this lab. When you select the three-dot icon at the top of the page, you can save files you have been editing to the sketchbook. The checkmark icon compiles your current sketch, and the right arrow icon uploads your code to your Arduino board once it has been connected via USB.
 
-Now, we will program our robot very simply, using the code shown in Figure 6. You should type this code into the Arduino IDE. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid repetition, you may want to save your file using the menu item: *File → Save* and then create a new copy for each new part by using the menu item: *File → Save As…* You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 6, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Verify that your Arduino IDE is connected to the right serial port by clicking Tools → Port. Check that the battery pack is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 6 and compile it again.  Finally, upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/ArduinoWebEditor.png" width="600">
+    <font size="2">
+    <figcaption> Figure 5: Arduino Web Editor Layout </a> 
+    </figcaption>
+    </font>
+</figure>
+
+Now, we will program our robot very simply, using the code shown in Figure 6. You should type this code into the Arduino web editor. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid repetition, you may want to save your file using the menu item: *Save* and then create a new copy for each new part by using the menu item: *Save As…* You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 6, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Check that the battery pack is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 6 and compile it again.  Finally, upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
 
 Some notes on coding:
 - ```//``` before any words means that the entire line is "commented" which doesn't affect the execution of the code in any way. They are good for labeling parts of your code and telling the user how the code works.
 - Always remember to put a semicolon ```;``` behind each line of code because that denotes line ending.
 - For variables, which are shown in lines 3 to 6, the first word denotes the type of variable.  The second word is the variable name and is set equal to a value. For example, in line 3, ```int pin_led1 = 4``` means that we are declaring a variable of type "integer" named pin_led1 with an integer value of 4.
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/ArduinoCodeExample.png" width="600">
-    <font size="2">
-    <figcaption> Figure 5: Arduino IDE Layout </a> 
-    </figcaption>
-    </font>
-</figure>
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="600">
@@ -90,7 +90,7 @@ Some notes on coding:
     </font>
 </figure>
 
-We will now extend the code to make one LED light up when the right bumper is pressed and the other light up when the left bumper is pressed. The code for this part is shown in Figure 7 below. Verify that this works as expected after typing the code into the IDE and uploading it to your Arduino.
+We will now extend the code to make one LED light up when the right bumper is pressed and the other light up when the left bumper is pressed. The code for this part is shown in Figure 7 below. Verify that this works as expected after typing the code into the web editor and uploading it to your Arduino.
 
 
 <figure>
@@ -134,7 +134,7 @@ A small change to the current code can allow the blink rate of the LED to be det
 </details>
 
 #### Part 1.B Experiment with Grayscale Sensors
-In this section, you will experiment with the grayscale sensor on the robot. This is the same sensor you will need to utilize later in the last section to find the location of the target. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both an LED that generates light and a photodetector that senses light. The value the sensor outputs depends on the amount of light that the photodetector senses. This sensor will report values between 0 and 1024, which indicates how much light has been reflected back (lower values indicate that the robot is travelling on a lighter surface, while higher values indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 8 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the Serial Monitor by selecting the menu item: *Tools → Serial Monitor*. Place your robot over the light wood of the testing block and then over the black section of the testing block.  Notice the types of values the grayscale sensor yields in each case and determine a threshold value that separates the two. This value can be a rough estimate of a number that separates grayscale values for light colors and grayscale values for dark colors (you will need to use this value later in the last section). Verify that the readings behave as expected before showing your results to an instructor.
+In this section, you will experiment with the grayscale sensor on the robot. This is the same sensor you will need to utilize later in the last section to find the location of the target. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both an LED that generates light and a photodetector that senses light. The value the sensor outputs depends on the amount of light that the photodetector senses. This sensor will report values between 0 and 1024, which indicates how much light has been reflected back (lower values indicate that the robot is travelling on a lighter surface, while higher values indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 8 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the Serial Monitor by selecting the menu item: *Monitor* in the lefthand bar. Place your robot over the light wood of the testing block and then over the black section of the testing block.  Notice the types of values the grayscale sensor yields in each case and determine a threshold value that separates the two. This value can be a rough estimate of a number that separates grayscale values for light colors and grayscale values for dark colors (you will need to use this value later in the last section). Verify that the readings behave as expected before showing your results to an instructor.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="600">
@@ -151,7 +151,7 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 #### Part 1.C Experiment with Drive Motors
 In this section, you will begin to experiment with the drive motors of the robot. The test program that you will use to experiment with these motors is shown in Figure 9 below. This program will attempt to move the robot in a square with two-foot sides. You will notice that two pins are used to control each drive motor. One pin controls the direction that the motor spins, while the other controls the speed at which that motor spins. When the motor direction output pin is set to LOW, the motor will spin forwards, and when it is set to HIGH, the motor will spin backwards. The motor speed pin can be set to any value between 0 and 255, where higher numbers indicate a faster motor speed. Keep in mind that moderate motor speeds are between 75 and 125, and also that the motor speed is proportional to the voltage generated by the 5 AA batteries(so as they drain, you may have to increase your motor speed in order to get your wheels to turn at the same rate). 
 
-Enter the code shown in Figure 9 below into your Arduino IDE. Once you have done so, place your robot on the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino and, if you would like, try executing this code once more with the robot on the floor so that you can see whether it really does move in a square. If your robot does not move in a square, play around with the rotating delay time until it does. 
+Enter the code shown in Figure 9 below into your Arduino web editor. Once you have done so, place your robot on the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino and, if you would like, try executing this code once more with the robot on the floor so that you can see whether it really does move in a square. If your robot does not move in a square, play around with the rotating delay time until it does. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="700">
