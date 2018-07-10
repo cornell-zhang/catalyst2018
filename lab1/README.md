@@ -77,8 +77,8 @@ In this section, you will wire up some basic circuits that start with a simple a
 Looking at figure 3, let us assume the rows are denoted by the numbers, we notice that all holes in a row are connected together. This means that any circuit components with both pins connected in the same rows are in parallel to each other. Different rows are not connected. Components with only one pin connected to the same row and the other pin connected to different rows are in series with each other. Components with no pins that share a row will not affect each other. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
 
 #### Part 1.A Experiment with LED
-LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from back current or current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
-The LED must be placed in a specific direction for it to turn on. The two pins of the LED are called cathode, the short pin, and anode, the long pin. Look at the diagram in figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED from cathode to anode, it will emmit light.   
+LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
+The LED must be placed in a specific direction for it to turn on. The two pins of the LED are called cathode, the short pin, and anode, the long pin. Look at the diagram in figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED from anode to cathode, it will emmit light.   
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LED.png" width="600">
@@ -88,8 +88,8 @@ The LED must be placed in a specific direction for it to turn on. The two pins o
     </font>
 </figure>
 
-The circuit diagram shown in figure 5 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from high voltage to low voltage. Thus the current flows clockwise in the schematic. 
-Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent a short circuit. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going from the positive end to the negative end. 
+The circuit diagram shown in figure 5 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from higher voltage to lower voltage. Thus the current flows clockwise in figure 5. 
+Wire up the simple LED circuit shown in figure 4 below. You may also refer to figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent a short circuit. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going flowing through it. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
@@ -104,9 +104,9 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part 1.B Experiment with Inverters
-In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can recieve electrons) as opose to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFET (MOS Field Effect Transistor) which means that it has a "gate" that controls the current flowing through it. These transistors act as switches whose behavior is determined by input voltage when the VDD and GND are kept constant. When the input voltage exceeds a certain threshhold, the MOSFET will change and allow current to flow through it or prevent current from flowing through it. Thus, combinations of NMOS and PMOS can make many different types of logic gates. 
+In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can recieve electrons) as opose to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFETs (MOS Field Effect Transistor). One defining property is that it has a "gate" that controls the current flowing through it. These transistors act as switches whose behavior is determined by input voltage when the VDD and GND are kept constant. When the input voltage exceeds a certain threshhold, the MOSFET will regulate current flow through it from acting as an open circuit or a short circuit. Thus, combinations of NMOS and PMOS can make many different types of logic gates. 
 
-Here's a summary. PMOS and NMOS are complementary!
+Here's a summary. Remember, PMOS and NMOS are complementary!
 
 PMOS: 
 - Closed when input is low 
@@ -126,9 +126,9 @@ NMOS:
     </font>
 </figure>
 
-There multiple labels in the figure. The 'G' stands for Gate which is where input voltage will be applied. The gate is not directly connected to the rest of the circuit but provides a voltage difference from the gate to the circuit. This is very similar to a capacitor. In digital logic, the gate voltage is the same as input voltage. 'D' stands for Drain and 'S' stands for Source. Notice that the PMOS and NMOS have the drain connected to the output. For PMOS, current will flow from the source to drain and for the NMOS, current will flow from the drain to source. 
+There multiple labels in the figure. The 'G' stands for Gate which is where input voltage will be applied. The gate is not directly connected to the rest of the circuit but provides a voltage difference from the gate to the circuit. This is very similar to a capacitor. In digital logic, the gate voltage is the same as input voltage. 'D' stands for Drain and 'S' stands for Source. For the MOS to change behavior, the gate voltage must be regulated such that the difference between the gate and source voltage meets some threshold. For NMOS, the gate to source voltage difference has to be greater than the threshold voltage for current to flow at all. For PMOS, the gate to source voltage difference has to be less than a threshold voltage for current to flow through it. Notice that the PMOS and NMOS have the drain connected to the output. For PMOS, current will flow from the source to drain and for the NMOS, current will flow from the drain to source. 
 
-Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figure 6 above and Figure 7 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
+Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figure 6 above and figure 7 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagramForInverter.png" width="800">
@@ -151,7 +151,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. Notice that w
 #### Part 1.C Developing a NAND Gate 
 In this section, you will implement a more complex circuit in the NAND gate. If you still have a yellow jumper attached to both your NMOS transistors, have an instructor come over to remove one, as you’ll only need one of them to implement this gate.
 
-Consider the circuit shown below in Figure 8. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). Once you have done so, implement the circuit shown on your prototyping platform and confirm that you are getting the expected results using your truth table. 
+Consider the circuit shown below in figure 8. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). Once you have done so, implement the circuit shown on your prototyping platform and confirm that you are getting the expected results using your truth table. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMOS NAND.png" width="400">
@@ -204,7 +204,7 @@ Figures 9 show us the circuit symbols for some basic logic gates and their accom
     </font>
 </figure>
 
-After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
+After turning off the power supply, begin to wire up the AND gate as shown in figure 10 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
@@ -219,7 +219,7 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 *Critical Thinking Questions*: So far we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
 #### Part 2.B Develop Parity Checker
-In this section, you will develop a parity checker, which is useful in determining whether a message has been compromised in any way when it was being sent. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match then it is likely that one of the bits in the message was corrupted. A parity unit should produce a zero when there are an even number of ones in the input and a one when there are an odd number of ones in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. 
+In this section, you will develop a parity checker, which is useful in determining whether a message has been compromised in any way when it was being sent. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match then it is likely that one of the bits in the message was corrupted. A parity unit should produce a zero when there is an even number of ones in the input and one when there is an odd number of ones in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="600">
@@ -228,8 +228,8 @@ In this section, you will develop a parity checker, which is useful in determini
     </figcaption>
     </font>
 </figure>
+Figure 11 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
 
-The schematics in Figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pretains to.  
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
     <font size="2">
@@ -238,9 +238,9 @@ The schematics in Figure 12 shows you the pin connections for the chips and what
     </font>
 </figure>
 
-Figure 11 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
+The schematics in figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pretains to.  
 
-Sample Truth table : Fill out the rest
+Parity Checker Truth table : Fill out the rest
     
 | W|X|Y|Z        |Output          |
 | -|-|-|---------- |:-------------:|
@@ -267,18 +267,13 @@ Sample Truth table : Fill out the rest
    For the truth table, there should be 16 entries since we have 4 bits and you can quickly come up with a truth table without evaulating the gates by counting the number of 1's in the input. 
 </p>
 </details>
-<details><summary><I>HINT 2</I></summary>
-<p>
-   Check the documentation carefully to see which pins in the chip are the input and which pins are the output. 
-</p>
-</details>
 
 
 ### Part 3. Building a Simple Calculator
-In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder. Note the connection between the parity checker and the adder. We can first look at the XOR gates used for both devices. As we found in the previous section, the XOR gate is convenient for finding odd numbers of 1's in the input where it will output 1 for those combinations of input. This property is also useful for binary arithmetic since whenever the two inputs are 1, the addition will result in a 0 with a carry out of 1. To help understand the relationship, write the truth table for a half adder. It should have two inputs and two outputs as seen in Figure 13. A carry out in binary arithmetic is similar to decimal arithmetic where in decimal arithmetic we carry over the 1..9 to the next order when the addition is greater than 10. In binary addition, we carry over the 1 when addition is greater than 1.   
+In this section, you will use all the knowledge you have previously gained about digital circuits, to work incrementally towards building a two-bit ripple-carry adder. First, you will build a half-adder, then a full adder, and then lastly combine your work with that of another group’s in order to create a two-bit ripple-carry adder. Note the connection between the parity checker and the adder. We can first look at the XOR gates used for both devices. As we found in the previous section, the XOR gate is convenient for finding odd numbers of 1's in the input where it will output 1 for those combinations of input. This property is also useful for binary arithmetic since whenever the two inputs are 1, the addition will result in a 0 with a carry out of 1. To help understand the relationship, write the truth table for a half adder. It should have two inputs and two outputs as seen in figure 13. A carry out in binary arithmetic is similar to in decimal arithmetic where we carry over the 1..9 to the next order when the addition from the previous order is greater than 10. In binary addition, we carry over the 1 when the addition is greater than 1.   
 
 #### Part 3.A Experiment with Half-Adder
-Wire up the half-adder shown in Figure 13 below. 
+Wire up the half-adder shown in figure 13 below. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdder.png" width="400">
@@ -296,7 +291,7 @@ Wire up the half-adder shown in Figure 13 below.
 
 
 #### Part 3.B Develop Full Adder
-Wire up the full-adder shown in Figure 14 below. A full adder contains a carry in which takes in the carry out from another adder. This allows modularity. This unit is complicated enough that you should plan out your wiring ahead of time using the template in Figure 15. Additionally you should extend your truth table to include a carry in. This will affect the output.
+Wire up the full-adder shown in figure 14 below. A full adder contains a carry in which takes in the carry out from another adder. This unit is complicated enough that you should plan out your wiring ahead of time using the template in figure 15. Additionally you should extend your truth table to include a carry in. The Cin will affect the output and Cout.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Fulladder.png" width="600">
@@ -317,19 +312,19 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
 ```Sign-Off Milestone```: Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
 <details><summary><I>HINT 1</I></summary>
 <p>
-    It is very easy to complete the truth table using arithmetic rather than working through Figure 14. One way to think about this is S = binary addition of A+B+Cin, while Cout = 0 if decimal addition of A+B+Cin<=1, otherwise = 1. 
+    It is very easy to complete the truth table using arithmetic rather than working through figure 14. One way to think about this is S = binary addition of A+B+Cin, while Cout = 0 if decimal addition of A+B+Cin<=1, otherwise = 1. 
 </p>
 </details>
 <details><summary><I>HINT 2</I></summary>
 <p>
-    <I>Debugging tip</I>: When there is only one of A, B, and Cin, S = 1, cout = 0. When two of those, S = 0, cout = 0. When all three are closed, then both S and cout = 1. 
+    <I>Debugging tip</I>: When there is only one of A, B, and Cin, S = 1, Cout = 0. When two of those, S = 0, Cout = 0. When all three are closed, then both S and Cout = 1. 
 </p>
 </details>
 
 #### Part 3.C Develop multi-bit ripple-carry adder
-In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. For a ripple-carry adder, the cout of one stage acts as the cin of the next stage. Observe Figure 16, a ripple-carry adder is a combination of full adders. This systems provides regularity and modularity. The ripple-carry adder starts in the full adder for the least significant bits. It first calculates the result and cout from binary addition of the least significant bits. Then, the full adder passes the cout to the next adder in line. The next adder takes in the cin, A, B and calculates its own result and cout. It passes the cout to the next adder in the chain until it reaches the end of the chain. The name "ripple-carry" comes from the fact that the carry moves through the system. Think about how in decimal arithmetic, we carry 1..9 multiple times if the carry results in addition greater than 10.  
+In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. For a ripple-carry adder, the Cout of one stage acts as the Cin of the next stage. Observe figure 16, a ripple-carry adder is a combination of multiple full adders. This systems provides regularity and modularity. We can theoretically have N-bit ripple-carry adder using N adders which can handle binary addition up to N bits. The ripple-carry adder starts in the full adder for the least significant bits with carry in of zero. It first calculates the result and Cout from binary addition of the least significant bits. Then, the full adder passes the Cout to the next adder in line. The next adder takes the Cout as Cin as well as A and B to calculate its own result and Cout. It passes the Cout to the next adder in the chain until it reaches the end of the chain. The Cout for the last adder is helpful in determining if the binary addition resulted in overflow. If the Cin is not the same as the Cout, then most likely overflow occurs. The name "ripple-carry" comes from the fact that the carry moves through the system. Think about how in decimal arithmetic, we can end up carrying 1..9 multiple times if the carry results in addition greater than 10.  
 
-Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 16 below. Both full adders should be powered using 9v batteries. Verify that this simple two-bit ripple-carry adder works. 
+Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in figure 16 below. Both full adders should be powered using 9v batteries. You will likely need extra wires. Ask the TA's for materials and/or help. Verify that this simple two-bit ripple-carry adder works. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Adder.png" width="900">
@@ -362,7 +357,7 @@ calculate A - B, we need to modify B before using the ripple-carry adder. We fir
 bit in B (i.e., every one becomes a zero and every zero becomes a one). Then we need to add one
 to the inverted version of B. If we add the result to A, it will have the same effect as subtracting B
 from A. In other words, using binary arithmetic A - B = A + !B + 1, where !B means invert every
-bit. Figure 13 illustrates how to implement a subtractor. You can implement the subtractor
+bit. You can implement the subtractor
 either by working out the inversion and increment by one on paper and then using the ripplecarry
 adder from Part 3. For the truly ambitious, you could implement a two-bit subtractor
 by working with three other groups. Combine each groups’ breadboard implementation of
