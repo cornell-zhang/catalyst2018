@@ -13,8 +13,8 @@ You should first develop and test just your cruise control system. Determine a f
 Once you have developed a successful cruise control system, you can create the FSM that will allow your robot to use the cruise control system and the digit recognition system.  Your FSM should be simple, containing three different states: a state in which your robot moves forward with a speed that depends on the infrared sensor, a state in which your robot moves forward with a speed that depends on the number received from the digit recognition system, and a stop state. For organizational purposes, you should write each of these states as a separate function.  To implement the function for the cruise control state, you can simply copy the code you previously wrote. A `receive_value` function has been provided for you.  This function simply reads the digit received over WiFi from the web server and stores it in a variable `value`. You should then create a function that determines the next state based on the variable `value`. This function should also use the `receive_value` function to first read values received from the server. The next important function you should write is one that switches the robot's state, depending on the next state determined by the function you previously wrote.  Hint: do not forget to define all variables you use at the beginning of your code! Your loop function should continuously determine the next state and switch the robot to this state, using the two functions you just wrote. 
 
 Notes on Coding: 
--In your function that determines the next state, you will want to set a new variable `state`, depending on `value`.  You should use `if...else` conditionals for this 
--In your function that switches your robot's state, you will want to use something called `switch`.  The syntax for this is show below: 
+In your function that determines the next state, you will want to set a new variable `state`, depending on `value`.  You should use `if...else` conditionals for this.  
+In your function that switches your robot's state, you will want to use something called `switch`.  The syntax for this is show below: 
 ```
 switch(variable)
 {
