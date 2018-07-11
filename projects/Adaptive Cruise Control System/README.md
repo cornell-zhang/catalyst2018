@@ -1,4 +1,4 @@
-Project: Adaptive Cruise Control System
+Project 2: Adaptive Cruise Control System
 ======================
 In this project, you will equip your robot with an adaptive cruise control system, and also add functionality that will let you control the speed of your robot using the digitrec system that you implemented in lab 3. So what exactly is an adaptive cruise control system? Recently, we have made many advances in the automotive industry, with Google and other companies coming out with things like self-driving cars. These cars, in order not to crash into anything and abide by the laws of the road, will implement an adaptive cruise control system, so that they put enough distance between their car and other cars/obstacles. The adaptive cruise control system is the basis for making these cars "smart".
 
