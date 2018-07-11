@@ -5,7 +5,7 @@ Use the robot to navigate a maze using various sensors. We will have a competiti
 
 Goal
 ---
-The maze is square with a single wall that extends halfway through the middle of the maze. The floor of the maze is entirely wood and is the same color except for an all black square that signifies the target location. The goal is to program the robot to reach the target at the shortest amount of time.
+The maze is a square covered all all sides with a wooden wall and has a single wooden wall that extends halfway through the middle of the maze. The floor of the maze is entirely wood except for an all black square that signifies the target location. The wood all have same color. The goal is to program the robot to reach the target at the shortest amount of time. 
 
 
 Design tips
