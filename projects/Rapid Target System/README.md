@@ -55,10 +55,10 @@ return_type function_name( parameter ) {
 Example:
 ```
 void robot_turn(int direction){
-		Serial.print(direction);
+	Serial.print(direction);
 }
 ```
-In the above example, ```void``` means that the doesn't return anything. ```robot_turn``` is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter and prints it out to the Serial monitor. 
+In the above example, ```void``` means that the doesn't return anything. ```robot_turn``` is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter named ```direction``` and prints it out to the Serial monitor. 
 
 
 
