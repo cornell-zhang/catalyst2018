@@ -74,7 +74,6 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
-
 Looking at figure 3, let us assume the rows are denoted by the numbers (they are really faded in the figure), we notice that all holes in a row are connected together. This means that any circuit components with both pins connected to the same rows are in parallel to each other. For example, if we connect one pin of resistor (R1) to row 1 and its other pin to row 2 and we do the same with another resistor(R2), then the two resistors are in parallel with each other and the equivalent resistance will be ```(R1*R2)/(R1+R2)```. Alternatively, if we connect one resistor (R3) to row 2 and row 3, then R3 will be in series with R1 and R2 and the equivalent resistance will be ```(R1*R2)/(R1+R2)+R3```. Remember to never connect the pins of your circuit component to the same row. The component will not work. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
 
 <details><summary><I>Circuit Example (Click me)</I></summary>
@@ -88,7 +87,6 @@ Looking at figure 3, let us assume the rows are denoted by the numbers (they are
 </figure>
 </p>
 </details>
-
 
 
 #### Part 1.A Experiment with LED
