@@ -47,14 +47,17 @@ Uses for comments:
 ### Functions:
 Functions are a group of statements that perform a specific task. Function are useful for performing repetitive tasks.
 Declare a function like this:
-```return_type function_name( parameter ) {
+```
+return_type function_name( parameter ) {
    body of the function
 }
 ```
 Example:
-```void robot_turn(int direction){
+```
+void robot_turn(int direction){
 		Serial.print(direction);
-}```
+}
+```
 In the above example, ```void``` means that the doesn't return anything. ```robot_turn``` is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter and prints it out to the Serial monitor. 
 
 
