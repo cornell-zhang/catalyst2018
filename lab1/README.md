@@ -74,10 +74,25 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
-Looking at figure 3, let us assume the rows are denoted by the numbers (they are really faded in the figure), we notice that all holes in a row are connected together. This means that any circuit components with both pins connected to the same rows are in parallel to each other. For example, if we connect one pin of resistor (R1) to row 1 and its other pin to row 2 and we do the same with another resistor(R2), then the two resistors are in parallel with each other and the equivalent resistance will be (R1*R2)/(R1+R2). Alternatively, if we connect one resistor (R3) to row 2 and row 3, then R3 will be in series with R1 and R2 and the equivalent resistance will be (R1*R2)/(R1+R2)+R3. Remember to never connect the pins of your circuit component to the same row. The component will not work. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
+
+Looking at figure 3, let us assume the rows are denoted by the numbers (they are really faded in the figure), we notice that all holes in a row are connected together. This means that any circuit components with both pins connected to the same rows are in parallel to each other. For example, if we connect one pin of resistor (R1) to row 1 and its other pin to row 2 and we do the same with another resistor(R2), then the two resistors are in parallel with each other and the equivalent resistance will be ```(R1*R2)/(R1+R2)```. Alternatively, if we connect one resistor (R3) to row 2 and row 3, then R3 will be in series with R1 and R2 and the equivalent resistance will be ```(R1*R2)/(R1+R2)+R3```. Remember to never connect the pins of your circuit component to the same row. The component will not work. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
+
+<details><summary><I>Circuit Example (Click me)</I></summary>
+<p>
+	<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/circuitexample.png" width="200">
+    <font size="2">
+    <figcaption> Circuit example. If we want to connect that circuit to the breadboard, we would connect one pin of R1 to the (+) of the battery and another pin to row 1. Then we would connect one pin of R2 to row 1 and another to row 2. For the parallel configuration of R3 and R4, we will first connect one pin of each R3 and R4 to row 2 to establish a series connection. Then we will connect the second pin of both R3 and R4 to the the (-) of the battery, otherwise known as ground (GND).<br></br></a> 
+    </figcaption>
+    </font>
+</figure>
+</p>
+</details>
+
+
 
 #### Part 1.A Experiment with LED
-LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
+LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. Diodes can be used to protect motors and electronics from current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
 The LED must be placed in a specific direction for it to turn on. The two pins of the LED are called cathode, the short pin, and anode, the long pin. Look at the diagram in Figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED from anode to cathode, it will emmit light.   
 
 <figure>
@@ -87,14 +102,13 @@ The LED must be placed in a specific direction for it to turn on. The two pins o
     </figcaption>
     </font>
 </figure>
-![alt text](https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/waterCircuit.PNG "water Circuit")
 
+*Circuit Intuition:*
+We will quickly go over some basic electrical terms such as current and voltage
 
-*Circuit intuition:*
-We will quickly go over some basic electrical terms such as current and voltage.
-The circuit diagram shown in Figure 5 contains three circuit components; the LED, the resistor, and the power source. The power source, which can be a battery or a plug, is denoted with a plus sign which shows the location of higher voltage. Voltage is the difference between two electrical potentials. Electrical potential is a measure of the potential to do work for electrical components. This is similar to gravitational potential energy in mechanics. Just like its mechanics counterpart, voltage is relative. Current always flow from higher voltage to lower voltage. Thus the current flows clockwise in Figure 5. A resistor in an electrical circuit is analogous to a narrow segment of pipe in the water circuit; both the resistor and the narrow pipe serve to restrict the flow of current. So the greater the resistance (narrower the pipe) the less current can flow through circuit.
+The circuit diagram shown in Figure 5 contains three circuit components; the LED, the resistor, and the power source. The power source, which can be a battery or a plug, is denoted with a plus sign which shows the location of higher voltage. Voltage is the difference between two electrical potentials. Electrical potential is a measure of the potential to do work for electrical components. This is similar to gravitational potential energy in mechanics. Just like its mechanics counterpart, voltage is relative. Current always flow from higher voltage to lower voltage. Thus the current flows clockwise in Figure 5. A resistor in an electrical circuit is analogous to a narrow segment of pipe in the water circuit in Figure 6; both the resistor and the narrow pipe serve to restrict the flow of current. So the greater the resistance (narrower the pipe) the less current can flow through circuit.
 
-Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. **Remember to place a resistor in the circuit.** The LED does not have sufficient internal resistance to prevent a short circuit. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going flowing through it. 
+Wire up the simple LED circuit shown in Figure 5 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. **Remember to place a resistor in the circuit.** The LED does not have sufficient internal resistance to prevent a short circuit, a low resistance connection that can result in the power source being destroyed. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going flowing through it. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
@@ -103,9 +117,17 @@ Wire up the simple LED circuit shown in Figure 4 below. You may also refer to Fi
     </font>
 </figure>
 
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/waterCircuit.PNG" width="600">
+    <font size="2">
+    <figcaption> Figure 6: Water Circuit </a> 
+    </figcaption>
+    </font>
+</figure>
+
 
 ```diff
-- Sign-Off Milestone:
+Sign-Off Milestone:
 ``` 
 Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
 
@@ -129,7 +151,7 @@ NMOS:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMOS Inverter.png" width="400">
     <font size="2">
-        <figcaption> Figure 6: CMOS Inverter Circuit <b></b> </a>
+        <figcaption> Figure 6: CMOS Inverter Circuit <br></br> </a>
     </figcaption>
     </font>
 </figure>
@@ -139,9 +161,9 @@ There multiple labels in the figure. The 'G' stands for Gate which is where inpu
 Wire up an inverter circuit using both a PMOS and NMOS transistor. An inverter inverts the input signal. A HIGH signal becomes low while a LOW signal becomes HIGH. This is also know as a NOT gate where the output is the opposite of the input as seen in Figure 7. The bar above the A means that we are inverting the value of A. In Figure 7, the bubble or circle at the tip of the triangle facing Y is the symbol for NOT. We will be observing other logic gates later in the session; some gates will have circles attached to the input or output terminals. These suggests that we are inverting the terminal. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs(this is called a truth table). 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate.PNG" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate.PNG" width="200">
     <font size="2">
-        <figcaption> Figure 7: NOT gate <b></b></a>
+        <figcaption> Figure 7: NOT gate <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -149,7 +171,7 @@ Wire up an inverter circuit using both a PMOS and NMOS transistor. An inverter i
 Notice that we have already provided you with the PMOS and NMOS transistors that are wired to VDD(+) and GND(-) respectively. You will have to use a digital input switch to send a digital signal to your inverter and a digital output switch to receive the digital signal that your inverter produces. You may refer to Figure 6 above and Figure 8 below, which show both the circuit diagram for the inverter and how it should be implemented on the breadboard, respectively.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagramForInverter.png" width="300">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagramForInverter.png" width="800">
     <font size="2">
         <figcaption> Figure 8: Breadboard Diagram For Testing Inverter Circuit </a>
     </figcaption>
@@ -159,7 +181,7 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 <details><summary><I>HINT 1(CLICK ME)</I></summary>
 <p>
 	<figure>
-		<img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate_sol.png" width="800">
+		<img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate_sol.png" width="300">
 		<font size="2">
 			<figcaption> NOT Gate with Truth Table </a>
 		</figcaption>
@@ -186,9 +208,9 @@ In the previous section, we learned about basic digital circuits and how they ca
 Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.png" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.png" width="600">
     <font size="2">
-        <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <b></b></a>
+        <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -198,12 +220,15 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
     <font size="2">
-        <figcaption> Figure 10: Breadboard Diagram for Testing AND Gate <b></b></a>
+        <figcaption> Figure 10: Breadboard Diagram for Testing AND Gate <br></br></a>
     </figcaption>
     </font>
 </figure>
 
-```Sign-Off Milestone```: Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the AND gate. 
+```diff
+Sign-Off Milestone:
+``` 
+ Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the AND gate. 
 
 *Critical Thinking Questions*: So far we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
@@ -266,14 +291,14 @@ We will be building a calculator that uses binary addition to calculate the addi
 digital circuits which can only handle logic ones and zeros; in other words, computers work with binary numbers (i.e., base 2) and binary arithmetic. This is in contrast to how we usually use decimal numbers (i.e., base 10) and decimal arithmetic. Let’s quickly review decimal numbers: each digit can be a number between zero and nine. The first digit is the “ones digit” (10<sup>0</sup>), the second digit is the “tens digit” (10<sup>1</sup>), the third digit is the “hundreds digit” (10<sup>2</sup>), and so on. We multiply the number in each digit by 10<sup>i</sup> where i indicates which digit. For binary numbers: each digit can only be zero or one. The first digit is the “ones digit” (2<sup>0</sup>), the second digit is the “twos digit” (2<sup>1</sup>), the third digit is the “fours digit” (2<sup>2</sup>), and so on. We multiply the number in each digit by 2<sup>i</sup> where i indicates which digit. Binary addition works exactly like decimal addition, where we add the "ones" digits together, "twos" digit together, and so on.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/decimalRep.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/decimalRep.png" width="800">
     <font size="2">
-        <figcaption> Figure 13: Binary and Decimal Representation</a>
+        <figcaption> Figure 13: Binary and Decimal Representation <br></br></a>
     </figcaption>
     </font>
 </figure>
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/stepsForbinadd.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/stepsForbinadd.png" width="350">
     <font size="2">
         <figcaption> Figure 14: Example using binary addition for 3 + 6. 
 		In the first step, we add the “ones digit”; one plus zero is one. In the second step, we add the “twos digit”; one plus one is two, but remember we cannot use two in binary numbers. We can only use zero or one. We need to carry a one to the next digit. This is exactly the same as carrying a one when performing decimal arithmetic. In the third step, we add one (the carry bit) plus zero plus one to again get two, so we again must carry a one to the next digit. In the final step, we simply add one plus zero plus zero to get the final answer: 1001 which is nine in decimal. As expected three plus six is nine, but we have now demonstrated how to do this addition using binary arithmetic.</a>
@@ -298,12 +323,9 @@ Wire up the half-adder shown in Figure 13 below.
 </figure>
 <details><summary><I>HINT 1</I></summary>
 <p> 
+	Half-Adder with Truth table
     <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdderTruthtable.png" width="400">
-    <font size="2">
-        <figcaption> Half-Adder with Truth table</a>
-    </figcaption>
-    </font>
 	</figure>
 </p>
 </details>
@@ -333,7 +355,10 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
     </font>
 </figure>
 
-```Sign-Off Milestone```: Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
+```diff
+Sign-Off Milestone:
+``` 
+ Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
 
 <details><summary><I>HINT 1</I></summary>
 <p>
@@ -343,13 +368,10 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
 
 <details><summary><I>HINT 2</I></summary>
 <p>
+	Full-Adder with Truth table
     <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdderTruthtable.png" width="400">
-    <font size="2">
-        <figcaption> Full-Adder with Truth table </a>
-    </figcaption>
-    </font>
-</figure> 
+	</figure> 
 </p>
 </details>
 <details><summary><I>HINT 2</I></summary>
