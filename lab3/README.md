@@ -17,7 +17,7 @@ With the name “machine learning” coined in 1969 by Arthur Samuel[5], researc
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="300">
     <font size="2">
-    <figcaption> Figure 1: Scheme in KNN Prediction </a> 
+    <figcaption> Figure 1: Scheme in KNN Prediction  <br><br></a> 
     </figcaption>
     </font>
 </figure>

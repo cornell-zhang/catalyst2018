@@ -28,4 +28,6 @@ switch(variable)
     function3();
   }
   ```
-  In this example case, if `variable` is 0, function1() will be executed and if `variable` is 1 function2() will be implemented.  By         default, function3() will be implemented. You will need to use a similar format for implementing your function to switch FSM states. 
+  In this example case, if `variable` is 0, function1() will be executed and if `variable` is 1 function2() will be implemented.  By         default, function3() will be implemented. You will need to use a similar format for implementing your function to switch FSM states.
+  
+  You will also have to make your robot go straight. When you test your motors, you may find that your robot is turning to one side over another. To make sure that your robot goes straight, you will have to implement some sort of function that will scale the speed of one wheel, so that both wheels will turn at about the same rate. Once you have tested the motors at some constant speed and determined the direction in which the robot turns towards, you will either have to scale the speed of that wheel up, or scale the speed of the other wheel down. After a few cycles of testing to see the degree of turning and scaling one of the wheel speeds, you should be able to find a speed so that the robot travels in a straight line.

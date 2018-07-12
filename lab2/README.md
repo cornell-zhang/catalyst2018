@@ -3,7 +3,7 @@ Lab 2: Smart Robot
 
 In the previous lab assignment, you explored the field of computer engineering solely from the hardware perspective. In this lab, however, you will start to see how hardware relates to software by programming various behaviors using an Arduino-based robotics platform. In Part 1, you will experiment with the robot's sensors and actuators. Part 1 is intended to teach you about engineering from a software standpoint, so much of the code used to test and experiment with these sensors is provided for you. In Part 2, you will gradually develop a more complicated wandering behavior for your robot. Part 2 will require more critical thinking, as you will be developing much of your own implementation. It will eventually culminate in creating a program that allows your robot to roam an enclosed space and locate a target. The environments your robots will navigate are 4'x3' plywood enclosures, each with a 12"x12" black square target. Your robot should be able to locate the target starting in any location and orientation. 
 
-This lab will require you to devlop a mobile robot control application, specifically a closed loop controller.  A closed loop controller operates actuators based on continuously collected and interpreted sensor data. In contrast, an open loop controller utilizes preset information instead of sensors. For example, as closed loop controllers, our robots will use sensors to determine whether they have bumped into an obstacle and will proceed accordingly if they have.  An open loop controller would instead attempt to move in a predefined fashion regardless of whether an obstacle is in the way. Closed loop controllers are a much better option for navigating our environment, as the initial orientation and location of our robot is unknown. 
+This lab will require you to devlop mobile robot control application, specifically a closed loop controller.  A closed loop controller operates actuators based on continuously collected and interpreted sensor data. In contrast, an open loop controller utilizes preset information instead of sensors. For example, as closed loop controllers, our robots will use sensors to determine whether they have bumped into an obstacle and will proceed accordingly if they have.  An open loop controller would instead attempt to move in a predefined fashion regardless of whether an obstacle is in the way. Closed loop controllers are a much better option for navigating our environment, as the initial orientation and location of our robot is unknown. 
 
 For each section, you will need to have a teaching assistant observe the desired behavior and initial the appropriate section on the sign-off sheet. **Make sure to turn in your sign-off sheet at the end of the lab session.**
 
@@ -16,14 +16,12 @@ Before beginning the lab, make sure to take a look at the components you will ne
 - Wooden testing block (some groups may need to share)
 - Workstation with black USB cable
 
-Take a look at the mobile robotic platform and try to identify each part of the robot when your group gets one. Diagrams of the top-view and front-view of the robot are shown in Figures 2 and 3 respectively. Figure 4 shows a diagram of the prototyping board. The robot includes two mechanical bump switches at the front to detect obstacles and a grayscale sensor on the bottom to detect the target.  The robot's circuitry includes a stack of three boards mounted on top of the robot.  The lowest board is an Arduino, the main computing board, which you will program. The middle board is a motor shield, which allows the Arduino to control the robot's two motors.  The last board is a maker shield, which connects to the grayscale sensor and the two bump switch sensors. The maker shield also contains LEDs, a button, and a potentiometer.
-
-The robot is powered using two different power supplies. Five AA batteries located at the bottom of the robot power the two drive motors.  A separate battery pack will be used to power the board stack.  This will need to be plugged into the Arduino board after the robot is disconnected from the computer in order for the robot to be properly powered. In order to power the drive motors, you will need to flip the motor switch to ON.  If you need to stop your robot from moving, simply switch the drive motor switch to OFF. To test your code, place your robot on the wooden testing block, upload your code, and switch the drive motor to ON.  This will allow you to turn on your robot's drive motors without having it actually move. 
+A diagram of the environment your robot will need to navigate is shown below in Figure 1. Once your group gets a mobile robot, take a look at it and try to identify each part of the robot. Diagrams of the top-view and front-view of the robot are shown in Figures 2 and 3 respectively. Figure 4 shows a diagram of the prototyping board. The robot includes two mechanical bump switches at the front to detect obstacles and a grayscale sensor on the bottom to detect the target.  The robot's circuitry includes a stack of three boards mounted on top of the robot.  The lowest board is an Arduino, the main computing board, which you will program. The middle board is a motor shield, which allows the Arduino to control the robot's two motors.  The last board is a maker shield, which connects to the grayscale sensor and the two bump switch sensors. The maker shield also contains LEDs, a button, and a potentiometer.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotEnvironment.png" width="400">
     <font size="2">
-    <figcaption> Figure 1: Plywood Environment </a> 
+        <figcaption> Figure 1: Plywood Environment <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -31,16 +29,18 @@ The robot is powered using two different power supplies. Five AA batteries locat
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="400">
     <font size="2">
-    <figcaption> Figure 2: Top-View of Mobile Robotic Platform </a> 
+        <figcaption> Figure 2: Top-View of Mobile Robotic Platform <br></br></a> 
     </figcaption>
     </font>
 </figure>
+
+The robot is powered using two different power supplies. Five AA batteries located at the bottom of the robot power the two drive motors.  A separate battery pack will be used to power the board stack.  This will need to be plugged into the Arduino board after the robot is disconnected from the computer in order for the robot to be properly powered. In order to power the drive motors, you will need to flip the motor switch to ON.  If you need to stop your robot from moving, simply switch the drive motor switch to OFF. To test your code, place your robot on the wooden testing block, upload your code, and switch the drive motor to ON.  This will allow you to turn on your robot's drive motors without having it actually move. 
 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="400">
     <font size="2">
-    <figcaption> Figure 3: Front-View of Mobile Robotic Platform </a> 
+        <figcaption> Figure 3: Front-View of Mobile Robotic Platform <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -49,7 +49,7 @@ The robot is powered using two different power supplies. Five AA batteries locat
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="400">
     <font size="2">
-    <figcaption> Figure 4: Prototyping Board </a> 
+    <figcaption> Figure 4: Prototyping Board<br></br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -70,7 +70,7 @@ We will be using the Arduino Web Editor to write and compile our code. Use a web
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/ArduinoWebEditor.png" width="600">
     <font size="2">
-    <figcaption> Figure 5: Arduino Web Editor Layout </a> 
+    <figcaption> Figure 5: Arduino Web Editor Layout <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -85,7 +85,7 @@ Some notes on coding:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 6: Blinking LED Code Example </a> 
+    <figcaption> Figure 6: Blinking LED Code Example <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -96,7 +96,7 @@ We will now extend the code to make one LED light up when the right bumper is pr
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 7: Blinking LED and Switch-Controlled LED Code Example </a> 
+    <figcaption> Figure 7: Blinking LED and Switch-Controlled LED Code Example<br></br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -139,14 +139,13 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 8: Analog Grayscale Sensor and Serial Monitor Example </a>
+    <figcaption> Figure 8: Analog Grayscale Sensor and Serial Monitor Example <br></br></a>
     </figcaption>
     </font>
 </figure>
 
 **Sign-Off Milestone: Once you have the analog grayscale sensor values being displayed on the serial monitor, have a teaching assistant verify that things are working correctly.** 
 
-*Critical Thinking Questions*: What happens when the analog grayscale sensor is positioned precisely at the edge of the target? How do your readings compare to the readings collected by other groups around you? Why do you think all robots do not report the same analog grayscale sensor values when positioned over similar materials? What do you think would happen if the target was made out of a very glossy black material?
 
 #### Part 1.C Experiment with Drive Motors
 In this section, you will begin to experiment with the drive motors of the robot. The test program that you will use to experiment with these motors is shown in Figure 9 below. This program will attempt to move the robot in a square with two-foot sides. You will notice that two pins are used to control each drive motor. One pin controls the direction that the motor spins, while the other controls the speed at which that motor spins. When the motor direction output pin is set to LOW, the motor will spin forwards, and when it is set to HIGH, the motor will spin backwards. The motor speed pin can be set to any value between 0 and 255, where higher numbers indicate a faster motor speed. Keep in mind that moderate motor speeds are between 75 and 125, and also that the motor speed is proportional to the voltage generated by the 5 AA batteries(so as they drain, you may have to increase your motor speed in order to get your wheels to turn at the same rate). 
@@ -156,7 +155,7 @@ Enter the code shown in Figure 9 below into your Arduino web editor. Once you ha
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="700">
     <font size="2">
-        <figcaption> Figure 9: Move Robot in a Square Code Example </a>
+        <figcaption> Figure 9: Move Robot in a Square Code Example <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -179,7 +178,7 @@ The figure below illustrates the specific FSM we will be using.  The robot first
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
     <font size="2">
-        <figcaption> Figure 10: Finite-State Machine Algorithm </a>
+        <figcaption> Figure 10: Finite-State Machine Algorithm <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -191,7 +190,7 @@ In this section, you will need to write a program that makes the robot continue 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="700">
     <font size="2">
-        <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior </a>
+        <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior<br></br> </a>
     </figcaption>
     </font>
 </figure>
