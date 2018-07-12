@@ -21,7 +21,7 @@ A diagram of the environment your robot will need to navigate is shown below in 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotEnvironment.png" width="400">
     <font size="2">
-    <figcaption> Figure 1: Plywood Environment </a> 
+        <figcaption> Figure 1: Plywood Environment <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -29,7 +29,7 @@ A diagram of the environment your robot will need to navigate is shown below in 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotTop.png" width="400">
     <font size="2">
-    <figcaption> Figure 2: Top-View of Mobile Robotic Platform </a> 
+        <figcaption> Figure 2: Top-View of Mobile Robotic Platform <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -40,7 +40,7 @@ The robot is powered using two different power supplies. Five AA batteries locat
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/RobotFront.png" width="400">
     <font size="2">
-    <figcaption> Figure 3: Front-View of Mobile Robotic Platform </a> 
+        <figcaption> Figure 3: Front-View of Mobile Robotic Platform <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -49,7 +49,7 @@ The robot is powered using two different power supplies. Five AA batteries locat
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/PrototypingBoard.png" width="400">
     <font size="2">
-    <figcaption> Figure 4: Prototyping Board </a> 
+    <figcaption> Figure 4: Prototyping Board<br></br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -70,7 +70,7 @@ We will be using the Arduino Web Editor to write and compile our code. Use a web
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/ArduinoWebEditor.png" width="600">
     <font size="2">
-    <figcaption> Figure 5: Arduino Web Editor Layout </a> 
+    <figcaption> Figure 5: Arduino Web Editor Layout <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -85,7 +85,7 @@ Some notes on coding:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 6: Blinking LED Code Example </a> 
+    <figcaption> Figure 6: Blinking LED Code Example <br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -96,7 +96,7 @@ We will now extend the code to make one LED light up when the right bumper is pr
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 7: Blinking LED and Switch-Controlled LED Code Example </a> 
+    <figcaption> Figure 7: Blinking LED and Switch-Controlled LED Code Example<br></br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -139,7 +139,7 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 8: Analog Grayscale Sensor and Serial Monitor Example </a>
+    <figcaption> Figure 8: Analog Grayscale Sensor and Serial Monitor Example <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -155,7 +155,7 @@ Enter the code shown in Figure 9 below into your Arduino web editor. Once you ha
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="700">
     <font size="2">
-        <figcaption> Figure 9: Move Robot in a Square Code Example </a>
+        <figcaption> Figure 9: Move Robot in a Square Code Example <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -178,7 +178,7 @@ The figure below illustrates the specific FSM we will be using.  The robot first
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
     <font size="2">
-        <figcaption> Figure 10: Finite-State Machine Algorithm </a>
+        <figcaption> Figure 10: Finite-State Machine Algorithm <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -190,7 +190,7 @@ In this section, you will need to write a program that makes the robot continue 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="700">
     <font size="2">
-        <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior </a>
+        <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior<br></br> </a>
     </figcaption>
     </font>
 </figure>
