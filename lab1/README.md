@@ -79,7 +79,7 @@ Looking at figure 3, let us assume the rows are denoted by the numbers (they are
 <details><summary><I>Circuit Example (Click me)</I></summary>
 <p>
 	<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/circuitexample.png" width="200">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/circuitexample.png" width="600">
     <font size="2">
     <figcaption> Circuit example. If we want to connect that circuit to the breadboard, we would connect one pin of R1 to the (+) of the battery and another pin to row 1. Then we would connect one pin of R2 to row 1 and another to row 2. For the parallel configuration of R3 and R4, we will first connect one pin of each R3 and R4 to row 2 to establish a series connection. Then we will connect the second pin of both R3 and R4 to the the (-) of the battery, otherwise known as ground (GND).<br></br></a> 
     </figcaption>
@@ -104,21 +104,13 @@ The LED must be placed in a specific direction for it to turn on. The two pins o
 *Circuit Intuition:*
 We will quickly go over some basic electrical terms such as current and voltage
 
-The circuit diagram shown in Figure 5 contains three circuit components; the LED, the resistor, and the power source. The power source, which can be a battery or a plug, is denoted with a plus sign which shows the location of higher voltage. Voltage is the difference between two electrical potentials. Electrical potential is a measure of the potential to do work for electrical components. This is similar to gravitational potential energy in mechanics. Just like its mechanics counterpart, voltage is relative. Current always flow from higher voltage to lower voltage. Thus the current flows clockwise in Figure 5. A resistor in an electrical circuit is analogous to a narrow segment of pipe in the water circuit in Figure 6; both the resistor and the narrow pipe serve to restrict the flow of current. So the greater the resistance (narrower the pipe) the less current can flow through circuit.
+The circuit diagram shown in Figure 5 contains three circuit components; the LED, the resistor, and the power source. The power source, which can be a battery or a plug, is denoted with a plus sign which shows the location of higher voltage. Voltage is the difference between two electrical potentials. Electrical potential is a measure of the potential to do work for electrical components. This is similar to gravitational potential energy in mechanics. Just like its mechanics counterpart, voltage is relative. Current always flow from higher voltage to lower voltage. Thus the current flows clockwise in Figure 5. A resistor in an electrical circuit is analogous to a narrow segment of pipe in a water circuit; both the resistor and the narrow pipe serve to restrict the flow of current. So the greater the resistance (narrower the pipe) the less current can flow through circuit.
 
 Wire up the simple LED circuit shown in Figure 5 below. You may also refer to Figure 1, which shows the circuit wired up on the breadboard. **Remember to place a resistor in the circuit.** The LED does not have sufficient internal resistance to prevent a short circuit, a low resistance connection that can result in the power source being destroyed. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going flowing through it. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
     <figcaption> Figure 5: Simple LED Circuit </a> 
-    </figcaption>
-    </font>
-</figure>
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/waterCircuit.PNG" width="600">
-    <font size="2">
-    <figcaption> Figure 6: Water Circuit </a> 
     </figcaption>
     </font>
 </figure>
@@ -178,12 +170,9 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 
 <details><summary><I>HINT 1(CLICK ME)</I></summary>
 <p>
+	NOT Gate with Truth Table
 	<figure>
 		<img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate_sol.png" width="300">
-		<font size="2">
-			<figcaption> NOT Gate with Truth Table </a>
-		</figcaption>
-		</font>
 	</figure>
 </p>
 </details>
@@ -206,7 +195,7 @@ In the previous section, we learned about basic digital circuits and how they ca
 Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.png" width="600">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.png" width="500">
     <font size="2">
         <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <br></br></a>
     </figcaption>
@@ -236,16 +225,17 @@ In this section, you will develop a parity checker, which is useful in determini
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="600">
     <font size="2">
-        <figcaption> Figure 11: Parity Checker [2] </a>
+        <figcaption> Figure 11: Parity Checker [2] <br></br> </a>
     </figcaption>
     </font>
 </figure>
+
 Figure 11 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
     <font size="2">
-        <figcaption> Figure 12: Schematics for the three chips </a>
+        <figcaption> Figure 12: Schematics for the three chips <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -323,7 +313,7 @@ Wire up the half-adder shown in Figure 13 below.
 <p> 
 	Half-Adder with Truth table
     <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdderTruthtable.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdderTruthtable.png" width="300">
 	</figure>
 </p>
 </details>
@@ -368,7 +358,7 @@ Sign-Off Milestone:
 <p>
 	Full-Adder with Truth table
     <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdderTruthtable.png" width="400">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/FullAdderTruthtable.png" width="300">
 	</figure> 
 </p>
 </details>
