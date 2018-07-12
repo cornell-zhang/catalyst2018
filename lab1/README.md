@@ -238,7 +238,7 @@ Figure 11 illustrates how a four-bit parity checker can be implemented using thr
     </font>
 </figure>
 
-The schematics in figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pretains to.  
+The schematics in figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pertains to.  
 
 Parity Checker Truth table : Fill out the rest
     
