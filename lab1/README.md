@@ -74,7 +74,7 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
-Looking at figure 3, let us assume the rows are denoted by the numbers, we notice that all holes in a row are connected together. This means that any circuit components with both pins connected in the same rows are in parallel to each other. Different rows are not connected. Components with only one pin connected to the same row and the other pin connected to different rows are in series with each other. Components with no pins that share a row will not affect each other. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
+Looking at figure 3, where the rows are denoted by the numbers, we notice that all holes in a row are connected together. This means that any circuit components with both pins connected in the same rows are in parallel to each other. Different rows are not connected. Components with only one pin connected to the same row and the other pin connected to different rows are in series with each other. Components with no pins that share a row will not affect each other. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
 
 #### Part 1.A Experiment with LED
 LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. There are many different types of diode such as Zener Diode, which allows current to flow in the opposite direction if it reaches a certain voltage. Diodes can be used to protect motors and electronics from current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
@@ -89,7 +89,7 @@ The LED must be placed in a specific direction for it to turn on. The two pins o
 </figure>
 
 The circuit diagram shown in figure 5 contains three circuit components; the LED, which is the triangle with a line through it, the resistor, and the power source. The power source is denoted with a plus sign which shows the direction of current. Current always flow from higher voltage to lower voltage. Thus the current flows clockwise in figure 5. 
-Wire up the simple LED circuit shown in figure 4 below. You may also refer to figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent a short circuit. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going flowing through it. 
+Wire up the simple LED circuit shown in figure 5 below. You may also refer to figure 1, which shows the circuit wired up on the breadboard. Remember to place a resistor in the circuit. The LED does not have sufficient internal resistance to prevent a short circuit. When a circuit is closed, it needs a resistor to dissipate energy, otherwise, the circuit will heat up from large amount of current going flowing through it. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
@@ -104,7 +104,7 @@ Wire up the simple LED circuit shown in figure 4 below. You may also refer to fi
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part 1.B Experiment with Inverters
-In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can recieve electrons) as opose to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFETs (MOS Field Effect Transistor). One defining property is that it has a "gate" that controls the current flowing through it. These transistors act as switches whose behavior is determined by input voltage when the VDD and GND are kept constant. When the input voltage exceeds a certain threshhold, the MOSFET will regulate current flow through it from acting as an open circuit or a short circuit. Thus, combinations of NMOS and PMOS can make many different types of logic gates. 
+In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can recieve electrons) as opposed to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFETs (MOS Field Effect Transistor). One defining property is that it has a "gate" that controls the current flowing through it. These transistors act as switches whose behavior is determined by input voltage when the VDD and GND are kept constant. When the input voltage exceeds a certain threshhold, the MOSFET will regulate current flow through it from acting as an open circuit or a short circuit. Thus, combinations of NMOS and PMOS can make many different types of logic gates. 
 
 Here's a summary. Remember, PMOS and NMOS are complementary!
 
@@ -228,7 +228,7 @@ In this section, you will develop a parity checker, which is useful in determini
     </figcaption>
     </font>
 </figure>
-Figure 11 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
+Figure 11 illustrates how a four-bit parity checker can be implemented using three XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
@@ -238,7 +238,7 @@ Figure 11 illustrates how a four-bit parity checker can be implemented using fou
     </font>
 </figure>
 
-The schematics in figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pretains to.  
+The schematics in figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pertains to.  
 
 Parity Checker Truth table : Fill out the rest
     
