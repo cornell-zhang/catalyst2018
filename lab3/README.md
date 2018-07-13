@@ -1,6 +1,6 @@
 Lab 3: Handwritten Digit Recognition
 ======================
-Why should we explore machine learning applications? The answer seems obvious: we want machines to complete hard work for us. With the significant improvement of the computing ability of electronic devices in recent years, machine learning has become a key technique for solving problems in various areas, including image/video processing, computational biology, the automotive industry, aerospace engineering, and manufacturing. It is a data analysis technique that teaches computers to do what comes naturally to human beings: learn from experience[1]. By leveraging machine learning algorithms to train digital systems, they can extract useful information (features) intelligently from huge amounts of data, which releases people from these trivial tasks. One of the most well-known machine learning applications is handwritten digit recognition.
+Why should we explore machine learning applications? The answer seems obvious: we want machines to complete hard work for us. With the significant improvement of the computing ability of electronic devices in recent years, machine learning has become a key technique for solving problems in various areas, including image/video processing, computational biology, the automotive industry, aerospace engineering, and manufacturing. It is a data analysis technique that teaches computers to do what comes naturally to human beings: learn from experience[1]. By leveraging machine learning algorithms to train digital systems, they can extract useful information (features) intelligently from huge amounts of data, which relieves people from these tedious tasks. One of the most well-known machine learning applications is handwritten digit recognition.
 
 In the last lab, you built a smart robot that can search and find a target. Now let's make it even smarter by building a brain for the robot! And in the projects, you will be able to control the robot using this system. In this lab assignment, you and your partner will explore digital intelligence by implementing a handwritten digit recognition system using Python – an interpreted high-level programming language, and the machine learning algorithm that we will be using here, is called K-Nearest Neighbors (KNN), which will be introduced in the next section - software description. The first part of this section describes the algorithm for the digit recognition system, that is K-Nearest Neighbors(KNN). Then the second part introduces Google Colab-- an online Google Drive based Python IDE. The final part includes a Google Colab based Python notebook, which will serve as a tutorial and will cover basic usage and a detailed explanation of the Python elements you will need for this lab. If you are new to Python, please spend as much time as you need, so that you understand each of the different parts, as you will likely be using many of those concepts to implement your digitrec system. As for the lab exercises, the first three parts require you implement and verify fundamental functions includes calculating distances, sorting distances, and voting for the final result/prediction. Then, you can move to the fourth part and build the digit recognition system. After achieving an error rate lower than 10%, you will move to the last part: upload your code to the remote server and randomly draw digits on the canvas to further test your design.
 
@@ -29,7 +29,7 @@ But what about predicting handwritten digits in images? As you may know, all fil
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.PNG" width="800">
     <font size="2">
-    <figcaption> Figure 2: Training instance for digit 0 - resolution 7x7 </a> 
+    <figcaption> Figure 2: Training instance for digit 0 - resolution 7x7 <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -37,7 +37,7 @@ But what about predicting handwritten digits in images? As you may know, all fil
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.2.PNG" width="800">
     <font size="2">
-    <figcaption> Figure 3: Training instance for digit 7 - resolution 7x7 </a> 
+    <figcaption> Figure 3: Training instance for digit 7 - resolution 7x7 <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -49,21 +49,21 @@ However, these simple images shown before are not enough to build an accurate ha
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/HandwrittenDigits.png" width="800">
     <font size="2">
-    <figcaption> Figure 4: Training instance for digit 0 (a), training instance for digit 7 (b) - resolution 28x28 </a> 
+    <figcaption> Figure 4: Training instance for digit 0 (a), training instance for digit 7 (b) - resolution 28x28 <br><br></a> 
     </figcaption>
     </font>
 </figure>
 
 ### Part 2. Google Colab
 
-In this lab, you will be programming in Python, and we will use Google Colab, which is based on the Jupyter Notebook IDE, as it makes it very easy to collaborate with your peers in real-time. You should have a Google account to use it. To get started, please click the following link to the shared folder and copy all files inside this folder to your Google Drive. You could select all of them and right click the mouse and choose the item "Make a copy" (Figure 5). After doing so, you will want to have these files in the same folder, so that you can easily access them. Make sure to select all these files in your personal Google Drive, and move them into a folder that you will create. You may need to search for them in the search bar, if you have many files in your Drive already.
+In this lab, you will be programming in Python, and to do this, we will be using Google Colab-- based on the Jupyter Notebook IDE-- as it makes it very easy to collaborate with your peers in real-time. You need to have a Google account to use Google Colab, so if you don't already have one, you should make one before coming in to complete this lab. To get started, please first login to your account and go to your Google Drive homepage. Then, use the link below to obtain the folder that will contain all the files you will need for this lab. Next, copy all the files within this folder into your Google Drive. You will have to select all of them and right click the mouse and choose the item "Make a copy" (Figure 5), since Google Drive won't let you copy entire folders to your Drive. After doing so, you will probably want to have these files in the same folder, so that you can easily access them. Make sure to select all these files in your personal Google Drive, and move them into a folder that you will create. You may need to search for them in the search bar if you have many files in your Drive already. After placing them all into their own folder on your Drive, you will also want to rename the files, since their names will become something like, "Copy of \_\_\_\_\_\_", once you copy them. When you rename them, you should use the name of the original file, followed by, "--GroupX", where you can replace "X" with the number of your group.
 
 Link to Folder: https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/5.png" width="800">
     <font size="2">
-    <figcaption> Figure 5: Copy all files to your own drive </a> 
+    <figcaption> Figure 5: Copy all files to your own drive <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -73,7 +73,7 @@ Google Colab works very similarly to a Google Docs, propagating changes that you
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/6.png" width="800">
     <font size="2">
-    <figcaption> Figure 6: Open python notebook using Google Colab - w1 </a> 
+    <figcaption> Figure 6: Open python notebook using Google Colab - w1 <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -81,7 +81,7 @@ Google Colab works very similarly to a Google Docs, propagating changes that you
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/7.png" width="800">
     <font size="2">
-    <figcaption> Figure 7: Open python notebook using Google Colab - w2 </a> 
+    <figcaption> Figure 7: Open python notebook using Google Colab - w2 <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -91,7 +91,7 @@ Notebooks in Google Colab are allowed to have both text blocks and code blocks. 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/8.png" width="800">
     <font size="2">
-    <figcaption> Figure 8: Run code by clicking the "run" button in the left side of the code cell </a> 
+    <figcaption> Figure 8: Run code by clicking the "run" button in the left side of the code cell <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -143,7 +143,7 @@ After checking your implementation for each of the methods from the first three 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/9.png" width="400">
     <font size="2">
-    <figcaption> Figure 9: Get Shareable Link by Right-Clicking on File</a> 
+    <figcaption> Figure 9: Get Shareable Link by Right-Clicking on File <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -151,7 +151,7 @@ After checking your implementation for each of the methods from the first three 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/10.png" width="800">
     <font size="2">
-    <figcaption> Figure 10: Copy the link to a window of Chrome and get the fileID </a> 
+    <figcaption> Figure 10: Copy the link to a window of Chrome and get the fileID <br><br></a> 
     </figcaption>
     </font>
 </figure>
