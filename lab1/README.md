@@ -115,11 +115,11 @@ Wire up the simple LED circuit shown in Figure 5 below. You may also refer to Fi
     </font>
 </figure>
 
-<h2>
+
 ```diff
 -Sign-Off Milestone
 ```
-</h2> 
+
 Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
 
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
@@ -173,7 +173,7 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 <p>
 	NOT Gate with Truth Table
 	<figure>
-		<img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate_sol.png" width="300">
+		<img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate_sol.png" width="200">
 	</figure>
 </p>
 </details>
@@ -215,11 +215,11 @@ Wire up a single gate from the other two chips in a similar fashion and come up 
     </font>
 </figure>
 
-<h2>
+
 ```diff
 -Sign-Off Milestone
 ```
-</h2> 
+
  Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the XOR gate. 
 
 *Critical Thinking Questions*: So far we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
@@ -349,11 +349,11 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
     </font>
 </figure>
 
-<h2>
+
 ```diff
 -Sign-Off Milestone
 ```
-</h2> 
+
  Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
 
 <details><summary><I>HINT 1</I></summary>
@@ -389,11 +389,11 @@ Figure 16 shows how we can chain a bunch of full adders to create a N-bit ripple
     </font>
 </figure>
 
-<h2>
+
 ```diff
 -Sign-Off Milestone
 ```
-</h2> 
+ 
 Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 16 below. Both full adders should be powered using 9v batteries. You will likely need extra wires. Ask the TA's for materials and/or help. Verify that this simple two-bit ripple-carry adder works. 
 
 *Critical Thinking Questions*: What do you think is a disadvantage of the ripple-carry adder. Think about the name of the adder and what would happen if we have a large amount of full adders chained together. What would be a solution to this problem?
