@@ -196,7 +196,7 @@ In the previous section, we learned about basic digital circuits and how they ca
 Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables. Can you fill out the truth table for the NAND gate? You may have guessed it, a NAND gate comes from NOT+AND=NAND. Thus a NAND gate is AND gated inverted. Looking at the figure, the only difference between a NAND and AND gate is the bubble at the output pin for a NAND gate. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates.png" width="500">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates.PNG" width="500">
     <font size="2">
         <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <br></br></a>
     </figcaption>
