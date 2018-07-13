@@ -90,7 +90,7 @@ Looking at figure 3, let us assume the rows are denoted by the numbers (they are
 
 
 #### Part 1.A Experiment with LED
-LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. Diodes can be used to protect motors and electronics from current going in the reverse bias which can damage electronic components. The diode we are using provides light as the name suggests.
+LED stands for Light Emitting Diodes; a diode is a semiconductor device that allows current to flow easily in one direction but restricts current flowing in opposite direction. LED's are especially useful for its low energy consumption and smaller size, which makes it possible to use for our lab! 
 The LED must be placed in a specific direction for it to turn on. The two pins of the LED are called cathode, the short pin, and anode, the long pin. Look at the diagram in Figure 4, the anode and cathode of the LED corresponds to its circuit representation. As current flows through the LED from anode to cathode, it will emmit light.   
 
 <figure>
@@ -115,10 +115,11 @@ Wire up the simple LED circuit shown in Figure 5 below. You may also refer to Fi
     </font>
 </figure>
 
-
+<h2>
 ```diff
-Sign-Off Milestone:
-``` 
+-Sign-Off Milestone-
+```
+</h2> 
 Once you have wired everything up, have an instructor verify that the components are connected correctly; then the instructor will demonstrate how to plug in the barrel connector, test the circuit, and turn the board on/off using the switch on the breadboard power supply. Try putting the LED in both directions. 
 
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
@@ -190,19 +191,21 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 ### Part 2. Understanding Basic Logic Gates
 In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates we discovered.
 
-#### Part 2.A Experiment with AND, OR, XOR Gates
+#### Part 2.A Experiment with AND, OR, XOR, NAND Gates
 
-Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables.
+Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables. Can you fill out the truth table for the NAND gate? You may have guessed it, a NAND gate comes from NOT+AND=NAND. Thus a NAND gate is AND gated inverted. Looking at the figure, the only difference between a NAND and AND gate is the bubble at the output pin for a NAND gate. 
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.png" width="500">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates.png" width="500">
     <font size="2">
         <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <br></br></a>
     </figcaption>
     </font>
 </figure>
 
-After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for a NAND gate, and check to see that your results are expected once you have finished up the wiring. Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
+After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for an AND gate, and check to see that your results are expected once you have finished up the wiring. After that, you can try to covert your AND gate into a NAND gate. Remember that NAND gate is just NOT+AND.
+
+Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
@@ -212,35 +215,19 @@ After turning off the power supply, begin to wire up the AND gate as shown in Fi
     </font>
 </figure>
 
+<h2>
 ```diff
-Sign-Off Milestone:
-``` 
- Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the AND gate. 
+-Sign-Off Milestone-
+```
+</h2> 
+ Once you have determined which chip contains the each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the XOR gate. 
 
 *Critical Thinking Questions*: So far we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
 #### Part 2.B Develop Parity Checker
-In this section, you will develop a parity checker, which is useful in determining whether a message has been compromised in any way when it was being sent. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match then it is likely that one of the bits in the message was corrupted. A parity unit should produce a zero when there is an even number of ones in the input and one when there is an odd number of ones in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. 
+In this section, you will develop a parity checker, which checks for errors in the transmission. Digital messages are always binary (it is the language of computers!) and are composed entirely of ones and zeros. The parity checker takes advantage of this fact by counting the number of ones and zeros to check for erros in the message.  Parity checker can be even or odd parity. An even parity unit produces a zero when there is an even number of ones in the input and one when there is an odd number of ones in the input, which signifies that there is an error in the input. This means that the total number of ones(including both the input and the parity unit) should be an even number. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match then it is likely that one of the bits in the message was corrupted. We will be implementing an even parity checker.
 
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="600">
-    <font size="2">
-        <figcaption> Figure 11: Parity Checker [2] <br></br> </a>
-    </figcaption>
-    </font>
-</figure>
-
-Figure 11 illustrates how a four-bit parity checker can be implemented using four XOR gates. Verify, by filling out the truth table below, that this is the case, and once done with the wiring, do the same with your setup, checking all combinations of inputs.
-
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
-    <font size="2">
-        <figcaption> Figure 12: Schematics for the three chips <br></br></a>
-    </figcaption>
-    </font>
-</figure>
-
-The schematics in Figure 12 shows you the pin connections for the chips and what inputs and outputs each pin pretains to.  
+Figure 11 illustrates how a four-bit parity checker can be implemented using three XOR gates. Fill out the truth table below and build the parity checker using Figure 11. After you are done, make sure the truth table you fill out and the circuit you built agree by checking different combinations of inputs.
 
 Parity Checker Truth table : Fill out the rest
     
@@ -262,6 +249,25 @@ Parity Checker Truth table : Fill out the rest
 |1||||
 |1||||
 |1||||
+
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/ParityChecker.png" width="600">
+    <font size="2">
+        <figcaption> Figure 11: Parity Checker [2] <br></br> </a>
+    </figcaption>
+    </font>
+</figure>
+
+The schematics in Figure 12 shows you the internal connections for the chips and pin connections on breadboard. Notice that each chip contains multiple gates of the same type. Each chip requires a power (VDD) and a common ground (GND). 
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
+    <font size="2">
+        <figcaption> Figure 12: Schematics for the three chips <br></br></a>
+    </figcaption>
+    </font>
+</figure>
 
 
 <details><summary><I>HINT 1</I></summary>
@@ -343,9 +349,11 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
     </font>
 </figure>
 
+<h2>
 ```diff
-Sign-Off Milestone:
-``` 
+-Sign-Off Milestone-
+```
+</h2> 
  Once you have wired up the full-adder unit, show an instructor its operation and verify the corresponding truth table.
 
 <details><summary><I>HINT 1</I></summary>
@@ -369,9 +377,9 @@ Sign-Off Milestone:
 </details>
 
 #### Part 3.C Develop multi-bit ripple-carry adder
-In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. For a ripple-carry adder, the Cout of one stage acts as the Cin of the next stage. Observe Figure 16, a ripple-carry adder is a combination of multiple full adders. This systems provides regularity and modularity. We can theoretically have N-bit ripple-carry adder using N adders which can handle binary addition up to N bits. The ripple-carry adder starts in the full adder for the least significant bits with carry in of zero. It first calculates the result and Cout from binary addition of the least significant bits. Then, the full adder passes the Cout to the next adder in line. The next adder takes the Cout as Cin as well as A and B to calculate its own result and Cout. It passes the Cout to the next adder in the chain until it reaches the end of the chain. The Cout for the last adder is helpful in determining if the binary addition resulted in overflow. If the Cin is not the same as the Cout, then most likely overflow occurs. The name "ripple-carry" comes from the fact that the carry moves through the system. Think about how in decimal arithmetic, we can end up carrying 1..9 multiple times if the carry results in addition greater than 10.  
+In this last section you will combine full adders in order to develop a two-bit ripple-carry adder. For a ripple-carry adder, the Cout of one stage acts as the Cin of the next stage. Observe Figure 16, a ripple-carry adder is a combination of multiple full adders. This systems provides regularity and modularity. We can theoretically have N-bit ripple-carry adder using N adders which can handle binary addition up to N bits. The ripple-carry adder starts in the full adder for the least significant bits (the "ones" digit) with carry in of zero. It first calculates the result and Cout from binary addition of the least significant bits. Then, the full adder passes the Cout to the next adder in line. The next adder takes the Cout as Cin as well as A and B to calculate its own result and Cout. It passes the Cout to the next adder in the chain until it reaches the end of the chain. The Cout for the last adder is helpful in determining if the binary addition resulted in overflow. If the Cin is not the same as the Cout, then most likely overflow occurs. The name "ripple-carry" comes from the fact that the carry moves through the system. Think about how in decimal arithmetic, we can end up carrying 1..9 multiple times if the carry results in addition greater than 10 for the digits of the next order.  
 
-Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 16 below. Both full adders should be powered using 9v batteries. You will likely need extra wires. Ask the TA's for materials and/or help. Verify that this simple two-bit ripple-carry adder works. 
+Figure 16 shows how we can chain a bunch of full adders to create a N-bit ripple carry adder.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Adder.png" width="900">
@@ -380,6 +388,13 @@ Find another group that also has a completed full-adder and find a way to chain 
     </figcaption>
     </font>
 </figure>
+
+<h2>
+```diff
+-Sign-Off Milestone-
+```
+</h2> 
+Find another group that also has a completed full-adder and find a way to chain both of your integrated full-adder boards together to create a hardware unit capable of adding two two-bit numbers. The configuration is shown in Figure 16 below. Both full adders should be powered using 9v batteries. You will likely need extra wires. Ask the TA's for materials and/or help. Verify that this simple two-bit ripple-carry adder works. 
 
 *Critical Thinking Questions*: What do you think is a disadvantage of the ripple-carry adder. Think about the name of the adder and what would happen if we have a large amount of full adders chained together. What would be a solution to this problem?
 
