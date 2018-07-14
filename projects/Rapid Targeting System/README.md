@@ -39,27 +39,33 @@ As in lab 2, you will be programming in C++ on the Arduino IDE. You will also ve
 Even though you will use code from lab 2, you will likely find yourself writing more lines code to configure the robot AI. It is therefore very useful to develop good coding practices and tricks in order to organize your code and improve the readability of your code.
 
 ### Improving the readability of you code
-<details><summary><I>Comments</I></summary>
+<details><summary><b>Comments</b></summary>
 <p> 
-    Since you will be working in a group with other students, comments are a very good way to tell others what your code does as well as help group members debug the code. In C++, comments can be made using ```//```, which comments lines, or ```/*..*/```, which comments a block. 
+    Since you will be working in a group with other students, comments are a very good way to tell others what your code does as well as help group members debug the code. In C++, comments can be made using <code>//</code>, which comments lines, or <code>/*..*/</code>, which comments a block. 
+</p>
+<p>
     Uses for comments:
-    - You can comment out code in order to help isolate bugs. 
-    - Label variables and functions
-    - Insert comments next to lines of code to tell the user what that line does.
-    - Put instructions on how to use this code/program.
-
-    You can comment out large blocks of code using ```/*..*/``` and comment specific lines using ```//```. Commented code is ignored by the compiler and will not be uploaded onto the board; thus, it will not take up additional memory.
+    <ul>
+    <li>You can comment out code in order to help isolate bugs. </li>
+    <li> Label variables and functions.</li>
+    <li> Insert comments next to lines of code to tell the user what that line does.</li>
+    <li> Put instructions on how to use this code/program.</li>
+    </ul>
+</p>
+<p>
+    You can comment out large blocks of code using <code>/*..*/</code> and comment specific lines using <code>//</code>. Commented code is ignored by the compiler and will not be uploaded onto the board; thus, it will not take up additional memory.
 </p>
 </details>
 
-
-*Header Files*:
+<details><summary>Header Files</summary>
+<p> 
 Another great way to organize your code is to include header files. The project is divided into different phases and you will likely split up into different groups. Header files is useful for integrating different parts of the project in a single file.
-
+</p>
+ <p> 
 The current project involves multiple parts: wifi, robot control, navigation, and robot peripherals. All these parts require a significant amount of the code.
-
+</p> <p> 
 To create Header files, open any plane text file such as one from a text editor and save the it with the ".h" ending. This marks the file as a C/C++ header file. The default may be a ".txt"; just delete that ending. Save  the ".h" file in the same sketch folder as your main Arduino file. Example shown below.
-
+</p> 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex1.PNG" width="400">
     <font size="2">
@@ -67,9 +73,9 @@ To create Header files, open any plane text file such as one from a text editor 
     </figcaption>
     </font>
 </figure>
-
+<p> 
 When you open your main Arduino ".ino" file. You will see the header file as a tab in your IDE. Shown below.
-
+</p> 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex2.PNG" width="400">
     <font size="2">
@@ -77,8 +83,10 @@ When you open your main Arduino ".ino" file. You will see the header file as a t
     </figcaption>
     </font>
 </figure>
-
+<p> 
 Now, all you have to do is include the header files in the main file and in any file you plan to use the header file in. This is done using ```#include "(name of header file).h"```. Remember to use the double quotes which tells the compiler that we are adding a file from the same location as the file that included it.
+</p> 
+</details>
 
 ### C++ Tutorial
 *Functions*:
