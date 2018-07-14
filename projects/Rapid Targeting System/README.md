@@ -68,7 +68,7 @@ To create Header files, open any plane text file such as one from a text editor 
 </p> 
 <figure>
 <font size="2">
-        <figcaption> Figure 1: Adding header file to directory <br></br> </a>
+        <figcaption> Figure 1: Adding header file to directory</a>
     </figcaption>
     </font>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex1.PNG" width="400">
@@ -77,7 +77,7 @@ To create Header files, open any plane text file such as one from a text editor 
 When you open your main Arduino ".ino" file. You will see the header file as a tab in your IDE. Shown below.
 </p> 
 <figure><font size="2">
-        <figcaption> Figure 2: Tabs with header files <br></br> </a>
+        <figcaption> Figure 2: Tabs with header files</a>
     </figcaption>
     </font>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex2.PNG" width="400">
@@ -88,23 +88,24 @@ Now, all you have to do is include the header files in the main file and in any 
 </details>
 
 ### C++ Tutorial
-*Functions*:
-Functions are a group of statements that perform a specific task. Function are useful for performing repetitive tasks.
-Declare a function like this:
-```
+<details><summary><b>Functions</b></summary>
+<p>Functions are a group of statements that perform a specific task. Function are useful for performing repetitive tasks.</p>
+<p>Declare a function like this:
+<pre><code>
 return_type function_name( parameter ) {
    body of the function
 }
-```
+</code></pre>
 Example:
-```
+<pre><code>
 void robot_turn(int direction){
 	Serial.print(direction);
 }
-```
+</pre></code></p>
+<p>
 In the above example, ```void``` means that the doesn't return anything. ```robot_turn``` is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter named ```direction``` and prints it out to the Serial monitor. Functions are very useful for abstracting tasks for easiler integration with the rest of the code. You can also make repetitive tasks into functions so that you only need to call the function instead of executing similar lines of code repeatedly.
-
-
+</p>
+</details>
 
 
 
