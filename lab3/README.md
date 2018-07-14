@@ -10,9 +10,9 @@ Software Description
 Before getting started with implementing your digitrec system, you should read this section carefully to get a basic understanding about KNN and Python. In this section, the motivation for machine learning applications and the methodology of machine learning algorithms will be covered in part 1. Then part 2 will contain a brief introduction to Google Colab, which is the online platform to program and test Python scripts. Lastly, part 3 is a tutorial for programming in Python (it will be an interactive tutorial that you can play around with on a Google Colab document, *example.ipynb*).
 
 ### Part 1. K-Nearest Neighbors
-Handwritten digit recognition refers to a computer’s ability to intelligently interpret handwritten inputs and is broadly applied in document processing, signature verification, and bank check clearing [3]. An important step in handwritten digit recognition is classification, in which the algorithm classifies data into one of a fixed number of classes according to training sets (already classified handwritten digits).  
+Handwritten digit recognition refers to a computer’s ability to intelligently interpret handwritten inputs and is broadly applied in document processing, signature verification, and bank check clearing [2]. An important step in handwritten digit recognition is classification, in which the algorithm classifies data into one of a fixed number of classes according to training sets (already classified handwritten digits).  
 
-With the name “machine learning” coined in 1969 by Arthur Samuel [5], researchers have designed various machine learning algorithms suitable for different types of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data, based on the principle: “similar inputs have similar outputs” [6].
+With the name “machine learning” coined in 1969 by Arthur Samuel [4], researchers have designed various machine learning algorithms suitable for different types of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data, based on the principle: “similar inputs have similar outputs” [5].
 
 First, we will describe the KNN algorithm, and afterwards, provide an example, so that you can further solidify your understanding of the algorithm. By doing this, you can start to get an idea of the process that you will have to implement through Python code, when doing this lab yourself. To start, the algorithm will first sort the "training set" (the set of instances that you already have classified, which you will be using to classify a "testing instance") by using their "distance" (which will be referred to as the hamming distance) to the "testing instance". After having sorted these "training instances," the algorithm will choose the first K (where K is usually chosen by the specific use case) of these "training instances" (these are the K-Nearest "training instances" to our "testing instance") to use to classify our "testing instance". Since these "training instances" have already been classified (given a label, containing the category the instance is a part of), the algorithm will consider each of these instances to have one vote. This vote will consist of the label that the particular "training instance" has been classified as. At the end, the label with the most votes will be chosen to be the label of the "testing instance". Therefore, the "testing instance" will be put in the category with the most votes at the end of the algorithm. Below, we give a pictorial representation of this process, with K = 3.
 
@@ -44,7 +44,7 @@ But what about predicting handwritten digits in images? As you may know, all fil
     </font>
 </figure>
 
-With the training set and testing set stored in the format of a binary array, we could classify the testing instances by referring to the rule "similar inputs have similar outputs." To evaluate the similarity between the testing instance and training instance, we could calculate the hamming distance[7], which is defined as the total number of corresponding bits that are different in the two binary strings. For example, 1011 and 0111 differ in the two most significant(bits on the left of the string) bits and therefore have a distance of 2. 1011 and 1010 differ only in the least significant(bits on the right of the string) bit and have a distance of 1. As a result, 1011 is closer to 1010 than to 0111. To implement the function of calculating the hamming distance, we use the XOR logic (represented as "^" in Python) you have experienced within lab 1.
+With the training set and testing set stored in the format of a binary array, we could classify the testing instances by referring to the rule "similar inputs have similar outputs." To evaluate the similarity between the testing instance and training instance, we could calculate the hamming distance[6], which is defined as the total number of corresponding bits that are different in the two binary strings. For example, 1011 and 0111 differ in the two most significant(bits on the left of the string) bits and therefore have a distance of 2. 1011 and 1010 differ only in the least significant(bits on the right of the string) bit and have a distance of 1. As a result, 1011 is closer to 1010 than to 0111. To implement the function of calculating the hamming distance, we use the XOR logic (represented as "^" in Python) you have experienced within lab 1.
 
 However, these simple images shown before are not enough to build an accurate handwritten digit recognition system. More features (training images with a higher resolution) and a large number of training images are required to build a relatively well-performing handwritten digit recognition system. Thus we use part of the well-known MNIST dataset with a resolution of 28x28 in part 4 of the lab exercise. Again to simplify the design, images in the training set and the testing set are preprocessed to black and white ones. Figure 4 shows two digits with the resolution of 28x28. To guarantee the accuracy of predicting random handwritten digits on the canvas in part 5 of the lab exercise, the deployed web application utilizes the whole MNIST dataset and some additional corner instances that we have added to that dataset.  
 
@@ -99,7 +99,7 @@ Notebooks in Google Colab are allowed to have both text blocks and code blocks. 
 </figure>
 
 ### Part 3. Python Tutorial
-Python, as a high-level programming language for general-purpose programming language and was ranked as the most popular programming language in 2017 [9]. These days, most students start their coding journey using Python because of its high code readability, clear constructs, syntactically significant whitespace, and abundant open-source standard libraries [10]. In this section, we will go over the basic syntax and data structures of Python.
+Python, as a high-level programming language for general-purpose programming language and was ranked as the most popular programming language in 2017 [8]. These days, most students start their coding journey using Python because of its high code readability, clear constructs, syntactically significant whitespace, and abundant open-source standard libraries [10]. In this section, we will go over the basic syntax and data structures of Python.
 
 In this part, you should navigate to the copy of files in the shared folder (link available in the last section). Please open the file named *example.ipynb*, so that you can follow along with the Python tutorial there. To effectively learn Python from practice, feel free to modify and run the example notebook. If you accidentally mess it up, you could easily recover it by re-copying the original notebook in the shared folder.
 
@@ -174,11 +174,11 @@ Once you have verified your web app, demonstrate the final web-based digit recog
 ```
 
 ### Extensions
-In part 2, you implement the sort distances function by applying the Python built-in function called sort(). You may ask the question: what's going on? why it just worked? Actually there are many different sorting algorithms, so if you are interested, please go ahead and check out this nice 6 minute video!
+In part 2, you implement the sort distances function by applying the Python built-in function called sorted(). You may ask the question: what's going on? why it just worked? Actually there are many different sorting algorithms, so if you are interested, please go ahead and check out this nice 6 minute video!
 
 https://www.youtube.com/watch?v=kPRA0W1kECg
 
-Sorting algorithms are so important that many researchers are still focusing on it. Thus in this extension, you will learn the algorithm called "adaptive merge sort" [12] used in the Python built-in function sort(). Through implementing this sort method, you will learn about a programming archetype called recursion, and also a little bit about the process behind making an algorithm like this one. To make this function, you will need to make three separate functions, all of which have comment blocks over them. 
+Sorting algorithms are so important that many researchers are still focusing on it. Thus in this extension, you will learn the algorithm called "adaptive merge sort" [11] used in the Python built-in function sorted(). Through implementing this sort method, you will learn about a programming archetype called recursion, and also a little bit about the process behind making an algorithm like this one. To make this function, you will need to make three separate functions, all of which have comment blocks over them. 
 
 The first function will be the "main" function that will use recursion. In this function, you will have, a base case. This occurs when the size of the list is small enough that you know the answer right off the bat. In this case, a list with only one element will always be sorted. Then, you will move onto the recursive case. First, you will partition the array into two halves. The first sub-array will contain all even-indexed elements in the array, while the second sub-array will contain all odd-indexed elements. If we happen to be lucky and the two of these arrays happen to be already sorted, we can proceed to merge the sorted arrays together(our second function will check whether these two sub-arrays are sorted, and our third function will merge two sorted arrays together, into one sorted array). In the rest of our "main" function, we either return the sorted array after merging, if we got "lucky" or we recurse on the two halves that we made, and sort in the same way. Notice that this recursion will terminate due to the base case. If we didn't have the base case there, we would get an 'indexOutOfBounds' error, which would mean that we tried to access a list element that's not actually in the list(one that's either before the first element, or past the last element). To prevent this from happening, we must have a base case. Always make sure that when using recursion, you are making the problem progressively smaller as well.
 
@@ -187,33 +187,31 @@ Implement the three functions that are located in the comment block that says, "
 ### References
 [1] “What is Machine Learning? 3 things you need to know” Available at https://www.mathworks.com/discovery/machine-learning.html
 
-[2] Kun, Jeremy. K-Nearest-Neighbors and Handwritten Digit Classi_cation. Math Programming. Available at https://jeremykun.com/2012/08/26/k-nearest-neighbors-and-handwritten-digit-classi_cation
+[2] ECE 5775 lab2 handout: Digit Recognition System (Part1). Available at http://www.csl.cornell.edu/courses/ece5775/schedule.html
 
-[3] ECE 5775 lab2 handout: Digit Recognition System (Part1). Available at http://www.csl.cornell.edu/courses/ece5775/schedule.html
-
-[4] K-Nearest-Neighbors and Handwritten Digit Classification. Available at:
+[3] K-Nearest-Neighbors and Handwritten Digit Classification. Available at:
 https://jeremykun.com/2012/08/26/k-nearest-neighbors-and-handwritten-digit-classification/
 
-[5] Machine Learning – Wikipedia. Available at:
+[4] Machine Learning – Wikipedia. Available at:
 https://en.wikipedia.org/wiki/Machine_learning
 
-[6] CS5780 lecture 2 handout: K-nearest-neighbors. Available at:
+[5] CS5780 lecture 2 handout: K-nearest-neighbors. Available at:
 http://www.cs.cornell.edu/courses/cs4780/2018sp/page16/index.html
 
-[7] Hamming distance – Wikipedia. Available at:
+[6] Hamming distance – Wikipedia. Available at:
 https://en.wikipedia.org/wiki/Hamming_distance
 
-[8] The MNIST Database of handwritten digits. Available at:
+[7] The MNIST Database of handwritten digits. Available at:
 http://yann.lecun.com/exdb/mnist/
 
-[9] Python Tops 2017’s Most popular Programming Languages. Available at:
+[8] Python Tops 2017’s Most popular Programming Languages. Available at:
 https://www.extremetech.com/computing/252987-python-tops-list-2017s-popular-programming-languages
 
-[10] Python (programming language) – Wikipedia. Available at:
+[9] Python (programming language) – Wikipedia. Available at:
 https://en.wikipedia.org/wiki/Python_(programming_language)
 
-[11] The Python Tutorial. Available at:
+[10] The Python Tutorial. Available at:
 https://docs.python.org/3/tutorial/index.html
 
-[12] Adaptive Merge Sort. Available at:
+[11] Adaptive Merge Sort. Available at:
 https://www.cs.waikato.ac.nz/~tcs/COMP317/adaptivesort.html
