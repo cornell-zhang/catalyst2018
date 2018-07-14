@@ -64,7 +64,7 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
-In this section, you will wire up some basic circuits that start with a simple analog LED circuit and understand basic logic gates. We will finish the lab with implementing a full adder that can add multiple bits. A computer contains billions of transistors. Logic gates such as the AND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic and basic circuit work is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
+In this section, you will wire up some basic circuits that start with a simple analog LED circuit and understand basic logic gates. A computer contains billions of transistors. Logic gates such as the AND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic gates and basic circuits work is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="800">
@@ -74,14 +74,14 @@ In this section, you will wire up some basic circuits that start with a simple a
     </font>
 </figure>
 
-Looking at figure 3, let us assume the rows are denoted by the numbers (they are really faded in the figure), we notice that all holes in a row are connected. This means that any circuit components with both pins connected to the same rows are in parallel to each other. For example, if we connect one pin of resistor (R1) to row 1 and its other pin to row 2 and we do the same with another resistor(R2), then the two resistors are in parallel with each other and the equivalent resistance will be ```(R1*R2)/(R1+R2)```. Alternatively, if we connect one resistor (R3) to row 2 and row 3, then R3 will be in series with R1 and R2 and the equivalent resistance will be ```(R1*R2)/(R1+R2)+R3```. Remember to never connect the pins of your circuit component to the same row. The component will not work. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components 
+Looking at figure 3, let us assume the rows are denoted by the numbers (they are really faded in the figure), we notice that all holes in a row are connected. This means that any circuit components with both pins connected to the same rows are in parallel to each other. For example, if we connect one pin of resistor (R1) to row 1 and its other pin to row 2 and we do the same with another resistor (R2), then the two resistors are in parallel with each other and the equivalent resistance will be ```(R1*R2)/(R1+R2)```. Alternatively, if we connect one resistor (R3) to row 2 and row 3, then R3 will be in series with R1 and R2 and the equivalent resistance will be ```(R1*R2)/(R1+R2)+R3```. Remember to never connect the pins of your circuit component to the same row. The component will not work. The top and bottom of the figure shows the holes connected horizontally. These holes are typically for power and ground pins from the power source and circuit components. 
 
 <details><summary><I>Circuit Example (Click me)</I></summary>
 <p>
 	<figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/circuitexample.png" width="600">
     <font size="2">
-    <figcaption> Circuit example. If we want to connect that circuit to the breadboard, we would connect one pin of R1 to the (+) of the battery and another pin to row 1. Then we would connect one pin of R2 to row 1 and another to row 2. For the parallel configuration of R3 and R4, we will first connect one pin of each R3 and R4 to row 2 to establish a series connection. Then we will connect the second pin of both R3 and R4 to the the (-) of the battery, otherwise known as ground (GND).<br></br></a> 
+    <figcaption> <br></br> Circuit example. If we want to connect that circuit to the breadboard, we would connect one pin of R1 to the (+) of the battery and another pin to row 1. Then we would connect one pin of R2 to row 1 and another to row 2. For the parallel configuration of R3 and R4, we will first connect one pin of each R3 and R4 to row 2 to establish a series connection. Then we will connect the second pin of both R3 and R4 to the the (-) of the battery, otherwise known as ground (GND).<br></br></a> 
     </figcaption>
     </font>
 </figure>
@@ -125,9 +125,9 @@ Once you have wired everything up, have an instructor verify that the components
 *Critical Thinking Questions*: What do you think would happen if we used a resistor with higher resistance? What do you think would happen if we used a resistor with lower resistance? What would happen if we put two resistors in series or in parallel?
 
 #### Part 1.B Experiment with Inverters
-In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can receive electrons) as oppose to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFETs (MOS Field Effect Transistor). One defining property is that it has a "gate" that controls the current flowing through it. These transistors act as switches whose behavior is determined by input voltage when the VDD and GND are kept constant. When the input voltage exceeds a certain threshold, the MOSFET will regulate current flow through it from acting as an open circuit or a short circuit. Thus, combinations of NMOS and PMOS can make several types of logic gates. 
+In this part, we will be working with PMOS and NMOS transistors. PMOS stands for P-type Metal Oxide Semiconductor. P-type semiconductors contain a larger concentration of holes (elements that can receive electrons) as opposed to electrons while N-type semiconductors are the opposite. These transistors are also called MOSFETs (MOS Field Effect Transistor). One defining property of a transistor is that it has a "gate" that controls the current flowing through it. When this gate is closed, it closes the circuit and allows current to flow. When the gate is open, the circuit is open and all current is stopped. These transistors act as switches whose behavior is determined by input voltage to the gate. When the input voltage exceeds a certain threshold, the MOSFET will regulate current flow through it from acting as an open circuit or a closed circuit. Thus, combinations of NMOS and PMOS can make several types of logic gates. 
 
-Here's a summary. Remember, PMOS and NMOS are complementary!
+Here's a summary. Remember, PMOS and NMOS are complementary and are often used together in circuits as in figure 6!
 
 PMOS: 
 - Closed when input is low 
@@ -142,14 +142,14 @@ NMOS:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/CMOS Inverter.png" width="400">
     <font size="2">
-        <figcaption> Figure 6: CMOS Inverter Circuit <br></br> </a>
+        <figcaption> Figure 6: CMOS (Complementary MOS) Inverter Circuit <br></br> </a>
     </figcaption>
     </font>
 </figure>
 
-There multiple labels in the figure. The 'G' stands for Gate which is where input voltage will be applied. The gate is not directly connected to the rest of the circuit but provides a voltage difference from the gate to the circuit. This is very similar to a capacitor. In digital logic, the gate voltage is the same as input voltage. 'D' stands for Drain and 'S' stands for Source. For the MOS to change behavior, the gate voltage must be regulated such that the difference between the gate and source voltage meets some threshold. For NMOS, the gate to source voltage difference must greater than the threshold voltage for current to flow at all. For PMOS, the gate to source voltage difference must less than a threshold voltage for current to flow through it. Notice that the PMOS and NMOS have the drain connected to the output. For PMOS, current will flow from the source to drain and for the NMOS, current will flow from the drain to source. Thus, the characteristics of the PMOS and NMOS transistors gives us intuition on why PMOS is closed when input to gate is low and vice versa for NMOS.
+There multiple labels in the figure. The 'G' stands for Gate which is where input voltage will be applied. The gate is not directly connected to the rest of the circuit but provides a voltage difference from the gate to the circuit. In digital logic, the gate voltage is the same as input voltage. 'D' stands for Drain and 'S' stands for Source. For the MOS to change behavior, the gate voltage must be regulated such that the difference between the gate and source voltage meets some threshold. For NMOS, the gate to source voltage difference must greater than the threshold voltage for current to flow at all. For PMOS, the gate to source voltage difference must less than a threshold voltage for current to flow through it. Notice that the PMOS and NMOS have the drain connected to the output. For PMOS, current will flow from the source to drain and for the NMOS, current will flow from the drain to source.
 
-Wire up an inverter circuit using both a PMOS and NMOS transistor. An inverter inverts the input signal. A HIGH signal becomes low while a LOW signal becomes HIGH. This is also known as a NOT gate where the output is the opposite of the input as seen in Figure 7. The bar above the A means that we are inverting the value of A. In Figure 7, the bubble or circle at the tip of the triangle facing Y is the symbol for NOT. We will be observing other logic gates later in the session; some gates will have circles attached to the input or output terminals. These suggests that we are inverting the terminal. Before proceeding with your implementation, try to determine the values of the circuit for each combination of inputs (this is called a truth table). 
+Wire up an inverter circuit using both a PMOS and NMOS transistor. An inverter inverts the input signal. A high signal becomes low while a low signal becomes high. This is also known as a NOT gate where the output is the opposite of the input as seen in Figure 7. The bar above the A means that we are inverting the value of A. In Figure 7, the bubble or circle at the tip of the triangle facing Y is the symbol for NOT. We will be observing other logic gates later in the session; some gates will have circles attached to the input or output terminals. These suggests that we are inverting the terminal. Before proceeding with your implementation, try to determine the output of the circuit for each possible input (this is called a truth table).
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Notgate.PNG" width="200">
@@ -179,7 +179,7 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 </details>
 <details><summary><I>HINT 2</I></summary>
 <p>
-    As seen in Figure 7, wiring is very important for debugging the circuit. A good practice is to make all the same nodes the same color. For example, make wires that have the same voltage the same color.
+    As seen in Figure 8, wiring is very important for debugging the circuit. A good practice is to make all the same nodes the same color. For example, make wires that have the same voltage the same color.
 </p>
 </details>
 <details><summary><I>HINT 3</I></summary>
@@ -203,9 +203,7 @@ Figures 9 show us the circuit symbols for some basic logic gates and their accom
     </font>
 </figure>
 
-After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for an AND gate and check to see that your results are expected once you have finished up the wiring.
-
-Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
+After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. You should check that the behavior of the chip matches the AND truth table in Figure 9. After you confirm the behavior of this chip, wire up the other two chips in a similar fashion and come up with a truth table for each. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/IntegratedCircuitDiagram.png" width="800">
@@ -225,7 +223,7 @@ Wire up a single gate from the other two chips in a similar fashion and come up 
 *Critical Thinking Questions*: So far, we have seen four two-input logic gates: AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
 #### Part 2.B Develop Parity Checker
-In this section, you will develop a parity checker, which checks for errors in the transmission. Digital messages are always binary (it is the language of computers!) and are composed entirely of ones and zeros. The parity checker takes advantage of this fact by counting the number of ones and zeros to check for errors in the message.  Parity checker can be even or odd parity. An even parity unit produces a zero when there is an even number of ones in the input and one when there is an odd number of ones in the input, which signifies that there is an error in the input. This means that the total number of ones (including both the input and the parity unit) should be an even number. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match, then it is likely that one of the bits in the message was corrupted. We will be implementing an even parity checker.
+In this section, you will develop a parity checker, which is often used to check for errors in digital transmissions. Digital messages are always binary (it is the language of computers!) and are composed entirely of ones and zeros. The parity checker takes advantage of this fact by counting the number of ones and zeros to check for errors in the message.  Parity checker can be even or odd parity. An even parity unit produces a zero when there is an even number of ones in the input and one when there is an odd number of ones in the input, which signifies that there is an error in the input. This means that the total number of ones (including both the input and the parity unit) should be an even number. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match, then it is likely that one of the bits in the message was corrupted. We will be implementing an even parity checker.
 
 Figure 11 illustrates how a four-bit parity checker can be implemented using three XOR gates. Fill out the truth table below and build the parity checker using Figure 11. After you are done, make sure the truth table you fill out and the circuit you built agree by checking different combinations of inputs.
 
@@ -370,7 +368,7 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
 	</figure> 
 </p>
 </details>
-<details><summary><I>HINT 2</I></summary>
+<details><summary><I>HINT 3</I></summary>
 <p>
     <I>Debugging tip</I>: When there is only one of A, B, and Cin, S = 1, Cout = 0. When two of those, S = 0, Cout = 0. When all three are closed, then both S and Cout = 1. 
 </p>
