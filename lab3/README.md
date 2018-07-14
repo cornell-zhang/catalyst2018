@@ -14,6 +14,8 @@ Handwritten digit recognition refers to a computer’s ability to intelligently 
 
 With the name “machine learning” coined in 1969 by Arthur Samuel [5], researchers have designed various machine learning algorithms suitable for different types of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data, based on the principle: “similar inputs have similar outputs” [6].
 
+First, we will describe the KNN algorithm, and afterwards, provide an example, so that you can further solidify your example of the algorithm, so you can start to get an idea of the process that you will have to implement through Python code, in this lab. To start, the algorithm will first sort the "training instances"(those instances that you already have classified, which you will be using to classify a "testing instance") by their distance to the "testing instance". After having sorted these "training instances," the algorithm will choose the first K(where K is usually chosen by the use case) of these "training instances" to use to classify our "testing instance". Since these "training instances" have already been classified, the algorithm will consider each of these instances to have one "vote". This "vote" will consist of the label that the particular "training instance" has been classified as. At the end, the label with the most votes will be chosen to be the label of the "testing instance". Below, we give a pictorial representation of this process, with K = 3.
+
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/KNNPrediction.png" width="300">
     <font size="2">
@@ -27,7 +29,7 @@ As shown in Figure 1, all points are projected to a 2D hyperplane. Three of them
 But what about predicting handwritten digits in images? As you may know, all files are stored as numbers in electronic devices, including images. For colored images under RGB mode, each pixel will be represented by three numbers ranging from 0 to 255 which corresponding to the colors: red, green, and blue. To simplify our design, images in the training set and the testing set are black and white, that is only "0" or "1" for each pixel. Figures 2 and 3 shows two simple examples of training instances with a resolution of 7x7, and we will use similar inputs to test your code modularly (each function separately), once you implement each one.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.PNG" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/DigitRepOne.png" width="800">
     <font size="2">
     <figcaption> Figure 2: Training instance for digit 0 - resolution 7x7 <br><br></a> 
     </figcaption>
@@ -35,7 +37,7 @@ But what about predicting handwritten digits in images? As you may know, all fil
 </figure>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.2.PNG" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/DigitrRepTwo.png" width="800">
     <font size="2">
     <figcaption> Figure 3: Training instance for digit 7 - resolution 7x7 <br><br></a> 
     </figcaption>
