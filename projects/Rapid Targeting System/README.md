@@ -93,17 +93,17 @@ Now, all you have to do is include the header files in the main file and in any 
 <p>Declare a function like this:
 <pre><code>
 return_type function_name( parameter ) {
-   body of the function
+    body of the function
 }
 </code></pre>
 Example:
 <pre><code>
 void robot_turn(int direction){
-	Serial.print(direction);
+    Serial.print(direction);
 }
 </pre></code></p>
 <p>
-In the above example, ```void``` means that the doesn't return anything. ```robot_turn``` is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter named ```direction``` and prints it out to the Serial monitor. Functions are very useful for abstracting tasks for easiler integration with the rest of the code. You can also make repetitive tasks into functions so that you only need to call the function instead of executing similar lines of code repeatedly.
+In the above example, <code>void</code> means that the doesn't return anything. <code>robot_turn</code> is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter named <code>direction</code> and prints it out to the Serial monitor. Functions are very useful for abstracting tasks for easiler integration with the rest of the code. You can also make repetitive tasks into functions so that you only need to call the function instead of executing similar lines of code repeatedly.
 </p>
 </details>
 
