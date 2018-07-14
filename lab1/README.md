@@ -196,7 +196,7 @@ In the previous section, we learned about basic digital circuits and how they ca
 Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.PNG" width="500">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.png" width="500">
     <font size="2">
         <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <br></br></a>
     </figcaption>
