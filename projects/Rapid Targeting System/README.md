@@ -57,7 +57,7 @@ Even though you will use code from lab 2, you will likely find yourself writing 
 </p>
 </details>
 
-<details><summary>Header Files</summary>
+<details><summary><b>Header Files</b></summary>
 <p> 
 Another great way to organize your code is to include header files. The project is divided into different phases and you will likely split up into different groups. Header files is useful for integrating different parts of the project in a single file.
 </p>
@@ -67,21 +67,20 @@ The current project involves multiple parts: wifi, robot control, navigation, an
 To create Header files, open any plane text file such as one from a text editor and save the it with the ".h" ending. This marks the file as a C/C++ header file. The default may be a ".txt"; just delete that ending. Save  the ".h" file in the same sketch folder as your main Arduino file. Example shown below.
 </p> 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex1.PNG" width="400">
-    <font size="2">
+<font size="2">
         <figcaption> Figure 1: Adding header file to directory <br></br> </a>
     </figcaption>
     </font>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex1.PNG" width="400">
 </figure>
 <p> 
 When you open your main Arduino ".ino" file. You will see the header file as a tab in your IDE. Shown below.
 </p> 
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex2.PNG" width="400">
-    <font size="2">
+<figure><font size="2">
         <figcaption> Figure 2: Tabs with header files <br></br> </a>
     </figcaption>
     </font>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex2.PNG" width="400">
 </figure>
 <p> 
 Now, all you have to do is include the header files in the main file and in any file you plan to use the header file in. This is done using ```#include "(name of header file).h"```. Remember to use the double quotes which tells the compiler that we are adding a file from the same location as the file that included it.
