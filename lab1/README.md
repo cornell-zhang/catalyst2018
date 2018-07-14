@@ -1,7 +1,7 @@
 Lab 1: Digital Calculator
 ======================
 
-In this first lab assignment, both you and your partner will experiment with basic circuit components used in electronics, gradually building your way up into building a two-bit ripple-carry adder. The goal of the lab is become familiar with how circuits and digital logic work at a hardware level. In the first section, you will experiment with both basic analog and digital circuits, culminating with the creation of a logical NAND gate. In the second part, you will experiment with basic logic gates, and eventually develop a parity checker. In the last part, you will use everything you have learned thus far to incrementally build a two-bit ripple-carry adder. After finishing each section, make sure that a teaching assistant verifies the correct outcome and initials the appropriate line on the sign-off sheet. **Make sure to turn in your sign-off sheet by the end of the lab session.**
+In this first lab assignment, both you and your partner will experiment with basic circuit components used in electronics, gradually building your way up into building a two-bit ripple-carry adder. The goal of the lab is become familiar with how circuits and digital logic work at a hardware level. In the first section, you will experiment with both basic analog and digital circuits. In the second part, you will experiment with basic logic gates, and eventually develop a parity checker. In the last part, you will use everything you have learned thus far to incrementally build a two-bit ripple-carry adder. After finishing each section, make sure that a teaching assistant verifies the correct outcome and initials the appropriate line on the sign-off sheet. **Make sure to turn in your sign-off sheet by the end of the lab session.**
 
 
 Hardware Description
@@ -64,7 +64,7 @@ Lab Exercises
 --------------------------
 
 ### Part 1. Understanding basic circuits
-In this section, you will wire up some basic circuits that start with a simple analog LED circuit and then go to other simple digital circuits before going into developing a NAND gate. We will be exploring the basic building blocks that make up all electronics. A computer contains billions of transistors. Logic gates such as the NAND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic and basic circuit work is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
+In this section, you will wire up some basic circuits that start with a simple analog LED circuit and understand basic logic gates. We will finish the lab with implementing a full adder that can add multiple bits. A computer contains billions of transistors. Logic gates such as the AND gate are made up of these transistors. Inside a computer, there could be millions to billions of logic gates depending on the computer all working in conjunction to make the machine run. Understanding how these logic and basic circuit work is fundamental to understanding how a computer works. If you are ever in need of assistance, feel free to ask the TA’s for help. While you are wiring up circuits, make sure to turn OFF the breadboard power supply. Failure to do so may result in the circuit breaking. You may refer to Figure 3 below to see the wiring underlying the breadboard.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardWiring.png" width="800">
@@ -191,19 +191,19 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 ### Part 2. Understanding Basic Logic Gates
 In the previous section, we learned about basic digital circuits and how they can be implemented. In this section, we will take what we have learned and abstract it away and eventually build a parity checker with these new gates we discovered.
 
-#### Part 2.A Experiment with AND, OR, XOR, NAND Gates
+#### Part 2.A Experiment with AND, OR, XOR Gates
 
-Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables. Can you fill out the truth table for the NAND gate? You may have guessed it, a NAND gate comes from NOT+AND=NAND. Thus, a NAND gate is an AND gated inverted. Looking at the figure, the only difference between a NAND and an AND gate is the bubble at the output pin for a NAND gate. 
+Figures 9 show us the circuit symbols for some basic logic gates and their accompanying truth tables.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates.PNG" width="500">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Logicgates2.PNG" width="500">
     <font size="2">
         <figcaption> Figure 9: Circuit Symbols for Different Logic Gates [1] <br></br></a>
     </figcaption>
     </font>
 </figure>
 
-After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for an AND gate and check to see that your results are expected once you have finished up the wiring. After that, you can try to covert your AND gate into a NAND gate. Remember that a NAND gate is just NOT+AND.
+After turning off the power supply, begin to wire up the AND gate as shown in Figure 10 below. During this process try to come up with the truth table for an AND gate and check to see that your results are expected once you have finished up the wiring.
 
 Wire up a single gate from the other two chips in a similar fashion and come up with a truth table for each using the same process as the previous part. Using these truth tables, try to determine which gate is the XOR and which is the OR gate.
 
@@ -222,7 +222,7 @@ Wire up a single gate from the other two chips in a similar fashion and come up 
 
  Once you have determined which chip contains each type of gate, show an instructor your truth tables and demonstrate the operation of either the OR or the XOR gate. 
 
-*Critical Thinking Questions*: So far, we have seen four two-input logic gates: NAND, AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
+*Critical Thinking Questions*: So far, we have seen four two-input logic gates: AND, OR, and XOR. How many different logic gates are possible if we limit ourselves to gates with just two inputs and one output? 
 
 #### Part 2.B Develop Parity Checker
 In this section, you will develop a parity checker, which checks for errors in the transmission. Digital messages are always binary (it is the language of computers!) and are composed entirely of ones and zeros. The parity checker takes advantage of this fact by counting the number of ones and zeros to check for errors in the message.  Parity checker can be even or odd parity. An even parity unit produces a zero when there is an even number of ones in the input and one when there is an odd number of ones in the input, which signifies that there is an error in the input. This means that the total number of ones (including both the input and the parity unit) should be an even number. The sender can calculate the parity of a message and send the parity bit along with the message. The receiver can then also calculate the parity of the message and compare it to the parity bit sent along with the message. If the parity bits do not match, then it is likely that one of the bits in the message was corrupted. We will be implementing an even parity checker.
