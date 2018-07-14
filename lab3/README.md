@@ -29,7 +29,7 @@ As shown in Figure 1, all points are projected to a 2D hyperplane. Three of them
 But what about predicting handwritten digits in images? As you may know, all files are stored as numbers in electronic devices, including images. For colored images under RGB mode, each pixel will be represented by three numbers ranging from 0 to 255 which corresponding to the colors: red, green, and blue. To simplify our design, images in the training set and the testing set are black and white, that is only "0" or "1" for each pixel. Figures 2 and 3 shows two simple examples of training instances with a resolution of 7x7, and we will use similar inputs to test your code modularly (each function separately), once you implement each one.
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.1.PNG" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/DigitRepOne.PNG" width="800">
     <font size="2">
     <figcaption> Figure 2: Training instance for digit 0 - resolution 7x7 <br><br></a> 
     </figcaption>
@@ -37,7 +37,7 @@ But what about predicting handwritten digits in images? As you may know, all fil
 </figure>
 
 <figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/2.2.PNG" width="800">
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab3/figures/DigitRepTwo.PNG" width="800">
     <font size="2">
     <figcaption> Figure 3: Training instance for digit 7 - resolution 7x7 <br><br></a> 
     </figcaption>
