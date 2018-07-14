@@ -1,13 +1,10 @@
 Projects
 ======================
 
-Intelligent electronic systems are broadly applied in many applications including in IoT devices and auto-driving systems.  For the final project, you are going to choose one of the following two competitions.
-
-Proposals
---------------------------------
+The goal of the final project is combine your knowledge in hardware, software, and machine intelligence to build a cohesive Internet-connected intelligent system. While there is a broad range of applications that can leverage such a system, for the purpose of the final project, you are going to choose one of the following representative application scenarios. You will be working in a group of around 8 students to collaboratively complete the project of your choice.
 
 ### [1. Rapid Targeting System](Rapid%20Targeting%20System)
-In this competition, students will build a robot that is able to quickly arrive at its destination. Students will use the same wooden maze as in Lab 2, but should implement more sophisticated programs that allow the robots to reach their targets in much shorter periods of time. Programs should include infrared mapping, which allow the robot to determine the direction in which the object directly ahead is the furthest away. This should allow the robot to determine the shortest route to the target from its current position.  As an additional challenge, students will develop a way to change the starting orientation of the robot by directing it to spin a certain number of degrees using the digit recognition system from Lab 3. Students should use WiFi communication to send a digit to the robot, causing it to rotate for a specified amount of time. After changing its starting orientation by rotating, the robot should proceed to rapidly navigate the maze to reach its target.
+For this application scenario, you will build a robot that is able to locate its target faster and more efficiently. Students will use the same wooden maze as in Lab 2, but should program more sophisticated control behaviors that allow the robots to reach their targets in a much shorter period of time. New behaviors may include infrared mapping, for example, to allow the robot to determine the direction in which the object in front of the robot is the farthest away. This should allow the robot to determine a shorter route to the target from its current position.  As an additional challenge, students will develop a remote mechanism to manually control the starting orientation of the robot by asking the robot to rotate a specific number of degrees using the digit recognition system from Lab 3. Students should use WiFi communication to send a digit to the robot, which in turn rotates the robot accordingly so it faces a good starting orientation. After changing its starting orientation, the robot should proceed to rapidly navigate the maze to reach its target. Groups will compete for the shortest amount of time it takes their robots to reach the target.
 
 
 ### [2. Adaptive Cruise System](Adaptive%20Cruise%20Control%20System)
