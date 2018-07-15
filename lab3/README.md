@@ -118,10 +118,10 @@ First, navigate to the comment section that says, "Part 1: Calculate Hamming Dis
 
 *HINT*: This method can be implemented very elegantly, if you exploit the methods of the Digit class.
 
-```diff
-- Sign-Off Milestone: 
+
+**Sign-Off Milestone**: 
 Once you have implemented this function and compared your results with the correct ones that we have provided for you, show the results of your function to a TA before moving on.
-```
+
 
 ### Part 2. Sort by Hamming Distance
 Next, navigate to the comment section that says, "Part 2: Sort by Hamming Distance". In this section, we will sort the results list that we have already made in the previous part so that we have the tuples in order of hamming distance, from least to greatest (we would like to find the K-*nearest* neighbors, after all). To simplify this section for you, you may use one of Python's built-in functions, *sorted*, which takes the entire list of tuples, and can sort by whatever you would like to specify it to sort by. A simple example was provided to you in the tutorial, so you may refer to that if you are stuck. Also, this may take a little bit of google-ing on your part, so make sure to ask a teaching assistant if you need any help. If you have prior coding experience, you may be interested in trying out the extension, which implements the same sorting algorithm that Python uses in its built-in function called "Adaptive Merge Sort". Through doing this exercise, you will learn about a new programming archetype called recursion. Be sure to complete the entirety of this lab before coming back to try this optional extension.
@@ -134,10 +134,10 @@ Once you have finished sorting the results of your previous function, check the 
 ### Part 3. Find K-Nearest Neighbors
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. After doing this, you will have to sort this dictionary by frequency of the digits. This way, we can pick out the digit with the highest frequency as our final result. You will find the section you have to implement under the comment "Part 3: Find K-Nearest Neighbors". 
 
-```diff
-- Sign-Off Milestone: 
+
+**Sign-Off Milestone**: 
 Once you have implemented this function, compare your results with the correct labelMap that we have provided for you. After verifying the correctness of your function, be sure to have a TA verify your results before moving on.
-```
+
 
 ### Part 4. Combining Functionality and Testing for Accuracy
 After checking your implementation for each of the methods from the first three parts, you will use this part to combine their functionalities and build your entire digitrec system. In this part, we have provided some training data for you that is in the Google Drive folder that you have access to. You will use the copied file, *dataset.csv*, to provide training and testing images to test the accuracy of your system. To allow your program to access the data file, you will have to first upload the file to your Google Colab Virtual Machine (VM). Follow the instructions in part 4(a) to upload this file into the VM. The text box tells you to get the fileID of the file you would like to upload. You may refer to the images below, which show how you can get the fileID of a file on Drive. Once you have done so, you will be able to run your digitrec system. Notice that, in the "digitrec" function, we make function calls to the other methods that you have implemented before. In this way, we have combined our modular design into a fully functional digitrec system. After doing all this, you will implement a function that finds the accuracy of the classifications that your digitrec system outputs, by comparing those outputs with the correct ones. This will be done in section 4(b). Lastly, you will combine all these parts together into your digitrec system, using the accuracy rate function that you implemented in the previous part, to find the success rate of your implementation.
@@ -158,20 +158,20 @@ After checking your implementation for each of the methods from the first three 
     </font>
 </figure>
 
-```diff
-- Sign-off Milestone: 
+
+**Sign-off Milestone**: 
 Once you have achieved an error rate smaller than 10%, show the code and results to one of the TAs before moving on.
-```
+
 
 ### Part 5. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access our server. According to your group number, your username will be "gX", where "X" is your group number, i.e. g1, g2, g5, etc. and your password will be the same as your username. Hit the "Login" button once you have filled these two fields. Once you have logged in, please double-check that the group number shown on the top (after the login screen) is correct. Before starting to draw on the canvas, you will have to upload a Python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called *digitrec_sol.py* into your local machine. Then open it within any programming IDE you like and paste the functions you implemented before into the correct place. After having done so, upload the file *digitrec_sol.py*, which includes your solution/implementation, to the server by clicking the button "upload Python script". Lastly, you can test your system by drawing digits (or other things if you'd like) to see whether your system works as expected.
 
 Remember that if you want to connect to the server and play with your handwritten digit recognition system using other electronic devices, say your smartphone, it should be connected to the Cornell network, or else the firewall will block your request.
 
-```diff
-- Sign-off Milestone: 
+
+**Sign-off Milestone**: 
 Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
-```
+
 
 ### Extensions
 In part 2, you implement the sort distances function by applying the Python built-in function called sorted(). You may ask the question: what's going on? why it just worked? Actually there are many different sorting algorithms, so if you are interested, please go ahead and check out this nice 6 minute video!
