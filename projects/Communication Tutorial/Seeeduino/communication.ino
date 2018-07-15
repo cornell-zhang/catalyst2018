@@ -3,7 +3,7 @@
 #include <YunClient.h>
 #include <Process.h>
 
-#define PORT 12
+#define PORT 12 // You will have to change the port number here
 
 YunServer server(PORT);
 YunClient client;
@@ -47,7 +47,7 @@ void loop()
       Serial.print("Prediction: ");
       
       while (client.available()) {
-        uint8_t ch = client.read();
+        uint8_t ch = client.read(); // Reading value from the chat server
         int value = ch - '0';
         Serial.println(value);
       }
