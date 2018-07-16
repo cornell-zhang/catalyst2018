@@ -76,7 +76,7 @@ We will be using the Arduino Web Editor to write and compile our code. Use a web
 </figure>
 
 Note that if the Auduino Web Editor keeps reporting errors, please switch to this portable Auduino IDE. 
-<a href="https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing"> (Link to Folder) </a> You should download this file to the disk and unzip the file which is called "arduino-1.8.5.zip". Then you should enter the corresponding folder and open Arduino GUI by double clicking the executable file called "arduino.exe". Now you should be able to write your code and verify it. Try to explore the menu (File, Edit, Sketch, Tools, and Help) on the top to learn how to use this IDE (Fugure 6). 
+<a href="https://drive.google.com/drive/folders/18qj4JanxX0zgHVHPIdTbCf_Tizlyk6sP?usp=sharing"> (Link to Folder) </a> You should download this file to the disk and unzip the file which is called "arduino-1.8.5.zip". Then you should enter the corresponding folder and open Arduino GUI by double clicking the executable file called "arduino.exe". Now you should be able to write your code and verify it. Try to explore the menu (File, Edit, Sketch, Tools, and Help) on the top to learn how to use this IDE (Fugure 6). 
 
 
 <figure>
