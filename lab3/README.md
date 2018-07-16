@@ -118,8 +118,9 @@ First, navigate to the comment section that says, "Part 1: Calculate Hamming Dis
 
 *HINT*: This method can be implemented very elegantly, if you exploit the methods of the Digit class.
 
-
-**Sign-Off Milestone**: 
+```diff
+-Sign-Off Milestone-
+```
 Once you have implemented this function and compared your results with the correct ones that we have provided for you, show the results of your function to a TA before moving on.
 
 
@@ -127,15 +128,17 @@ Once you have implemented this function and compared your results with the corre
 Next, navigate to the comment section that says, "Part 2: Sort by Hamming Distance". In this section, we will sort the results list that we have already made in the previous part so that we have the tuples in order of hamming distance, from least to greatest (we would like to find the K-*nearest* neighbors, after all). To simplify this section for you, you may use one of Python's built-in functions, *sorted*, which takes the entire list of tuples, and can sort by whatever you would like to specify it to sort by. A simple example was provided to you in the tutorial, so you may refer to that if you are stuck. Also, this may take a little bit of google-ing on your part, so make sure to ask a teaching assistant if you need any help. If you have prior coding experience, you may be interested in trying out the extension, which implements the same sorting algorithm that Python uses in its built-in function called "Adaptive Merge Sort". Through doing this exercise, you will learn about a new programming archetype called recursion. Be sure to complete the entirety of this lab before coming back to try this optional extension.
 
 ```diff
-- Sign-Off Milestone: 
-Once you have finished sorting the results of your previous function, check the results of your function against the correct sorted result list that we have provided for you. Once you have finished, be sure to show your results to a TA before moving on.
+-Sign-Off Milestone-
 ```
+Once you have finished sorting the results of your previous function, check the results of your function against the correct sorted result list that we have provided for you. Once you have finished, be sure to show your results to a TA before moving on.
 
 ### Part 3. Find K-Nearest Neighbors
 In this section, you will find the K-nearest neighbors of the testing image, and store them in a dictionary with their label as keys and the number of digits with that label as their value. For this reason, your loop will only iterate K times and not over the entire list. After doing this, you will have to sort this dictionary by frequency of the digits. This way, we can pick out the digit with the highest frequency as our final result. You will find the section you have to implement under the comment "Part 3: Find K-Nearest Neighbors". 
 
 
-**Sign-Off Milestone**: 
+```diff
+-Sign-Off Milestone-
+```
 Once you have implemented this function, compare your results with the correct labelMap that we have provided for you. After verifying the correctness of your function, be sure to have a TA verify your results before moving on.
 
 
@@ -158,8 +161,9 @@ After checking your implementation for each of the methods from the first three 
     </font>
 </figure>
 
-
-**Sign-off Milestone**: 
+```diff
+-Sign-Off Milestone-
+```
 Once you have achieved an error rate smaller than 10%, show the code and results to one of the TAs before moving on.
 
 
@@ -169,7 +173,9 @@ Now it’s time to deploy a web application based on your digit recognition syst
 Remember that if you want to connect to the server and play with your handwritten digit recognition system using other electronic devices, say your smartphone, it should be connected to the Cornell network, or else the firewall will block your request.
 
 
-**Sign-off Milestone**: 
+```diff
+-Sign-Off Milestone-
+```
 Once you have verified your web app, demonstrate the final web-based digit recognition system to one of the TAs.
 
 
