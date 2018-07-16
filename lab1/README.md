@@ -23,21 +23,23 @@ As for the other materials you will need, they are listed below:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/image3.jpeg" width="400">
     <font size="2">
-    <figcaption> Black power cable with barrel connector </a> 
+    <figcaption> Black power cable with barrel connector<br> </a> 
     </figcaption>
     </font>
 </figure>
+
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/image2.jpeg" width="400">
     <font size="2">
-    <figcaption> The LED </a> 
+    <figcaption> The LED<br> </a> 
     </figcaption>
     </font>
 </figure>
+
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/image1.jpeg" width="400">
     <font size="2">
-    <figcaption> Resistors </a> 
+    <figcaption> Resistors<br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -45,17 +47,15 @@ As for the other materials you will need, they are listed below:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagram.png" width="800">
     <font size="2">
-    <figcaption> Figure 1: Simple LED Circuit Implemented on Prototyping Platform </a> 
+    <figcaption> Figure 1: Simple LED Circuit Implemented on Prototyping Platform<br> </a> 
     </figcaption>
     </font>
 </figure>
 
-
-
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/supplies1.jpg" width="300">
     <font size="2">
-    <figcaption> Figure 2: Supplies </a> 
+    <figcaption> Figure 2: Supplies<br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -96,7 +96,7 @@ The LED must be placed in a specific direction for it to turn on. The two pins o
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LED.png" width="600">
     <font size="2">
-    <figcaption> Figure 4: LED Schematic </a> 
+    <figcaption> Figure 4: LED Schematic<br></a> 
     </figcaption>
     </font>
 </figure>
@@ -110,7 +110,7 @@ Wire up the simple LED circuit shown in Figure 5 below. You may also refer to Fi
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/LEDCircuitDiagram.png" width="200">
     <font size="2">
-    <figcaption> Figure 5: Simple LED Circuit </a> 
+    <figcaption> Figure 5: Simple LED Circuit<br></a> 
     </figcaption>
     </font>
 </figure>
@@ -164,7 +164,7 @@ Notice that we have already provided you with the PMOS and NMOS transistors that
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/BreadboardDiagramForInverter.png" width="800">
     <font size="2">
-        <figcaption> Figure 8: Breadboard Diagram For Testing Inverter Circuit </a>
+        <figcaption> Figure 8: Breadboard Diagram For Testing Inverter Circuit <br></a>
     </figcaption>
     </font>
 </figure>
@@ -309,7 +309,7 @@ Wire up the half-adder shown in Figure 13 below.
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/HalfAdder.png" width="400">
     <font size="2">
-        <figcaption> Figure 13: Circuit of Half-Adder </a>
+        <figcaption> Figure 13: Circuit of Half-Adder<br> </a>
     </figcaption>
     </font>
 </figure>
@@ -334,7 +334,7 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Fulladder.png" width="600">
     <font size="2">
-        <figcaption> Figure 14: Full-Adder </a>
+        <figcaption> Figure 14: Full-Adder <br></a>
     </figcaption>
     </font>
 </figure>
@@ -342,7 +342,7 @@ Wire up the full-adder shown in Figure 14 below. A full adder contains a carry i
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/PlanningDiagramFullAdder.png" width="800">
     <font size="2">
-        <figcaption> Figure 15: Planning Diagram for Breadboard Implementation of Full-Adder </a>
+        <figcaption> Figure 15: Planning Diagram for Breadboard Implementation of Full-Adder<br></a>
     </figcaption>
     </font>
 </figure>
@@ -382,7 +382,7 @@ Figure 16 shows how we can chain a bunch of full adders to create a N-bit ripple
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/Adder.png" width="900">
     <font size="2">
-        <figcaption> Figure 16: Multi-Bit Ripple-Carry Adder</a>
+        <figcaption> Figure 16: Multi-Bit Ripple-Carry Adder<br></a>
     </figcaption>
     </font>
 </figure>
@@ -429,7 +429,7 @@ create the entire hardware module.
     <figure>
         <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab1/figures/4thBitSubtractor.PNG" width="900">
         <font size="2">
-            <figcaption> Four Bit Subtractor</a>
+            <figcaption> Four Bit Subtractor<br></a>
         </figcaption>
         </font>
     </figure>
