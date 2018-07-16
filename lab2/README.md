@@ -75,7 +75,19 @@ We will be using the Arduino Web Editor to write and compile our code. Use a web
     </font>
 </figure>
 
-Now, we will program our robot very simply, using the code shown in Figure 6. You should type this code into the Arduino web editor. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid repetition, you may want to save your file using the menu item: *Save* and then create a new copy for each new part by using the menu item: *Save As…* You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 6, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Check that the battery pack is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 6 and compile it again.  Finally, upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
+Note that if the Auduino Web Editor keeps reporting errors, please switch to this portable Auduino IDE. 
+<a href="https://drive.google.com/drive/folders/1kYCltMJSid-Oc8IZqZsCcOZW1fFxs2nk?usp=sharing"> (Link to Folder) </a> You should download this file to the disk and unzip the file which is called "arduino-1.8.5.zip". Then you should enter the corresponding folder and open Arduino GUI by double clicking the executable file called "arduino.exe". Now you should be able to write your code and verify it. Try to explore the menu (File, Edit, Sketch, Tools, and Help) on the top to learn how to use this IDE (Fugure 6). 
+
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/Arduino_IDE.PNG" width="600">
+    <font size="2">
+    <figcaption> Figure 6: Arduino IDE Layout <br></br></a> 
+    </figcaption>
+    </font>
+</figure>
+
+Now, we will program our robot very simply, using the code shown in Figure 7. You should type this code into the Arduino web editor. As you write more programs, you will likely find yourself typing the same code components over and over again. To avoid repetition, you may want to save your file using the menu item: *Save* and then create a new copy for each new part by using the menu item: *Save As…* You can then delete portions of the code that you don’t need for your new project and start working. Once you are finished writing the code shown in Figure 7, upload your code to the Arduino and verify that the LED blinks as it should.  To upload your code to the Arduino, first ensure that the black USB cable is plugged into your computer and the Arduino stack. Check that the battery pack is plugged into the board as well. Compile your code by clicking the checkmark icon.  Note: if errors arise when compiling your code, it is likely that you have one or more syntax errors. In this case, check that your code is exactly the same as the code in Figure 7 and compile it again.  Finally, upload your code by selecting the right arrow icon. After checking that the LED is blinking, you can play around with the delay to vary the blink rate.
 
 Some notes on coding:
 - ```//``` before any words means that the entire line is "commented" which doesn't affect the execution of the code in any way. They are good for labeling parts of your code and telling the user how the code works.
@@ -85,18 +97,18 @@ Some notes on coding:
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 6: Blinking LED Code Example <br></br></a> 
+    <figcaption> Figure 7: Blinking LED Code Example <br></br></a> 
     </figcaption>
     </font>
 </figure>
 
-We will now extend the code to make one LED light up when the right bumper is pressed and the other light up when the left bumper is pressed. The code for this part is shown in Figure 7 below. Verify that this works as expected after typing the code into the web editor and uploading it to your Arduino.
+We will now extend the code to make one LED light up when the right bumper is pressed and the other light up when the left bumper is pressed. The code for this part is shown in Figure 8 below. Verify that this works as expected after typing the code into the web editor and uploading it to your Arduino.
 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/BlinkingLEDAndSwitchControlledLEDCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 7: Blinking LED and Switch-Controlled LED Code Example<br></br> </a> 
+    <figcaption> Figure 8: Blinking LED and Switch-Controlled LED Code Example<br></br> </a> 
     </figcaption>
     </font>
 </figure>
@@ -134,12 +146,12 @@ A small change to the current code can allow the blink rate of the LED to be det
 </details>
 
 #### Part 1.B Experiment with Grayscale Sensors
-In this section, you will experiment with the grayscale sensor on the robot. This is the same sensor you will need to utilize later in the last section to find the location of the target. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both an LED that generates light and a photodetector that senses light. The value the sensor outputs depends on the amount of light that the photodetector senses. This sensor will report values between 0 and 1024, which indicates how much light has been reflected back (lower values indicate that the robot is travelling on a lighter surface, while higher values indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 8 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the Serial Monitor by selecting the menu item: *Monitor* in the lefthand bar. Place your robot over the light wood of the testing block and then over the black section of the testing block.  Notice the types of values the grayscale sensor yields in each case and determine a threshold value that separates the two. This value can be a rough estimate of a number that separates grayscale values for light colors and grayscale values for dark colors (you will need to use this value later in the last section). Verify that the readings behave as expected before showing your results to an instructor.
+In this section, you will experiment with the grayscale sensor on the robot. This is the same sensor you will need to utilize later in the last section to find the location of the target. The grayscale sensor is located on the underside of the robot. Notice that the sensor has both an LED that generates light and a photodetector that senses light. The value the sensor outputs depends on the amount of light that the photodetector senses. This sensor will report values between 0 and 1024, which indicates how much light has been reflected back (lower values indicate that the robot is travelling on a lighter surface, while higher values indicate that the robot is travelling on a darker surface). Enter and upload the code shown in Figure 9 below. We will use the Serial Monitor to observe the value that is output by the grayscale sensor. After uploading the code to the Arduino, you can open up the Serial Monitor by selecting the menu item: *Monitor* in the lefthand bar. Place your robot over the light wood of the testing block and then over the black section of the testing block.  Notice the types of values the grayscale sensor yields in each case and determine a threshold value that separates the two. This value can be a rough estimate of a number that separates grayscale values for light colors and grayscale values for dark colors (you will need to use this value later in the last section). Verify that the readings behave as expected before showing your results to an instructor.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/GrayscaleSensorCode.png" width="600">
     <font size="2">
-    <figcaption> Figure 8: Analog Grayscale Sensor and Serial Monitor Example <br></br></a>
+    <figcaption> Figure 9: Analog Grayscale Sensor and Serial Monitor Example <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -150,12 +162,12 @@ In this section, you will experiment with the grayscale sensor on the robot. Thi
 #### Part 1.C Experiment with Drive Motors
 In this section, you will begin to experiment with the drive motors of the robot. The test program that you will use to experiment with these motors is shown in Figure 9 below. This program will attempt to move the robot in a square with two-foot sides. You will notice that two pins are used to control each drive motor. One pin controls the direction that the motor spins, while the other controls the speed at which that motor spins. When the motor direction output pin is set to LOW, the motor will spin forwards, and when it is set to HIGH, the motor will spin backwards. The motor speed pin can be set to any value between 0 and 255, where higher numbers indicate a faster motor speed. Keep in mind that moderate motor speeds are between 75 and 125, and also that the motor speed is proportional to the voltage generated by the 5 AA batteries(so as they drain, you may have to increase your motor speed in order to get your wheels to turn at the same rate). 
 
-Enter the code shown in Figure 9 below into your Arduino web editor. Once you have done so, place your robot on the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino and, if you would like, try executing this code once more with the robot on the floor so that you can see whether it really does move in a square. If your robot does not move in a square, play around with the rotating delay time until it does. 
+Enter the code shown in Figure 10 below into your Arduino web editor. Once you have done so, place your robot on the testing block to keep it from moving when you are testing. Verify that your robot behaves as expected after uploading the code to your Arduino and, if you would like, try executing this code once more with the robot on the floor so that you can see whether it really does move in a square. If your robot does not move in a square, play around with the rotating delay time until it does. 
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveRobotSquareCode.png" width="700">
     <font size="2">
-        <figcaption> Figure 9: Move Robot in a Square Code Example <br></br></a>
+        <figcaption> Figure 10: Move Robot in a Square Code Example <br></br></a>
     </figcaption>
     </font>
 </figure>
@@ -178,19 +190,19 @@ The figure below illustrates the specific FSM we will be using.  The robot first
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/FSM_Algorithm.png" width="600">
     <font size="2">
-        <figcaption> Figure 10: Finite-State Machine Algorithm <br></br></a>
+        <figcaption> Figure 11: Finite-State Machine Algorithm <br></br></a>
     </figcaption>
     </font>
 </figure>
 
 
 #### Part 2.A Develop Move-and-Stop Behavior
-In this section, you will need to write a program that makes the robot continue to move forward until it hits an obstacle, in which case it will stop. The code shown in Figure 11 below contains a possible starting point for your program.  Be sure to use your wooden testing block when working on this section.
+In this section, you will need to write a program that makes the robot continue to move forward until it hits an obstacle, in which case it will stop. The code shown in Figure 12 below contains a possible starting point for your program.  Be sure to use your wooden testing block when working on this section.
 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/lab2/figures/MoveAndStopTemplateCode.png" width="700">
     <font size="2">
-        <figcaption> Figure 11: Template for Move-and-Stop Robot Behavior<br></br> </a>
+        <figcaption> Figure 12: Template for Move-and-Stop Robot Behavior<br></br> </a>
     </figcaption>
     </font>
 </figure>
