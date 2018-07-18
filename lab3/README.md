@@ -118,21 +118,23 @@ In this preliminary part, you will explore the class structure of the Digit clas
 ### Part 1. Calculate Hamming Distance
 First, you will complete a preliminary exercise, which will teach you how to use the distance() method from the Digit class. We have already initialized the necessary Digit objects for you.
 
-**Sign-Off Milestone: Once you have completed the exercise relating to the distance() function, you should show your results to a TA before moving on.**
+**Sign-Off Milestone(Part 1 A): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
 
 First, navigate to the text section that says, "Part 1: Calculate Hamming Distances". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit (we have already provided this a little further up in the code), and each of the digits in the training set. In part (a) of this section, you will explore the *distance* method of the Digit class. Afterwards, you will implement the main function in this section, and lastly, you will test the results of that function. You will find further detail in the text section and in the comments that we provided you in the function. After finishing, move on to testing to see whether your function works correctly.
 
-**Sign-Off Milestone: Once you have implemented this function and verified your results with the simple inputs that we have provided for you, show your results to a TA before moving on.**
+**Sign-Off Milestone(Part 1 C): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
 
 ### Part 2. Find K-Nearest-Neighbors
 Next, navigate to the text section that says, "Part 2: Find K-Nearest Neighbors". In this section, you will find the K-Nearest Neighbors of the testing image, based on their hamming distances. These K-Nearest Neighbors don't need to be sorted by distance. This section is much more complicated that the last, so make sure to read through both the text block and the comments in the code block right after that for more detail. If you have any questions, be sure to ask a TA. After finishing, move on to testing to see whether your function works correctly.
 
-**Sign-Off Milestone: Once you have finished sorting the results of your previous function, check the results of your function using the simple inputs we have provided for you. Once you have finished, be sure to show your results to a TA before moving on.**
+**Sign-Off Milestone(Part 2 A): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
+
+**Sign-Off Milestone(Part 2 B): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
 
 ### Part 3. Find Classification
 Now, navigate to the text section that says, "Part 3. Find Classification". In this section you will use the output from the previous function you implemented, and vote on labels for the training images in your list. After doing so, you will iterate through these labels, picking out the one with the most votes to return from the function. For more detail please refer to both the text block and the comments in the code block of the function you are implementing for this part. After finishing this part, test to see that your function works properly, before showing your results to a TA.
 
-**Sign-Off Milestone: Once you have implemented this function, use the provided code to print out your results, and verify the correctness of your function yourself. Be sure to show your results to a TA once you have finished.**
+**Sign-Off Milestone(Part 3 B): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
 
 ### Part 4. Combining Functionality and Testing for Accuracy
 After checking your implementation for each of the methods from the first three parts, you will use this part to combine their functionalities and build your entire digitrec system. In this part, we have provided some training data for you that is in the Google Drive folder that you have access to. You will use the copied file, *dataset.csv*, to provide training and testing images to test the accuracy of your system. To allow your program to access the data file, you will have to first upload the file to your Google Colab Virtual Machine (VM). Follow the instructions in part 4(a) to upload this file into the VM (there are images below of what you should be doing). The text box tells you to get the fileID of the file you would like to upload. You may refer to the images below, which show how you can get the fileID of a file on Drive. Once you have done so, you will be able to run your digitrec system. Notice that, in the "digitrec" function, we make function calls to the other methods that you have implemented before. In this way, we have combined our modular design into a fully functional digitrec system. You will first test your digitrec implementation with just one testing image, and then with a few testing images. After doing all this, you will implement a function that finds the accuracy of the classifications that your digitrec system outputs, by comparing those outputs with the correct ones. This will be done in section 4(d) and testing will be done in 4(e). Lastly, you will combine all these parts together into your digitrec system, using the accuracy rate function that you just implemented in the previous part, to find the success rate of your implementation. For more detail, please refer to the Google Colab document.
@@ -153,11 +155,11 @@ After checking your implementation for each of the methods from the first three 
     </font>
 </figure>
 
-**Sign-Off Milestone(Part 4(b)): Once you have classified a single digit, you should verify that your function produced the correct classification before showing your results to a TA.**
+**Sign-Off Milestone(Part 4 C): Once you have classified a single digit, you should verify that your function produced the correct classification before showing your results to a TA.**
 
-**Sign-Off Milestone(Part 4(e)): Once you have have implemented the accuracy finding function, you should test your results, before showing your work to a TA.**
+**Sign-Off Milestone(Part 4 E): Once you have have implemented the accuracy finding function, you should test your results, before showing your work to a TA.**
 
-**Sign-Off Milestone(Part 4(f)): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
+**Sign-Off Milestone(Part 4 F): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
 
 ### Part 5. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access our server. According to your group number, your username will be "gX", where "X" is your group number, i.e. g1, g2, g5, etc. and your password will be the same as your username. Hit the "Login" button once you have filled these two fields. Once you have logged in, please double-check that the group number shown on the top (after the login screen) is correct. Before starting to draw on the canvas, you will have to upload a Python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called *digitrec_sol.py* into your local machine. Then open it within any programming IDE you like and paste the functions you implemented before into the correct place. After having done so, upload the file *digitrec_template.py*, which includes your solution/implementation, to the server by clicking the button, "upload_python_script" and then "upload" once you have selected the right file. Lastly, you can test your system by drawing digits (or other things if you'd like) to see whether your system works as expected.
