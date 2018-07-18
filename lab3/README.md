@@ -170,11 +170,10 @@ You should note that if you want to connect to the server and play with your han
 
 
 ### Extensions
-In part 2, you implement the sort distances function by applying the Python built-in function called sorted(). You may ask the question: what's going on? why it just worked? Actually there are many different sorting algorithms, so if you are interested, please go ahead and check out this nice 6 minute video!
+In part 2, you find the K images with the smallest hamming distances.  Another way to find these images is to implement the sort distances function by applying the Python built-in function called sorted().  As an optional modification, you can replace your implementation in Part 2 with code that utilizes the built-in sorted() function.  You may also want to create your own sorting function. This is also just one of the many available sorting algorithms. If you are interested, please go ahead and check out this nice 6 minute video!
 
 https://www.youtube.com/watch?v=kPRA0W1kECg
 
-Sorting algorithms are so important that many researchers are still focusing on it. Thus in this extension, you will experience the the Python built-in function sorted() which is developed with the algorithm called "adaptive merge sort" [11]. Please refer to the sixth section in the "example.ipynb".
 
 ### References
 [1] “What is Machine Learning? 3 things you need to know” Available at https://www.mathworks.com/discovery/machine-learning.html
