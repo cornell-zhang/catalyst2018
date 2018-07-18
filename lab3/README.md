@@ -110,12 +110,16 @@ In this section, you should implement three basic functions for building the dig
 
 As always, ask a teaching assistant if you need help with any of these parts.
 
-### Digit Class
-In this preliminary part, you will explore the class structure of the Digit class. If you need a refresher on classes and objects, you may refer to the tutorial in *example.ipynb*. Take note of the data members and functions of the class, as you will be working with Digit objects throughout this lab. After looking through the Digit Class, you will be asked to complete a few short exercises in the code block that follows it.
+### Part 0: Digit Class
+In this preliminary part, you will explore the class structure of the Digit class. If you need a refresher on classes and objects, you may refer to the tutorial in *example.ipynb*. Take note of the data members and functions of the class, as you will be working with Digit objects throughout this lab. After looking through the Digit Class, you will be asked to complete a few short exercises in the code block that follows it. These exercises will consist of just printing the Digit objects that we have constructed for you.
 
 **Sign-Off Milestone: Once you have completed the exercises, show your results to a TA before moving on.**
 
 ### Part 1. Calculate Hamming Distance
+First, you will complete a preliminary exercise, which will teach you how to use the distance() method from the Digit class. We have already initialized the necessary Digit objects for you.
+
+**Sign-Off Milestone: Once you have completed the exercise relating to the distance() function, you should show your results to a TA before moving on.**
+
 First, navigate to the text section that says, "Part 1: Calculate Hamming Distances". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit (we have already provided this a little further up in the code), and each of the digits in the training set. In part (a) of this section, you will explore the *distance* method of the Digit class. Afterwards, you will implement the main function in this section, and lastly, you will test the results of that function. You will find further detail in the text section and in the comments that we provided you in the function. After finishing, move on to testing to see whether your function works correctly.
 
 **Sign-Off Milestone: Once you have implemented this function and verified your results with the simple inputs that we have provided for you, show your results to a TA before moving on.**
@@ -149,8 +153,11 @@ After checking your implementation for each of the methods from the first three 
     </font>
 </figure>
 
-**Sign-Off Milestone: Once you have achieved an error rate smaller than 10%, show the code and results to one of the TAs before moving on.**
+**Sign-Off Milestone(Part 4(b)): Once you have classified a single digit, you should verify that your function produced the correct classification before showing your results to a TA.**
 
+**Sign-Off Milestone(Part 4(e)): Once you have have implemented the accuracy finding function, you should test your results, before showing your work to a TA.**
+
+**Sign-Off Milestone(Part 4(f)): After checking to see whether your error rate is below 10%, you should show your results to a TA before moving on.**
 
 ### Part 5. Deploy Digit Recognition Web Application
 Now it’s time to deploy a web application based on your digit recognition system. Please open "Chrome" and type in the IP address “132.236.59.106” or the domain name "zhang-precision-02.ece.cornell.edu" to access our server. According to your group number, your username will be "gX", where "X" is your group number, i.e. g1, g2, g5, etc. and your password will be the same as your username. Hit the "Login" button once you have filled these two fields. Once you have logged in, please double-check that the group number shown on the top (after the login screen) is correct. Before starting to draw on the canvas, you will have to upload a Python file that contains the code you wrote in the first part. Please go back to the shared file, download the template called *digitrec_sol.py* into your local machine. Then open it within any programming IDE you like and paste the functions you implemented before into the correct place. After having done so, upload the file *digitrec_template.py*, which includes your solution/implementation, to the server by clicking the button, "upload_python_script" and then "upload" once you have selected the right file. Lastly, you can test your system by drawing digits (or other things if you'd like) to see whether your system works as expected.
