@@ -118,10 +118,7 @@ In this preliminary part, you will explore the class structure of the Digit clas
 ### Part 1. Calculate Hamming Distance
 First, navigate to the text section that says, "Part 1: Calculate Hamming Distances". This is where you will implement the first part of this lab assignment. In this part, you will calculate the hamming distance between the test digit (we have already provided this a little further up in the code), and each of the digits in the training set. In part (a) of this section, you will explore the *distance* method of the Digit class. Afterwards, you will implement the main function in this section, and lastly, you will test the results of that function. You will find further detail in the text section and in the comments that we provided you in the function. After finishing, move on to testing to see whether your function works correctly.
 
-```diff
--Sign-Off Milestone-
-```
-Once you have implemented this function and verified your results with the simple inputs that we have provided for you, show your results to a TA before moving on.
+**Sign-Off Milestone: Once you have implemented this function and verified your results with the simple inputs that we have provided for you, show your results to a TA before moving on.**
 
 ### Part 2. Find K-Nearest Neighbors
 Next, navigate to the text section that says, "Part 2: Find K-Nearest Neighbors". In this section, you will find the K-Nearest Neighbors of the testing image, based on their hamming distances. These K-Nearest Neighbors don't need to be sorted by distance. This section is much more complicated that the last, so make sure to read through both the text block and the comments in the code block right after that for more detail. If you have any questions, be sure to ask a TA. After finishing, move on to testing to see whether your function works correctly.
