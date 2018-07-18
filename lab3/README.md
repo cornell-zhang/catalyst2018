@@ -9,7 +9,7 @@ Software Description
 
 Before getting started with implementing your digitrec system, you should read this section carefully to get a basic understanding about KNN and Python. In this section, the motivation for machine learning applications and the methodology of machine learning algorithms will be covered in part 1. Then part 2 will contain a brief introduction to Google Colab, which is the online platform to program and test Python scripts. Lastly, part 3 is a tutorial for programming in Python (it will be an interactive tutorial that you can play around with on a Google Colab document, *example.ipynb*).
 
-### Part 1. K-Nearest Neighbors
+### Part 1. K-Nearest-Neighbors
 Handwritten digit recognition refers to a computer’s ability to intelligently interpret handwritten inputs and is broadly applied in document processing, signature verification, and bank check clearing [2]. An important step in handwritten digit recognition is classification, in which the algorithm classifies data into one of a fixed number of classes according to training sets (already classified handwritten digits).  
 
 With the name “machine learning” coined in 1969 by Arthur Samuel [4], researchers have designed various machine learning algorithms suitable for different types of problems. As one of the earliest machine learning algorithms, KNN has a straightforward and intuitive method to classify data, based on the principle: “similar inputs have similar outputs” [5].
@@ -124,7 +124,7 @@ First, navigate to the text section that says, "Part 1: Calculate Hamming Distan
 
 **Sign-Off Milestone: Once you have implemented this function and verified your results with the simple inputs that we have provided for you, show your results to a TA before moving on.**
 
-### Part 2. Find K-Nearest Neighbors
+### Part 2. Find K-Nearest-Neighbors
 Next, navigate to the text section that says, "Part 2: Find K-Nearest Neighbors". In this section, you will find the K-Nearest Neighbors of the testing image, based on their hamming distances. These K-Nearest Neighbors don't need to be sorted by distance. This section is much more complicated that the last, so make sure to read through both the text block and the comments in the code block right after that for more detail. If you have any questions, be sure to ask a TA. After finishing, move on to testing to see whether your function works correctly.
 
 **Sign-Off Milestone: Once you have finished sorting the results of your previous function, check the results of your function using the simple inputs we have provided for you. Once you have finished, be sure to show your results to a TA before moving on.**
