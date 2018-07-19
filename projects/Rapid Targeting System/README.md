@@ -4,17 +4,17 @@
 
 ### Goal 
 ---
-Use the robot to navigate a maze using various sensors. We will have a competition between groups to see which robot can navigate the maze the fastest. You are allow to use all sensors installed on the robot and program them to aid your progress.
+Use the robot to navigate a maze using various sensors. We will have a competition between groups to see which robot can navigate the maze the fastest. You are allow to use all sensors installed on the robot and read their values to help you accomplish this task. If you have forgotten which sensors are on the robot, you may look on the handout for Lab 2, for a diagram of the sensors on the robot. There are also some sensors that you haven't already used in Lab 3, which you can experiement with, so that you know which sensors you will be using to complete this project.
 
-### The obstacle
+### Obstacle Course
 ---
-The maze is a square covered all all sides with a wooden wall and has a single wooden wall that extends halfway through the middle of the maze. The floor of the maze is entirely wood except for an all black square that signifies the target location. The wood all have same color. The robot will start at a randomly chosen position in opposite side of the wall from the target and will need to spin around for a random degree and then navigate the maze.
+The maze you will be navigating in this project, is the very same one that you had used in Lab 2. It's square in shape, covered on all sides with wooden walls and has a single wooden wall that extends halfway through the middle of the maze. The floor of the maze is entirely wood except for a black square that signifies the target location. The robot will start at a randomly chosen position on the opposite side of the wall from the target and each time, before beginning, it will spin some number of degrees according to the number you write on your Digitrec system. We will provide more detail about how you should have your robot spin, later on in this handout.
 
 We may add more obstacles to the course in order to test the robustness of your robot intelligence. We can also change the starting location of the robot.
 
-### Robot specification
+### Robot Specification
 ---
-The robot have a few updates in comparison to lab 2. We have added a wifi shield to allow us to communicate with the robot using Digitrec from lab 3. You will need to use the wifi shield to program the robot to spin initially when we draw a number on Digitrec website. To utilize the wifi shield, some modifications to the wiring of the robot are needed. Follow the tutorial in the folder titled "Communications Tutorial" in order to upgrade your robot. We also have access to the front facing infrared sensor.    
+The robot has a few updates in comparison to Lab 2. We have added a wifi chip to allow us to communicate with the robot using your Digitrec system from Lab 3. You will need to use the wifi chip to first receive a handwritten digit from your Digitrec system and then program the robot to spin initially, depending on this number. To utilize the wifi chip, some modifications to the wiring of the robot are needed. Follow the tutorial in the folder titled "Communications Tutorial" in order to upgrade your robot. We also have access to the front facing infrared sensor. You should split your group into two subgroups. One subgroup will be responsible for setting up the communication channel(a.k.a the wifi chip) and testing to see whether the Digitrec system works properly, while the other subgroup will be responsible for testing out the sensors and having the robot navigate to the target in the fastest way possible. After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. You will find more detail about the expectations, further down in the handout.
 
 ### Tasks
 --- 
