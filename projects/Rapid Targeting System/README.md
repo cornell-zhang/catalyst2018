@@ -17,23 +17,21 @@ Once the hardware is all wired up, you will need to program the software to make
 
 Once your robot can successfully receive a digit from the web app, you can program your robot to spin based on the value of the digit. Please note that the digit will be use to determine the initial orientation of the robot, and this orientation affects the direction for which the robot is initially facing and thus how fast it can get to the target. Therefore, be sure to determine the mapping between digit and rotation angle carefully and convey this information to anyone who would be starting the robot.
 
-Milestone 1.1: Your robot should be able to receive any digit sent from our digit recognition web app. You should verify the received digit with the serial monitor.
+**Milestone 1.1: Your robot should be able to receive any digit sent from our digit recognition web app. You should verify the received digit with the serial monitor.**
 
-Milestone 1.2: Your robot should be able rotate for a certain number of degrees based on the value of the digit sent from the web app. For example, your motors should rotate 30 degrees for every increment in the digit.
+**Milestone 1.2: Your robot should be able rotate for a certain number of degrees based on the value of the digit sent from the web app. For example, your motors should rotate 30 degrees for every increment in the digit.**
 
-### Tasks
---- 
-Your robot must be able to perform the following tasks:
+### Task 2: Developing smart wandering behaviors
 
-1. Program the CC3000 WiFi board on the robot to allow it to receive information from the Digitrec website.
-2. Spin the robot based on the number drawn on the Digitrec website. The degree to spin is scaled to 360 degrees. For example: 0 would be 0 degrees, 1 would be 36 degrees approximately and 9 would be 324 degrees approximately. 
-3. Have the robot navigate the maze in shortest possible time.
-4. Make sure the robot's intelligence is robust enough that it can handle different maze configurations.
-5. When the robot reaches the target, it should spin 360 degrees and stop moving.
+We will make use of various sensors (infrared sensor, greyscale sensor, bumpers) to increase the speed at which the robot navigates the maze and reach its final destimation. As part of the this process, you should think of how the robot should react to different values from these sensors. For example, which direction should it turn when a left bumper is hit versus when a right bumper is triggered? Can you also look at the signal from the infrared sensor to more intelligent determine how to turn? How general are the optimizations that you implement? For the design of your robot, can it handle different maze configurations? For your robot, are there any design tradeoff between having a fixed maze versus a dynamically reconfigurable maze? As in Lab 2, when the robot reaches the target, it should spin 360 degrees and stop moving.
 
-### Robot Specification
----
-The robot has a few updates in comparison to Lab 2. We have added a wifi chip to allow us to communicate with the robot using your Digitrec system from Lab 3. You will need to use the wifi chip to first receive a handwritten digit from your Digitrec system and then program the robot to spin initially, depending on this number. To utilize the wifi chip, some modifications to the wiring of the robot are needed. Follow the tutorial in the folder titled "Communications Tutorial" in order to upgrade your robot. We also have access to the front facing infrared sensor. You should split your group into two subgroups. One subgroup will be responsible for setting up the communication channel(a.k.a the wifi chip) and testing to see whether the Digitrec system works properly, while the other subgroup will be responsible for testing out the sensors and having the robot navigate to the target in the fastest way possible. After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. You will find more detail about the expectations, further down in the handout.
+**Milestone 2.1: Demonstrate one new feature implemented in your robot that allows it to reach the target faster. Make sure you can articulate why this new feature is useful. You will be required to demonstrate and time both your old robot and new robot in the maze.**
+
+**Milestone 2.2: Demonstrate another new feature implemented in your robot that allows it to reach the target faster. Please also articulate why this new feature is useful.**
+
+### Putting everything together
+
+After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. You will find more detail about the expectations, further down in the handout.
 
 
 
