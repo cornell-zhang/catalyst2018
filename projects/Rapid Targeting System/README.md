@@ -2,7 +2,7 @@
 # Rapid Targeting System 
 ---
 
-## Goal 
+### Goal 
 ---
 Use the robot to navigate a maze using various sensors. We will have a competition between groups to see which robot can navigate the maze the fastest. You are allow to use all sensors installed on the robot and program them to aid your progress.
 
@@ -24,6 +24,8 @@ Your robot must be able to perform the following tasks:
 2. Spin the robot based on the number drawn on the Digitrec website. The degree to spin is scaled to 360 degrees. For example: 0 would be 0 degrees, 1 would be 36 degrees approximately and 9 would be 324 degrees approximately. 
 3. Have the robot navigate the maze in shortest possible time.
 4. Make sure the robot's intelligence is robust enough that it can handle different maze configurations.
+5. When the robot reaches the target, it should spin 360 degrees and stop moving.
+
 
 ### Design tips
 ---
@@ -64,26 +66,57 @@ The current project involves multiple parts: wifi, robot control, navigation, an
 </p> <p> 
 To create Header files, open any plane text file such as one from a text editor and save the it with the ".h" ending. This marks the file as a C/C++ header file. The default may be a ".txt"; just delete that ending. Save  the ".h" file in the same sketch folder as your main Arduino file. Example shown below.
 </p> 
-<figure>
 <font size="2">
-        <figcaption> Figure 1: Adding header file to directory</a>
-    </figcaption>
+        <p>Figure 1: Adding header file to directory</p>
     </font>
+<figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex1.PNG" width="400">
 </figure>
 <p> 
 When you open your main Arduino ".ino" file. You will see the header file as a tab in your IDE. Shown below.
 </p> 
-<figure><font size="2">
-        <figcaption> Figure 2: Tabs with header files</a>
-    </figcaption>
+<font size="2">
+        <p> Figure 2: Tabs with header files</p>
     </font>
+<figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex2.PNG" width="400">
 </figure>
 <p> 
 Now, all you have to do is include the header files in the main file and in any file you plan to use the header file in. This is done using ```#include "(name of header file).h"```. Remember to use the double quotes which tells the compiler that we are adding a file from the same location as the file that included it.
 </p> 
 </details>
+
+
+<details><summary><b>Finite State Machines</b></summary>
+<p>Your robot will need to perform a wide variety of tasks and each task requires a specific set of actions. Finite state machines are very useful and quick way to delegate tasks to your robot depending on the current situation. </p>
+<p>Figure 3 below illustrates an example of an FSM. Each circle shows the state of the robot. </p>
+<font size="2">
+        <p> Figure 3: FSM Algorithm</p>
+    </font>
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/FSM_Algorithm.png" width="500">
+</figure>
+</details>
+<p>To implement a FSM in software, we use case statements where we check for the current state of the robot as well as the next state of the robot.</p>
+<pre><code>
+switch(state)
+  {
+    case looking: 
+    {
+        forward();
+        break;
+    }
+    case hit_wall: 
+    {
+        reverse(); 
+        break;
+    }
+    case found_target: 
+    {
+        rotate(); 
+        break;
+    }
+</code></pre>
 
 ### C++ Tutorial
 <details><summary><b>Functions</b></summary>
