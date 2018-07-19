@@ -1,20 +1,25 @@
 
 # Rapid Targeting System 
----
 
 ### Goal 
----
-Use the robot to navigate a maze using various sensors. We will have a competition between groups to see which robot can navigate the maze the fastest. You are allow to use all sensors installed on the robot and read their values to help you accomplish this task. If you have forgotten which sensors are on the robot, you may look on the handout for Lab 2, for a diagram of the sensors on the robot. There are also some sensors that you haven't already used in Lab 3, which you can experiement with, so that you know which sensors you will be using to complete this project.
 
-### Obstacle Course
----
-The maze you will be navigating in this project, is the very same one that you had used in Lab 2. It's square in shape, covered on all sides with wooden walls and has a single wooden wall that extends halfway through the middle of the maze. The floor of the maze is entirely wood except for a black square that signifies the target location. The robot will start at a randomly chosen position on the opposite side of the wall from the target and each time, before beginning, it will spin some number of degrees according to the number you write on your Digitrec system. We will provide more detail about how you should have your robot spin, later on in this handout.
+Use the robot to more rapidly navigate a maze and reach the target using various sensors. We will have a competition between groups to see which robot can navigate the maze the fastest. You are allowed to use all sensors installed on the robot and read their values to help you accomplish this task. If you have forgotten which sensors are on the robot, you may review the handout for Lab 2 for a diagram of the sensors on the robot. Some of these sensors were not used in either Lab 2 and Lab 3.
 
-We may add more obstacles to the course in order to test the robustness of your robot intelligence. We can also change the starting location of the robot.
+The maze you will be navigating in this project is the same one that you had used in Lab 2. The robot will start at a randomly chosen position on the opposite side of the wall from the target. Each time before starting, it will spin some number of degrees according to the number you write on your digit recognition web app. We will provide more detail about how you should have your robot spin later on in this handout. We may add more obstacles to the course in order to test the robustness of your robot intelligence. We can also change the starting location of the robot.
 
-### Robot Specification
----
-The robot has a few updates in comparison to Lab 2. We have added a wifi chip to allow us to communicate with the robot using your Digitrec system from Lab 3. You will need to use the wifi chip to first receive a handwritten digit from your Digitrec system and then program the robot to spin initially, depending on this number. To utilize the wifi chip, some modifications to the wiring of the robot are needed. Follow the tutorial in the folder titled "Communications Tutorial" in order to upgrade your robot. We also have access to the front facing infrared sensor. You should split your group into two subgroups. One subgroup will be responsible for setting up the communication channel(a.k.a the wifi chip) and testing to see whether the Digitrec system works properly, while the other subgroup will be responsible for testing out the sensors and having the robot navigate to the target in the fastest way possible. After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. You will find more detail about the expectations, further down in the handout.
+This project can be divided into independent tasks. Each group should further divide into subgroups to work on different tasks in parallel. At the end, different subgroups will come together to assemble the final system. Each group will get multiple robots to experiment with their design so that each subgroup has its own robot to work with.
+
+### Task 1: Setting up the wireless communication
+
+In order to allow the robot to receive a digit from the digit recognition web app, we will need to enable wireless connectivity on the robot by integrating a WiFi chip into the design. Specifically, we will wire up the CC3000 WiFi board on a breadboard on the side of the Arduino stack and connect the WiFi board to the appropriate pins on the Arduino stack. Please refer to the [Arduino Uno Communication Tutorail](../Communication%20Tutorial/Uno) for detailed instructions on how to set up the pin connections and build the hardware.
+
+Once the hardware is all wired up, you will need to program the software to make use of the WiFi board. For this part, you will first study our [code template](Communication%20Tutorial/Uno/communication.ino) and then integrate it into the program for your robot to receive digit from the web app.
+
+Once your robot can successfully receive a digit from the web app, you can program your robot to spin based on the value of the digit. Please note that the digit will be use to determine the initial orientation of the robot, and this orientation affects the direction for which the robot is initially facing and thus how fast it can get to the target. Therefore, be sure to determine the mapping between digit and rotation angle carefully and convey this information to anyone who would be starting the robot.
+
+Milestone 1.1: Your robot should be able to receive any digit sent from our digit recognition web app. You should verify the received digit with the serial monitor.
+
+Milestone 1.2: Your robot should be able rotate for a certain number of degrees based on the value of the digit sent from the web app. For example, your motors should rotate 30 degrees for every increment in the digit.
 
 ### Tasks
 --- 
@@ -25,6 +30,12 @@ Your robot must be able to perform the following tasks:
 3. Have the robot navigate the maze in shortest possible time.
 4. Make sure the robot's intelligence is robust enough that it can handle different maze configurations.
 5. When the robot reaches the target, it should spin 360 degrees and stop moving.
+
+### Robot Specification
+---
+The robot has a few updates in comparison to Lab 2. We have added a wifi chip to allow us to communicate with the robot using your Digitrec system from Lab 3. You will need to use the wifi chip to first receive a handwritten digit from your Digitrec system and then program the robot to spin initially, depending on this number. To utilize the wifi chip, some modifications to the wiring of the robot are needed. Follow the tutorial in the folder titled "Communications Tutorial" in order to upgrade your robot. We also have access to the front facing infrared sensor. You should split your group into two subgroups. One subgroup will be responsible for setting up the communication channel(a.k.a the wifi chip) and testing to see whether the Digitrec system works properly, while the other subgroup will be responsible for testing out the sensors and having the robot navigate to the target in the fastest way possible. After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. You will find more detail about the expectations, further down in the handout.
+
+
 
 
 ### Design tips
