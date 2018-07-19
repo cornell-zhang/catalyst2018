@@ -11,8 +11,10 @@ After having done this, you can get started with attempting to communicate with 
 
 |Seeeduino Cloud Label | Port # | Group # |
 |----------------------|--------|---------|
-|A                     |        |         |
-|B                     |        |         |
-|C                     |        |         |
+|1                     |1       |1        |
+|2                     |2       |2        |
+|3                     |3       |3        |
+|4                     |4       |4        |
+|5                     |5       |5        |
 
 We will end here with an extremely brief overview of what is going on in both the setup section and in the main loop of the code. In the setup section of the code, we are starting up the chat server between the Seeeduino Cloud and the specific port that we want the Seeeduino Cloud to listen to. After this setup code, we keep polling (checking continuously) in the main loop to see whether something else has appeared at the port we are listening to. If something has, we are reading that value, and printing the result to the serial monitor.
