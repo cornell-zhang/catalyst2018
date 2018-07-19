@@ -29,9 +29,9 @@ Your robot must be able to perform the following tasks:
 
 ### Design tips
 ---
-1. To help improve navigation time, you can increase the speed of the motors so that the robot can move and turn faster. However, the robot will be less stable and will likely tip over. You will therefore need to improve stability.
+1. To help improve navigation time, you can increase the speed of the motors so that the robot can move and turn faster. However, the robot will be less stable and will likely tip over. You will therefore need to adjust the speed enough, so that you have a combination of speed and stability. The only way to do this, is to test your design multiple times and adjust the speed accordingly.
 2. There are two infrared sensors on the robot. One on the front and one on the bottom; the bottom can help detect the target and the front can be used to sense distance between the sensor and the wall. It is recommended that you utilize the front infrared sensor to allow the robot to see the distance between itself and the wall; think about how the robot will know (or can guess) that it is going the right way. The front infrared sensor can also prevent the robot from getting stuck. The front facing infrared sensor will be useful for getting the robot out corners where bumpers can't detect.  
-3. The bumpers are an excellent tool to provide information to the robot. Look at the extensions for lab 2 where you implement the bumper to allow the robot to intelligently turn based on which bumper was pressed.
+3. The bumpers are an excellent tool to provide information to the robot. You may refer to the Lab 2 handout to see how you can use the bumper information to get your robot to navigate faster through the maze.
 
 ### Programming tips
 ---
