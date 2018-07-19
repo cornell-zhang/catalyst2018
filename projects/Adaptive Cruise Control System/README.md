@@ -34,10 +34,12 @@ As you may have noticed from Lab 2, the robot may not drive in a straight line e
 
 **Milestone 3.2: Your robot should be able recover a straigh path after bumping into any wall in the track. Your robot should be able to move from one end of the track to the other end without creating congestion that prevents other robots from moving.**
 
-### Putting everything together
+### Finale: Putting everything together
 
 Combine the functionalities created for the robots in the previous three tasks into a single robot that contains all these functionalities in one. This involves integrating the three pieces of Arduino code into one piece of code and uploading it into the Seeeduino micro-controller. Afterward, you will use a Seeeduino stacked with motor shield and maker shield to control your final integrated robot.
 
 **Milestone: You should test whether the integrated robot can accomplish the goals defined in all previous milestones.**
   
 **Milestone: Find another finished group and see if you can get one robot to adjust its speed depending on a second robot in front of it. Line your two robots up and simply control the speed of the leading robot using the digit recognition system.  See if you can get the trailing robot to dynamically adjust its speed to avoid collision.**
+
+At this point, congratulations for completing the core components of your final project. It's time to see where your imagination can take you in terms of adding even more functionalities and/or testing other interesting scenarios. Don't hesitate to try out any new ideas you have!
