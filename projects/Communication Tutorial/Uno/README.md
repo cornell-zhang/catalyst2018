@@ -73,7 +73,7 @@ In your final project, your robot will be communicating with our server via a ro
 |E              |14               |14             |
 
 
-To establish this connection using an Arduino, we have provided code (snapshot) that connects your CC3000 Wifi board to the network and provides useful checks for you in the Arduino Wed Editor's serial monitor. The first portion of the code establishes a connection to the network and prints connection details in your serial monitor. The second part of the code contains the loop that continuously checks for available data. To get started, please open the Arduino Web Edidor you used in lab2, create a new sketch and type in the following code (Figure 3,4,5).
+To establish this connection using an Arduino, we have provided code (snapshot) that connects your CC3000 Wifi board to the network and provides useful checks for you in the Arduino Wed Editor's serial monitor. The first portion of the code establishes a connection to the network and prints connection details in your serial monitor. The second part of the code is the initial configuration, and the final part contains the loop that continuously checks for available data. To get started, please open the Arduino Web Edidor you used in lab2, create a new sketch and type in the following code (Figure 3,4,5).
 Attention: Please remember to change the LISTEN_PORT number to your own one.
 
 <figure>
