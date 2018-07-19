@@ -20,7 +20,7 @@ The robot has a few updates in comparison to Lab 2. We have added a wifi chip to
 --- 
 Your robot must be able to perform the following tasks:
 
-1. Program the wifi shield on the robot to allow it to receive information from the Digitrec website.
+1. Program the CC3000 WiFi board on the robot to allow it to receive information from the Digitrec website.
 2. Spin the robot based on the number drawn on the Digitrec website. The degree to spin is scaled to 360 degrees. For example: 0 would be 0 degrees, 1 would be 36 degrees approximately and 9 would be 324 degrees approximately. 
 3. Have the robot navigate the maze in shortest possible time.
 4. Make sure the robot's intelligence is robust enough that it can handle different maze configurations.
