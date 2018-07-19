@@ -13,7 +13,7 @@ This project can be divided into independent tasks. Each group should further di
 
 In order to allow the robot to receive a digit from the digit recognition web app, we will need to enable wireless connectivity on the robot by integrating a WiFi chip into the design. Specifically, we will wire up the CC3000 WiFi board on a breadboard on the side of the Arduino stack and connect the WiFi board to the appropriate pins on the Arduino stack. Please refer to the [Arduino Uno Communication Tutorial](../Communication%20Tutorial/Uno) for detailed instructions on how to set up the pin connections and build the hardware.
 
-Once the hardware is all wired up, you will need to program the software to make use of the WiFi board. For this part, you will first study our [code template](Communication%20Tutorial/Uno/communication.ino) and then integrate it into the program for your robot to receive digit from the web app.
+Once the hardware is all wired up, you will need to program the software to make use of the WiFi board. For this part, you will first study our [code template](../Communication%20Tutorial/Uno#part-2software-setup) and then integrate it into the program for your robot to receive digit from the web app.
 
 Once your robot can successfully receive a digit from the web app, you can program your robot to spin based on the value of the digit. Please note that the digit will be use to determine the initial orientation of the robot, and this orientation affects the direction for which the robot is initially facing and thus how fast it can get to the target. Therefore, be sure to determine the mapping between digit and rotation angle carefully and convey this information to anyone who would be starting the robot.
 
@@ -25,128 +25,23 @@ Once your robot can successfully receive a digit from the web app, you can progr
 
 We will make use of various sensors (infrared sensor, greyscale sensor, bumpers) to increase the speed at which the robot navigates the maze and reach its final destimation. As part of the this process, you should think of how the robot should react to different values from these sensors. For example, which direction should it turn when a left bumper is hit versus when a right bumper is triggered? Can you also look at the signal from the infrared sensor to more intelligent determine how to turn? How general are the optimizations that you implement? For the design of your robot, can it handle different maze configurations? For your robot, are there any design tradeoff between having a fixed maze versus a dynamically reconfigurable maze? As in Lab 2, when the robot reaches the target, it should spin 360 degrees and stop moving.
 
+##### Design tips
+
+1. To help improve navigation time, you can increase the speed of the motors so that the robot can move and turn faster. However, the robot will be less stable and will likely tip over. You will therefore need to adjust the speed enough, so that you have a combination of speed and stability. The only way to do this, is to test your design multiple times and adjust the speed accordingly.
+2. The infrared sensor in the front can be used to sense distance between the sensor and the wall. It is recommended that you utilize the front infrared sensor to allow the robot to see the distance between itself and the wall; think about how the robot will know (or can guess) that it is going the right way. The front infrared sensor can also prevent the robot from getting stuck. The front facing infrared sensor will be useful for getting the robot out corners where bumpers can't detect.  
+3. The bumpers are an excellent tool to provide information to the robot. You may refer to the Lab 2 handout to see how you can use the bumper information to get your robot to navigate faster through the maze.
+
 **Milestone 2.1: Demonstrate one new feature implemented in your robot that allows it to reach the target faster. Make sure you can articulate why this new feature is useful. You will be required to demonstrate and time both your old robot and new robot in the maze.**
 
 **Milestone 2.2: Demonstrate another new feature implemented in your robot that allows it to reach the target faster. Please also articulate why this new feature is useful.**
 
 ### Putting everything together
 
-After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. You will find more detail about the expectations, further down in the handout.
+After the two subgroups have finished their respective parts, you should integrate the two parts together into one, single piece of Arduino code that you can upload to the robot and have it meet the specifications we have just listed. This involves integrating the three pieces of Arduino code into one piece of code.
 
+**Milestone: You should test whether the integrated robot can accomplish the goals defined in all previous milestones.**
 
-
-
-### Design tips
----
-1. To help improve navigation time, you can increase the speed of the motors so that the robot can move and turn faster. However, the robot will be less stable and will likely tip over. You will therefore need to adjust the speed enough, so that you have a combination of speed and stability. The only way to do this, is to test your design multiple times and adjust the speed accordingly.
-2. There are two infrared sensors on the robot. One on the front and one on the bottom; the bottom can help detect the target and the front can be used to sense distance between the sensor and the wall. It is recommended that you utilize the front infrared sensor to allow the robot to see the distance between itself and the wall; think about how the robot will know (or can guess) that it is going the right way. The front infrared sensor can also prevent the robot from getting stuck. The front facing infrared sensor will be useful for getting the robot out corners where bumpers can't detect.  
-3. The bumpers are an excellent tool to provide information to the robot. You may refer to the Lab 2 handout to see how you can use the bumper information to get your robot to navigate faster through the maze.
-
-### Programming tips
----
-As in lab 2, you will be programming in C++ on the Arduino IDE. You will also verify and upload the code using the IDE.
-Even though you will use code from lab 2, you will likely find yourself writing more lines code to configure the robot AI. It is therefore very useful to develop good coding practices and tricks in order to organize your code and improve the readability of your code.
-
-### Improving the readability of you code
-<details><summary><b>Comments</b></summary>
-<p> 
-    Since you will be working in a group with other students, comments are a very good way to tell others what your code does as well as help group members debug the code. In C++, comments can be made using <code>//</code>, which comments lines, or <code>/*..*/</code>, which comments a block. 
-</p>
-<p>
-    Uses for comments:
-    <ul>
-    <li>You can comment out code in order to help isolate bugs. </li>
-    <li> Label variables and functions.</li>
-    <li> Insert comments next to lines of code to tell the user what that line does.</li>
-    <li> Put instructions on how to use this code/program.</li>
-    </ul>
-</p>
-<p>
-    You can comment out large blocks of code using <code>/*..*/</code> and comment specific lines using <code>//</code>. Commented code is ignored by the compiler and will not be uploaded onto the board; thus, it will not take up additional memory.
-</p>
-</details>
-
-<details><summary><b>Header Files</b></summary>
-<p> 
-Another great way to organize your code is to include header files. The project is divided into different phases and you will likely split up into different groups. Header files is useful for integrating different parts of the project in a single file.
-</p>
- <p> 
-The current project involves multiple parts: wifi, robot control, navigation, and robot peripherals. All these parts require a significant amount of the code.
-</p> <p> 
-To create Header files, open any plane text file such as one from a text editor and save the it with the ".h" ending. This marks the file as a C/C++ header file. The default may be a ".txt"; just delete that ending. Save  the ".h" file in the same sketch folder as your main Arduino file. Example shown below.
-</p> 
-<font size="2">
-        <p>Figure 1: Adding header file to directory</p>
-    </font>
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex1.PNG" width="400">
-</figure>
-<p> 
-When you open your main Arduino ".ino" file. You will see the header file as a tab in your IDE. Shown below.
-</p> 
-<font size="2">
-        <p> Figure 2: Tabs with header files</p>
-    </font>
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/ex2.PNG" width="400">
-</figure>
-<p> 
-Now, all you have to do is include the header files in the main file and in any file you plan to use the header file in. This is done using ```#include "(name of header file).h"```. Remember to use the double quotes which tells the compiler that we are adding a file from the same location as the file that included it.
-</p> 
-</details>
-
-
-<details><summary><b>Finite State Machines</b></summary>
-<p>Your robot will need to perform a wide variety of tasks and each task requires a specific set of actions. Finite state machines are very useful and quick way to delegate tasks to your robot depending on the current situation. </p>
-<p>Figure 3 below illustrates an example of an FSM. Each circle shows the state of the robot. </p>
-<font size="2">
-        <p> Figure 3: FSM Algorithm</p>
-    </font>
-<figure>
-    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/FSM_Algorithm.png" width="500">
-</figure>
-<p>To implement a FSM in software, we use case statements where we check for the current state of the robot as well as the next state of the robot.</p>
-<pre><code>
-switch(state)
-  {
-    case looking: 
-    {
-        forward();
-        break;
-    }
-    case hit_wall: 
-    {
-        reverse(); 
-        break;
-    }
-    case found_target: 
-    {
-        rotate(); 
-        break;
-    }
-</code></pre>
-</details>
-
-
-### C++ Tutorial
-<details><summary><b>Functions</b></summary>
-<p>Functions are a group of statements that perform a specific task. Function are useful for performing repetitive tasks.</p>
-<p>Declare a function like this:
-<pre><code>
-return_type function_name( parameter ) {
-    body of the function
-}
-</code></pre>
-Example:
-<pre><code>
-void robot_turn(int direction){
-    Serial.print(direction);
-}
-</pre></code></p>
-<p>
-In the above example, <code>void</code> means that the doesn't return anything. <code>robot_turn</code> is the function name. The parameter is specified the same way as the function with a type and name. The function takes in an integer as a parameter named <code>direction</code> and prints it out to the Serial monitor. Functions are very useful for abstracting tasks for easiler integration with the rest of the code. You can also make repetitive tasks into functions so that you only need to call the function instead of executing similar lines of code repeatedly.
-</p>
-</details>
+**Milestone: Find another finished group and see how your robot competes against the robot of the other group. Discuss your designs and make the appropriate improvements.**
 
 
 
