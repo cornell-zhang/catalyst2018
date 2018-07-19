@@ -96,7 +96,6 @@ Now, all you have to do is include the header files in the main file and in any 
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/figures/FSM_Algorithm.png" width="500">
 </figure>
-</details>
 <p>To implement a FSM in software, we use case statements where we check for the current state of the robot as well as the next state of the robot.</p>
 <pre><code>
 switch(state)
@@ -117,6 +116,8 @@ switch(state)
         break;
     }
 </code></pre>
+</details>
+
 
 ### C++ Tutorial
 <details><summary><b>Functions</b></summary>
