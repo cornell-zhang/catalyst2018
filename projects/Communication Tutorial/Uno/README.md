@@ -73,8 +73,32 @@ In your final project, your robot will be communicating with our server via a ro
 |E              |14               |14             |
 
 
-To establish this connection using an Arduino, we have provided code (snapshot) that connects your CC3000 Wifi board to the network and provides useful checks for you in the Arduino Wed Editor's serial monitor. The first portion of the code establishes a connection to the network and prints connection details in your serial monitor. The second part of the code contains the loop that continuously checks for available data. To get started, please open the Arduino Web Edidor you used in lab2, create a new sketch and type in the following code.
+To establish this connection using an Arduino, we have provided code (snapshot) that connects your CC3000 Wifi board to the network and provides useful checks for you in the Arduino Wed Editor's serial monitor. The first portion of the code establishes a connection to the network and prints connection details in your serial monitor. The second part of the code contains the loop that continuously checks for available data. To get started, please open the Arduino Web Edidor you used in lab2, create a new sketch and type in the following code (Figure 3,4,5).
 Attention: Please remember to change the LISTEN_PORT number to your own one.
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/Communication Tutorial/Uno/figures/s1.PNG" width="800">
+    <font size="2">
+    <figcaption> Figure 3: Include necessary libraries, Pin connection, and variable definition.   <br><br></a> 
+    </figcaption>
+    </font>
+</figure>
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/Communication Tutorial/Uno/figures/s2.PNG" width="800">
+    <font size="2">
+    <figcaption> Figure 3: Initial Setup.   <br><br></a> 
+    </figcaption>
+    </font>
+</figure>
+
+<figure>
+    <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/Communication Tutorial/Uno/figures/s3.PNG" width="800">
+    <font size="2">
+    <figcaption> Figure 3: Main loop and print helper function.   <br><br></a> 
+    </figcaption>
+    </font>
+</figure>
 
 Once the digit recognition server returns a predicted digit, this number will be sent to your Arduino and stored in the variable 'value'.  When utilizing this code, you will need to change the LISTEN_PORT number to your group number in order to connect to the correct port. It is also important that you ensure you are logged into the correct group account on the Digit Recognition System as this allows your board to have its own, distinct connection. The information is in a table with the CC3000 label, Port and Group numbers below. Again, make sure you have changed the LISTEN_PORT number and uploaded the code to your robot, open your serial monitor to check that your device has successfully connected to the network.  Test this system by logging into the Digit Recognition System, and drawing a digit to predict. This digit should then be printed out in your Arduino Wed Editor's serial monitor. You will now be able to recieve digit recognition numbers and can go on to implement digit-dependent robot motion. 
 
