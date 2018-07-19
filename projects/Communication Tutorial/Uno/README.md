@@ -87,7 +87,7 @@ Attention: Please remember to change the LISTEN_PORT number to your own one.
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/Communication Tutorial/Uno/figures/s2.PNG" width="800">
     <font size="2">
-    <figcaption> Figure 3: Initial Setup.   <br><br></a> 
+    <figcaption> Figure 4: Initial Setup.   <br><br></a> 
     </figcaption>
     </font>
 </figure>
@@ -95,7 +95,7 @@ Attention: Please remember to change the LISTEN_PORT number to your own one.
 <figure>
     <img src="https://github.com/cornell-zhang/catalyst2018/blob/master/projects/Communication Tutorial/Uno/figures/s3.PNG" width="800">
     <font size="2">
-    <figcaption> Figure 3: Main loop and print helper function.   <br><br></a> 
+    <figcaption> Figure 5: Main loop and print helper function.   <br><br></a> 
     </figcaption>
     </font>
 </figure>
