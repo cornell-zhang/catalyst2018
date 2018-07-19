@@ -11,7 +11,7 @@ For this final project, your robots will need to have Internet connection capabi
 
 When using the Arduino web editor to program your robot, you will need to change the board type. Select the drop-down bar at the top that currently reads "Arduino Uno" then click "Select Other Board & Port."  Choose the "Arduino Yun" option. To allow each group to simultaneously use the digit recognition web server to control their robot, each group must connect to a different port. Each Seeeduino board has a unique MAC address and has been bound to a specific port in our router. When using our code template, be sure to locate the `#define PORT #` line and change the number to your group number. When signing in to the digit rec web server, you should also be sure to sign into the account corresponding to your correct group number. 
 
-Specific instructions on the WiFi connection and port numbers are provided as part of the [Seeeduino communication tutorial](../Communication%20Tutorial/Seeeduino). Please carefully read this tutorial before completing the task. You can find the port that you will have to change to, along with the appropriate group number, by referring to the table that in the communication tutorial.
+Specific instructions on the WiFi connection and port numbers are provided as part of the [Seeeduino communication tutorial](../Communication%20Tutorial/Seeeduino). Please carefully read this tutorial before completing the task. You can find the port that you will have to change to, along with the appropriate group number, by referring to the table that in the communication tutorial. A [code template](Project2Template.ino) is also provided for you to receive the digit. Please pay close attention to the `receive_value` function and take advantage of it accordingly.
 
 **Milestone 1.1: Your robot should be able to receive any digit sent from our digit recognition web app. You should verify the received digit with the serial monitor.**
 
@@ -36,29 +36,8 @@ As you may have noticed from Lab 2, the robot may not drive in a straight line e
 
 ### Putting everything together
 
-Once you have developed a successful cruise control system, you can create the FSM that will allow your robot to use the cruise control system and the digit recognition system.  It might be helpful to use a new copy of the template code for this. Your FSM should be simple, containing three different states: a state in which your robot moves forward with a speed that depends on the infrared sensor, a state in which your robot moves forward with a speed that depends on the number received from the digit recognition system, and a stop state. For organizational purposes, you should write each of these states as a separate function.  To implement the function for the cruise control state, you can simply copy the code you previously wrote. A `receive_value` function has been provided for you.  This function simply reads the digit received over WiFi from the web server and stores it in a variable `value`. You should then create a function that determines the next state based on the variable `value`. This function should also use the `receive_value` function to first read values received from the server. The next important function you should write is one that switches the robot's state, depending on the next state determined by the function you previously wrote.  Hint: do not forget to define all variables you use at the beginning of your code! Your loop function should continuously determine the next state and switch the robot to this state, using the two functions you just wrote. 
+Combine the functionalities created for the robots in the previous three tasks into a single robot that contains all these functionalities in one. This involves integrating the three pieces of Arduino code into one piece of code and uploading it into the Seeeduino micro-controller. Afterward, you will use a Seeeduino stacked with motor shield and maker shield to control your final integrated robot.
 
-Notes on Coding: 
-In your function that determines the next state, you will want to set a new variable `state`, depending on `value`.  You should use `if...else` conditionals for this.  
-In your function that switches your robot's state, you will want to use something called `switch`.  The syntax for this is show below: 
-```
-switch(variable)
-{
-  case 0:
-    function1();
-    break;
-  case 1: 
-    function2();
-    break;
-  default: 
-    function3();
-  }
-  ```
-  In this example case, if `variable` is 0, function1() will be executed and if `variable` is 1 function2() will be executed.  By         default, function3() will be implemented. You will need to use a similar format for implementing your function to switch FSM states.
+**Milestone: You should test whether the integrated robot can accomplish the goals defined in all previous milestones.**
   
-### Part 3: Testing Your Adaptive Cruise Control System
-After compiling and uploading your code to the robot, test your robot on the testing block to ensure that it adjusts its speed depending on the distance of your hand in front of it.  Once the cruise control system is working, test the digit recognition control system. Write numbers on the digit rec server and make sure that your robot adjusts its speed depending on the predicted number. You can then place your robot on the ground and further test its cruise control system by placing objects in front of it.  
-
-As a further challenge, find another finished group and see if you can get one robot to adjust its speed depending on a second robot in front of it. Line your two robots up and simply control the speed of the leading robot using the digit recognition system.  See if you can get the trailing robot to dynamically adjust its speed to avoid collision. 
-  
-Note: If you find that your robots are not driving in entirely straight lines, you will need to manually tune the wheel speeds to fix this issue. Test to see which way your robot is drifting to, and subtract or add a small integer to one of the wheel speeds in the code. Keep adjusting these integers until your robot drives forward in a straight line. 
+**Milestone: Find another finished group and see if you can get one robot to adjust its speed depending on a second robot in front of it. Line your two robots up and simply control the speed of the leading robot using the digit recognition system.  See if you can get the trailing robot to dynamically adjust its speed to avoid collision.**
