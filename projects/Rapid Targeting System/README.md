@@ -11,7 +11,7 @@ This project can be divided into independent tasks. Each group should further di
 
 ### Task 1: Setting up the wireless communication
 
-In order to allow the robot to receive a digit from the digit recognition web app, we will need to enable wireless connectivity on the robot by integrating a WiFi chip into the design. Specifically, we will wire up the CC3000 WiFi board on a breadboard on the side of the Arduino stack and connect the WiFi board to the appropriate pins on the Arduino stack. Please refer to the [Arduino Uno Communication Tutorail](../Communication%20Tutorial/Uno) for detailed instructions on how to set up the pin connections and build the hardware.
+In order to allow the robot to receive a digit from the digit recognition web app, we will need to enable wireless connectivity on the robot by integrating a WiFi chip into the design. Specifically, we will wire up the CC3000 WiFi board on a breadboard on the side of the Arduino stack and connect the WiFi board to the appropriate pins on the Arduino stack. Please refer to the [Arduino Uno Communication Tutorial](../Communication%20Tutorial/Uno) for detailed instructions on how to set up the pin connections and build the hardware.
 
 Once the hardware is all wired up, you will need to program the software to make use of the WiFi board. For this part, you will first study our [code template](Communication%20Tutorial/Uno/communication.ino) and then integrate it into the program for your robot to receive digit from the web app.
 
